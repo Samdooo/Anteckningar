@@ -1,6 +1,6 @@
 {
   "vaultName": "Anteckningar",
-  "lastExport": 1735682476788,
+  "lastExport": 1735682712985,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-light show-inline-title show-ribbon",
   "useCustomHeadContent": false,
@@ -147,499 +147,499 @@
   ],
   "fileInfo": {
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 24569,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 25255,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 3503,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 131021,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 187,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 400794,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 77,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Alternerande och skevsymmetriska avbildningar.md": {
-      "modifiedTime": 1734648133723,
+      "modifiedTime": 1735682712985,
       "sourceSize": 1543,
       "exportedPath": "matematik/linjär-algebra/alternerande-och-skevsymmetriska-avbildningar.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Direkta summor.md": {
-      "modifiedTime": 1735580788687,
+      "modifiedTime": 1735682712985,
       "sourceSize": 3993,
       "exportedPath": "matematik/linjär-algebra/direkta-summor.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Egenvärden och egenvektorer.md": {
-      "modifiedTime": 1734648133723,
+      "modifiedTime": 1735682712985,
       "sourceSize": 1065,
       "exportedPath": "matematik/linjär-algebra/egenvärden-och-egenvektorer.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Jordans Normalform.md": {
-      "modifiedTime": 1735580788687,
+      "modifiedTime": 1735682712985,
       "sourceSize": 8467,
       "exportedPath": "matematik/linjär-algebra/jordans-normalform.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Karakteristiska polynom.md": {
-      "modifiedTime": 1734648133723,
+      "modifiedTime": 1735682712985,
       "sourceSize": 2305,
       "exportedPath": "matematik/linjär-algebra/karakteristiska-polynom.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Kvotrum.md": {
-      "modifiedTime": 1735404777770,
+      "modifiedTime": 1735682712985,
       "sourceSize": 4937,
       "exportedPath": "matematik/linjär-algebra/kvotrum.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Linjära avbildningar.md": {
-      "modifiedTime": 1734648133723,
+      "modifiedTime": 1735682712985,
       "sourceSize": 426,
       "exportedPath": "matematik/linjär-algebra/linjära-avbildningar.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Minimalpolynom.md": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 5080,
       "exportedPath": "matematik/linjär-algebra/minimalpolynom.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Multilinjära avbildningar.md": {
-      "modifiedTime": 1734648133723,
+      "modifiedTime": 1735682712985,
       "sourceSize": 736,
       "exportedPath": "matematik/linjär-algebra/multilinjära-avbildningar.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Nilpotenta operatorer.md": {
-      "modifiedTime": 1735404777770,
+      "modifiedTime": 1735682712985,
       "sourceSize": 4534,
       "exportedPath": "matematik/linjär-algebra/nilpotenta-operatorer.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Samtidig diagonalisering.md": {
-      "modifiedTime": 1734652877732,
+      "modifiedTime": 1735682712985,
       "sourceSize": 2618,
       "exportedPath": "matematik/linjär-algebra/samtidig-diagonalisering.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Symmetriska och alternerande tensorer.md": {
-      "modifiedTime": 1734648133723,
+      "modifiedTime": 1735682712985,
       "sourceSize": 3072,
       "exportedPath": "matematik/linjär-algebra/symmetriska-och-alternerande-tensorer.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Tensorer.md": {
-      "modifiedTime": 1735580788687,
+      "modifiedTime": 1735682712985,
       "sourceSize": 13619,
       "exportedPath": "matematik/linjär-algebra/tensorer.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Yttre algebran.md": {
-      "modifiedTime": 1734648133723,
+      "modifiedTime": 1735682712985,
       "sourceSize": 1289,
       "exportedPath": "matematik/linjär-algebra/yttre-algebran.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Yttre potenser.md": {
-      "modifiedTime": 1735404777770,
+      "modifiedTime": 1735682712985,
       "sourceSize": 4886,
       "exportedPath": "matematik/linjär-algebra/yttre-potenser.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra.md": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 982,
       "exportedPath": "matematik/linjär-algebra.html",
       "dependencies": []
     },
     "Anteckningar.md": {
-      "modifiedTime": 1734648133723,
+      "modifiedTime": 1735682712985,
       "sourceSize": 22,
       "exportedPath": "anteckningar.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Inre produktrum.md": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 4005,
       "exportedPath": "matematik/linjär-algebra/inre-produktrum.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Norm och vinklar.md": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 2175,
       "exportedPath": "matematik/linjär-algebra/norm-och-vinklar.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Ortogonalitet och projektioner.md": {
-      "modifiedTime": 1735580788687,
+      "modifiedTime": 1735682712985,
       "sourceSize": 7789,
       "exportedPath": "matematik/linjär-algebra/ortogonalitet-och-projektioner.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Duala rum.md": {
-      "modifiedTime": 1735580788687,
+      "modifiedTime": 1735682712985,
       "sourceSize": 1676,
       "exportedPath": "matematik/linjär-algebra/duala-rum.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Hilbertrum.md": {
-      "modifiedTime": 1734991077759,
+      "modifiedTime": 1735682712985,
       "sourceSize": 3842,
       "exportedPath": "matematik/linjär-algebra/hilbertrum.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Konvergens och Cauchyföljder.md": {
-      "modifiedTime": 1734991077759,
+      "modifiedTime": 1735682712985,
       "sourceSize": 2323,
       "exportedPath": "matematik/linjär-algebra/konvergens-och-cauchyföljder.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Ortogonala och unitära operatorer.md": {
-      "modifiedTime": 1735580788687,
+      "modifiedTime": 1735682712985,
       "sourceSize": 7983,
       "exportedPath": "matematik/linjär-algebra/ortogonala-och-unitära-operatorer.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Normala operatorer.md": {
-      "modifiedTime": 1735580788687,
+      "modifiedTime": 1735682712985,
       "sourceSize": 3424,
       "exportedPath": "matematik/linjär-algebra/normala-operatorer.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Adjungerade avbildningar.md": {
-      "modifiedTime": 1735580788687,
+      "modifiedTime": 1735682712985,
       "sourceSize": 4800,
       "exportedPath": "matematik/linjär-algebra/adjungerade-avbildningar.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Duala avbildningar.md": {
-      "modifiedTime": 1735580788687,
+      "modifiedTime": 1735682712985,
       "sourceSize": 809,
       "exportedPath": "matematik/linjär-algebra/duala-avbildningar.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Moore-Penrose-inversen.md": {
-      "modifiedTime": 1735580788687,
+      "modifiedTime": 1735682712985,
       "sourceSize": 632,
       "exportedPath": "matematik/linjär-algebra/moore-penrose-inversen.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Singulärvärdesuppdelning.md": {
-      "modifiedTime": 1735581642237,
+      "modifiedTime": 1735682712985,
       "sourceSize": 5879,
       "exportedPath": "matematik/linjär-algebra/singulärvärdesuppdelning.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Markovkedjor och sannolikhetsmatriser.md": {
-      "modifiedTime": 1735682476788,
+      "modifiedTime": 1735682712985,
       "sourceSize": 8763,
       "exportedPath": "matematik/linjär-algebra/markovkedjor-och-sannolikhetsmatriser.html",
       "dependencies": []
