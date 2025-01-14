@@ -1,4 +1,37 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 11 Jan 2025 17:48:17 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 11 Jan 2025 17:48:15 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Ortogonalitet och projektioner]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik/linjär-algebra" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik/linjär-algebra</a> 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 14 Jan 2025 13:56:25 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 14 Jan 2025 13:56:24 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Groups and rings]]></title><description><![CDATA[ 
+ <br>
+<br><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/Groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Groups</a><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/matematik/grupper-och-ringar/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups</a>
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings.html</link><guid isPermaLink="false">Matematik/Groups and rings.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Tue, 14 Jan 2025 13:56:07 GMT</pubDate></item><item><title><![CDATA[Groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a><br>Definition: Properties
+Let  be a set together with a map .
+Associativity:  for all <br>
+Unit element: There exists  such that  for all <br>
+Inverse elements: For all  there exists  such that <br>
+Commutativity:  for all 
+<br>Definition
+Let  be a set together with a map . Then  is called a...
+Semigroup if it is associative<br>
+Monoid if it is associative and has a unit element<br>
+Group if it is associative, has a unit element, and has inverse elements<br>
+Abelian group if it is a commutative group
+<br>Notation
+As associativity holds, we can simply write  without parentheses. We also commonly define  for all , and  if a unit element  exists. Finally, we often write  as .
+<br>Theorem: Basic properties of groups
+Let  be a group. Then the following holds:
+
+<br>The unit element  is unique.
+<br>The inverse of any  is unique (denoted by ).
+<br> for all .
+<br>If  or , then .
+
+Proof:
+
+<br>If  and  are unit elements, then  by the properties of unit elements.
+<br>If  and  are inverses of , then .
+<br>We know , so  is the inverse of .
+<br>If , then , and analogous if .
+
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/grupper-och-ringar/groups.html</link><guid isPermaLink="false">Matematik/Grupper och ringar/Groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Tue, 14 Jan 2025 13:55:00 GMT</pubDate></item><item><title><![CDATA[Ortogonalitet och projektioner]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik/linjär-algebra" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik/linjär-algebra</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik/linjär-algebra" class="tag" target="_blank" rel="noopener nofollow">#matematik/linjär-algebra</a> <br><a data-href="Inre produktrum" href="https://samdooo.github.io/Anteckningar/Inre produktrum" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Inre produktrum</a><a data-href="Inre produktrum" href="https://samdooo.github.io/Anteckningar/matematik/linjär-algebra/inre-produktrum.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Inre produktrum</a> ger oss ett sätt att definiera vad som menas med att två vektorer är ortogonala, alltså vinkelräta mot varandra.<br>Definition: Ortogonalitet
 Om  där  är ett inre produktrum och  så kallar vi  och  ortogonala mot varandra och skriver . Vi kallar en mängd vektorer ortogonal om vektorerna är parvis ortogonala.
 <br>Definition: Ortogonal och ortonormal bas
