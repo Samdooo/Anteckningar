@@ -1,7 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 14 Jan 2025 13:56:25 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 14 Jan 2025 13:56:24 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Groups and rings]]></title><description><![CDATA[ 
- <br>
-<br><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/Groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Groups</a><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/matematik/grupper-och-ringar/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups</a>
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings.html</link><guid isPermaLink="false">Matematik/Groups and rings.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Tue, 14 Jan 2025 13:56:07 GMT</pubDate></item><item><title><![CDATA[Groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 15 Jan 2025 18:55:15 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 15 Jan 2025 18:55:14 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a><br>Definition: Properties
 Let  be a set together with a map .
 Associativity:  for all <br>
@@ -31,7 +28,40 @@ Proof:
 <br>We know , so  is the inverse of .
 <br>If , then , and analogous if .
 
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/grupper-och-ringar/groups.html</link><guid isPermaLink="false">Matematik/Grupper och ringar/Groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Tue, 14 Jan 2025 13:55:00 GMT</pubDate></item><item><title><![CDATA[Ortogonalitet och projektioner]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik/linjär-algebra" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik/linjär-algebra</a> 
+<br>Theorem: Left/right unit &amp; inverse is sufficient
+Let  be a set with a map  that satisfies
+
+<br> is associative
+<br> has a left unit  such that  for all .
+<br> has left inverses; for all  there exists a  such that .
+
+Then,  is a group.
+Proof:<br>
+We first show that if  is the left inverse of , it is also the right inverse of . We have , where the last step follows by applying the left inverse of  on both sides. Hence, inverses exist. We also get , so  is indeed also a left unit.
+<br>Examples
+
+<br> is an abelian group.
+<br>If  is a field,  is an abelian group.
+<br>If  is a field and  is a vector space over ,  is an abelian group.
+<br>If  is a field,  is an abelian group.
+<br> and  are abelian groups.
+<br>, , and  are commutative monoids, but not groups.
+
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 15 Jan 2025 18:42:06 GMT</pubDate></item><item><title><![CDATA[Permutation groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Permutation group
+Let  be a set. We then define the permutation group on  as  together with composition .
+<br>We can quite easily see that for any ,  is a group under composition . However, it is not necessarily commutative since the compositions of bijections are not necessarily commutative; swapping the first two elements and then the second two among three elements is different from swapping the second two and then the first two.<br>Permutation groups are groups
+Let  be a set. Then  is a group.
+Proof:<br>
+If  we know  since the composition of two bijections is a bijection. Compositions are associative, and by definition invertible with the identity on  as the unit element.
+<br>Notation
+If , we define  and call it the symmetric group of degree  or the group of permutations of  elements.
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/permutation-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Permutation groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 15 Jan 2025 18:54:47 GMT</pubDate></item><item><title><![CDATA[Groups and rings]]></title><description><![CDATA[ 
+ <br>
+<br><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/Groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Groups</a><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups</a>
+<br><a data-href="Permutation groups" href="https://samdooo.github.io/Anteckningar/Permutation groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Permutation groups</a><a data-href="Permutation groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/permutation-groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Permutation groups</a>
+<br>
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings.html</link><guid isPermaLink="false">Matematik/Groups and rings.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 15 Jan 2025 18:44:24 GMT</pubDate></item><item><title><![CDATA[Ortogonalitet och projektioner]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik/linjär-algebra" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik/linjär-algebra</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik/linjär-algebra" class="tag" target="_blank" rel="noopener nofollow">#matematik/linjär-algebra</a> <br><a data-href="Inre produktrum" href="https://samdooo.github.io/Anteckningar/Inre produktrum" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Inre produktrum</a><a data-href="Inre produktrum" href="https://samdooo.github.io/Anteckningar/matematik/linjär-algebra/inre-produktrum.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Inre produktrum</a> ger oss ett sätt att definiera vad som menas med att två vektorer är ortogonala, alltså vinkelräta mot varandra.<br>Definition: Ortogonalitet
 Om  där  är ett inre produktrum och  så kallar vi  och  ortogonala mot varandra och skriver . Vi kallar en mängd vektorer ortogonal om vektorerna är parvis ortogonala.
 <br>Definition: Ortogonal och ortonormal bas
