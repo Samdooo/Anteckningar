@@ -1,4 +1,9 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 15 Jan 2025 18:55:15 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 15 Jan 2025 18:55:14 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 17 Jan 2025 19:44:49 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 17 Jan 2025 19:44:47 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Direct groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Direct product
+Let  be a family of groups. We define the direct product of these groups as the group given by the set  where  denotes a disjoint union, meaning we preserve the information about which group each element comes from. The operation  of the direct product is defined componentwise as  for all .
+<br>We want to preserve the information about which group each element comes from because we want to, given two elements, know which operation should be used on them. This definition allows for index sets of any size and cardinality. If the family of groups is of finite size  we can see each element of the product as an -tuple, and if the index set is countably infinite we can see each element of the product as an infinite tuple, just like with regular set products.<br>Notation
+If each group in a family  is the same, so that  for all , we denote the product as . If  we denote the product as .
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/direct-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Direct groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Fri, 17 Jan 2025 19:09:00 GMT</pubDate></item><item><title><![CDATA[Groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a><br>Definition: Properties
 Let  be a set together with a map .
 Associativity:  for all <br>
@@ -47,16 +52,79 @@ We first show that if  is the left inverse of , it is also the right inverse of 
 <br> and  are abelian groups.
 <br>, , and  are commutative monoids, but not groups.
 
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 15 Jan 2025 18:42:06 GMT</pubDate></item><item><title><![CDATA[Permutation groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Thu, 16 Jan 2025 13:16:43 GMT</pubDate></item><item><title><![CDATA[Homomorphisms]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Homomorphism
+Let  and  be <a data-tooltip-position="top" aria-label="Groups > ^5927de" data-href="Groups#^5927de" href="https://samdooo.github.io/Anteckningar/Groups#^5927de" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Monoids</a><a data-tooltip-position="top" aria-label="Groups > ^5927de" data-href="Groups#^5927de" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html#^5927de" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Monoids</a> with units , respectively. A map  is a monoid homomorphism if  and  for all . If  are <a data-tooltip-position="top" aria-label="Groups > ^5927de" data-href="Groups#^5927de" href="https://samdooo.github.io/Anteckningar/Groups#^5927de" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Groups</a><a data-tooltip-position="top" aria-label="Groups > ^5927de" data-href="Groups#^5927de" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html#^5927de" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups</a>, we call  a group homomorphism.
+<br>Theorem
+Let  be a map between groups. If  for all ,  is a group homomorphism, and .
+Proof:<br>
+Since  are units, we have  so  is a group homomorphism. Furthermore, we have  so .
+<br>Definition
+Let  be groups. We define...
+
+<br> as the set of all homomorphisms from  to ,
+<br> as the set of all endomorphisms of ,
+<br> as the set of all automorphisms of .
+
+If a group homomorphism is...
+
+<br>Injective, it is called a monomorphism
+<br>Surjective, it is called a epimorphism
+<br>Bijective, it is called an isomorphism
+
+<br>Theorem: Compositions of homomorphisms are homomorphisms
+Let  be groups, and . Then Furthermore, if  is a group,  is a group.<br>
+Proof:<br>
+We have so . Furthermore, we know that the composition of two bijections is a bijection, hence  for all . We also know that the identity bijection is in , and that every bijection has an inverse also in , so  is indeed a group.
+<br>Definition
+Let  be groups, and . We define the kernel We also define the image 
+<br>Theorem
+Let  be groups, and . Then
+
+<br>
+<br>
+<br> is injective  
+<br> is surjective  
+<br>
+<br>
+
+Proof:
+
+<br>If , then , so  which means  according to <a data-tooltip-position="top" aria-label="Subgroups > ^0fcb50" data-href="Subgroups#^0fcb50" href="https://samdooo.github.io/Anteckningar/Subgroups#^0fcb50" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Theorem</a><a data-tooltip-position="top" aria-label="Subgroups > ^0fcb50" data-href="Subgroups#^0fcb50" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/subgroups.html#^0fcb50" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem</a>.
+<br>For any  we have , meaning .
+<br>We know , so if  is injective we get . If instead  and  we get  so  is injective.
+<br>This is true by definition.
+<br>For all  we get  since  is a group, so .
+<br>We have . For any  we have  since  is a group.
+
+<br>Example
+Let  be a group and  be a homomorphism. Then we have  So any homomorphism from  to a group is uniquely determine by where it maps . Note that this also holds for negative numbers since  respects inverses. 
+<br>Definition: Translation
+Let  be a group and . We define the (left) translation map by  as  where for all .
+<br>We note that translation by  is generally not a homomorphism since . However, the map that takes  to  is an injective group homomorphism since  and every  if  since  and . This means  can be identified with its image in , which thus is a subgroup of  (for finite groups, this is the result of Cayley's theorem).<br>Of course, we can also define the right translation map, and get basically the same results, but the maps are of course generally not the same. This asymmetry leads us to also look at conjugation.<br>Definition Conjugation
+Let  be a group and . We define the conjugation by  as  where<br>
+ for all .  is also called an inner isomorphism of . And we define .
+<br>We know that  because , and  is clearly an inverse of . This time, however, we only get that the map that takes  to  is still a homomorphism, but generally no longer an injective one. It's a homomorphism since  and , but generally not injective since for example, if  is abelian, we get  for every .]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/homomorphisms.html</link><guid isPermaLink="false">Matematik/Groups and rings/Homomorphisms.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Fri, 17 Jan 2025 19:44:23 GMT</pubDate></item><item><title><![CDATA[Permutation groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Permutation group
 Let  be a set. We then define the permutation group on  as  together with composition .
-<br>We can quite easily see that for any ,  is a group under composition . However, it is not necessarily commutative since the compositions of bijections are not necessarily commutative; swapping the first two elements and then the second two among three elements is different from swapping the second two and then the first two.<br>Permutation groups are groups
+<br>We can quite easily see that for any ,  is a <a data-tooltip-position="top" aria-label="Groups" data-href="Groups" href="https://samdooo.github.io/Anteckningar/Groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Group</a><a data-tooltip-position="top" aria-label="Groups" data-href="Groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Group</a> under composition . However, it is not necessarily commutative since the compositions of bijections are not necessarily commutative; swapping the first two elements and then the second two among three elements is different from swapping the second two and then the first two.<br>Permutation groups are groups
 Let  be a set. Then  is a group.
 Proof:<br>
 If  we know  since the composition of two bijections is a bijection. Compositions are associative, and by definition invertible with the identity on  as the unit element.
 <br>Notation
 If , we define  and call it the symmetric group of degree  or the group of permutations of  elements.
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/permutation-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Permutation groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 15 Jan 2025 18:54:47 GMT</pubDate></item><item><title><![CDATA[Groups and rings]]></title><description><![CDATA[ 
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/permutation-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Permutation groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Thu, 16 Jan 2025 13:17:22 GMT</pubDate></item><item><title><![CDATA[Subgroups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Submonoid, subgroup
+Let  be sets, and . If  and  are <a data-tooltip-position="top" aria-label="Groups > ^5927de" data-href="Groups#^5927de" href="https://samdooo.github.io/Anteckningar/Groups#^5927de" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Monoids</a><a data-tooltip-position="top" aria-label="Groups > ^5927de" data-href="Groups#^5927de" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html#^5927de" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Monoids</a> under the same operation,  is called a submonoid of . If  and  are <a data-tooltip-position="top" aria-label="Groups > ^5927de" data-href="Groups#^5927de" href="https://samdooo.github.io/Anteckningar/Groups#^5927de" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Groups</a><a data-tooltip-position="top" aria-label="Groups > ^5927de" data-href="Groups#^5927de" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html#^5927de" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups</a> under the same operation,  is called a subgroup of  and we write .
+<br>We see that every group  contains two trivial subgroups: itself and the trivial group . If a subgroup is not one of these two trivial subgroups, we often call it nontrivial.<br>From this definition the following theorems follow directly and so we state them without proofs.<br>Theorem
+Let  be a monoid with unit , and . Then  is a submonoid of  if and only if  and  for all .
+<br>Theorem
+Let  be a group and . Then  is a subgroup of  if and only if  is a submonoid of  and  for all .
+<br>We also find that we can find an often easier equivalent requirement for a subset to be a subgroup.<br>Theorem
+Let  be a group and  where . Then  is a subgroup of  if and only if , or in other words,  for all .
+Proof:<br>
+If  is a subgroup of , it is clear that  since  is a group and thus closed under composition and inverses. If instead , we can take any  and know that , so . This also means  for all , which finally means that  for all . So  is indeed a subgroup of . 
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/subgroups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Subgroups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Thu, 16 Jan 2025 21:12:31 GMT</pubDate></item><item><title><![CDATA[Groups and rings]]></title><description><![CDATA[ 
  <br>
 <br><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/Groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Groups</a><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups</a>
 <br><a data-href="Permutation groups" href="https://samdooo.github.io/Anteckningar/Permutation groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Permutation groups</a><a data-href="Permutation groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/permutation-groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Permutation groups</a>
