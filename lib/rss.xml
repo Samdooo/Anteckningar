@@ -1,9 +1,165 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 17 Jan 2025 19:44:49 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 17 Jan 2025 19:44:47 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Direct groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
- <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Direct product
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 22 Jan 2025 10:16:34 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 22 Jan 2025 10:16:32 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Cosets]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Coset
+Let  be a group and  be a <a data-tooltip-position="top" aria-label="Subgroups" data-href="Subgroups" href="https://samdooo.github.io/Anteckningar/Subgroups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Subgroup</a><a data-tooltip-position="top" aria-label="Subgroups" data-href="Subgroups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/subgroups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Subgroup</a>. A left coset of  in  is a subset of the form  where . We define  as the set of all left cosets of  in .
+Right cosets are defined analogously, so  and .
+The elements of a coset of  in  are called the coset's representatives.
+<br>We quickly see that it doesn't really matter if we are using left or right cosets since they essentially contain the same information. Consider the bijective  map . It restricts to a  map  meaning it defines a  bijection .<br>Theorem
+Let  be a group and . The following are equivalent:
+
+<br>,
+<br>,
+<br>,
+<br>.
+
+Proof:<br>
+(i)(ii): Clear since .<br>
+(ii)(iii): Let . Then  for some . This gives .<br>
+(iii)(iv): We have  for some , so .<br>
+(iv)(i): For every  we have  and for every  we have .
+<br>Corollary
+For any group  and subgroup ,  is the disjoint union of all left cosets of  in .
+<br>Definition: Order, index
+Let  be a group and  be a subgroup. The index of  in  is and the order of  is 
+<br>Theorem
+Let  be a group,  be a subgroup and . Then there is a  bijection; in particular, .
+Proof:<br>
+Translation  by  is bijective, hence the result.
+<br>Corollary: Theorem of Lagrange
+If  is a finite group and  is a subgroup, then 
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/cosets.html</link><guid isPermaLink="false">Matematik/Groups and rings/Cosets.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 09:39:22 GMT</pubDate></item><item><title><![CDATA[Cyclic groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Cyclic group
+Let  be a group and . Then  is the smallest subgroup of  containing , called the subgroup generated by .
+If  for some , we write  and call it the cyclic group generated by .
+<br>Theorem
+Let  be a group and . Then Proof:<br>
+Let  be the right hand expression above. By the construction of , we know . We also know that , so . For any  such that  it is clear that  since each element of  is in  and thus all compositions of elements of . Thus , so .
+<br>Remark
+Cyclic groups are abelian since .
+<br>Example
+ is called the free cyclic group. For any  we also have  and  If  we get  which is called the cyclic group of order .
+<br>We call them the free cyclic group and cyclic groups of order  because we can show that every cyclic group is isomorphic to one of these. For that we first need a few lemmas.<br>Lemma
+If  is a group,  is cyclic if and only if there exists a surjective .
+Proof:<br>
+: We have .<br>
+: Let , and we get , which combined with the fact that  is surjective means that .
+<br>Lemma
+If , then  for some .
+Proof:<br>
+If , then . Otherwise, let  (which exists since if  then ). Then we clearly have . Finally, let . Then we have  for some , which means , implying that  by minimality, so .
+<br>Theorem
+Let  be a cyclic group. Then
+
+<br>If , .
+<br>If , .
+
+Proof:<br>
+Since  is syclic there exists a surjective . The universal property gives a bijection . We know  for some , so  where in the first case, , and in the second, .
+<br>Theorem
+Let  be a cyclic group and . Then  is cyclic.
+Proof:<br>
+By <a data-tooltip-position="top" aria-label="^481423" data-href="#^481423" href="https://samdooo.github.io/Anteckningar/about:blank#^481423" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lemma</a><a data-tooltip-position="top" aria-label="^481423" data-href="#^481423" href="https://samdooo.github.io/Anteckningar/about:blank#^481423" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lemma</a>, there exists a surjective homomorphism , so . By <a data-tooltip-position="top" aria-label="^7b5424" data-href="#^7b5424" href="https://samdooo.github.io/Anteckningar/about:blank#^7b5424" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lemma</a><a data-tooltip-position="top" aria-label="^7b5424" data-href="#^7b5424" href="https://samdooo.github.io/Anteckningar/about:blank#^7b5424" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lemma</a>, there exists an  such that . If , then , and otherwise,  which by <a data-tooltip-position="top" aria-label="^481423" data-href="#^481423" href="https://samdooo.github.io/Anteckningar/about:blank#^481423" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lemma</a><a data-tooltip-position="top" aria-label="^481423" data-href="#^481423" href="https://samdooo.github.io/Anteckningar/about:blank#^481423" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lemma</a> means that  is cyclic.
+<br>Definition: Order of element
+Let  be a group and . The order of  is 
+<br>This means that if ,  and .<br>Theorem: Fermat's Little Theorem
+Let  be a finite group and . Then Proof:<br>
+The divisibility follows from <a data-tooltip-position="top" aria-label="Cosets > ^920282" data-href="Cosets#^920282" href="https://samdooo.github.io/Anteckningar/Cosets#^920282" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lagrange's Theorem</a><a data-tooltip-position="top" aria-label="Cosets > ^920282" data-href="Cosets#^920282" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/cosets.html#^920282" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lagrange's Theorem</a>, and the second part follows from the fact that .
+<br>Corollary: Fermat's Little Theorem, classic version
+Let  be prime and . Then Proof:<br>
+Let  (recall that '' denotes exclusion of zero). We first show that  is a group with respect to multiplication. Multiplication is well defined as  since  divides neither  nor , so  does not divide  either since  is prime, meaning , so . Furthermore, this multiplication is injective since if , then , so  meaning  since . This means , so . Since  is clearly a unit element, it follows that inverse elements exist, hence  is a group under multiplication.
+Now, if , then . Otherwise, we have , which by the group theoretic version of Fermat's Little Theorem means that 
+<br>Corollary
+Let  be a finite group with order , where  is prime. Then
+
+<br>,
+<br>For all , , and .
+
+Proof:<br>
+b) Since , we know  since  is prime and . Hence , so .<br>
+a) From <a data-tooltip-position="top" aria-label="^124bb5" data-href="#^124bb5" href="https://samdooo.github.io/Anteckningar/about:blank#^124bb5" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Theorem</a><a data-tooltip-position="top" aria-label="^124bb5" data-href="#^124bb5" href="https://samdooo.github.io/Anteckningar/about:blank#^124bb5" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem</a>, we know .
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/cyclic-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Cyclic groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 10:16:22 GMT</pubDate></item><item><title><![CDATA[Direct groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a><br>Definition: Direct product
 Let  be a family of groups. We define the direct product of these groups as the group given by the set  where  denotes a disjoint union, meaning we preserve the information about which group each element comes from. The operation  of the direct product is defined componentwise as  for all .
 <br>We want to preserve the information about which group each element comes from because we want to, given two elements, know which operation should be used on them. This definition allows for index sets of any size and cardinality. If the family of groups is of finite size  we can see each element of the product as an -tuple, and if the index set is countably infinite we can see each element of the product as an infinite tuple, just like with regular set products.<br>Notation
 If each group in a family  is the same, so that  for all , we denote the product as . If  we denote the product as .
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/direct-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Direct groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Fri, 17 Jan 2025 19:09:00 GMT</pubDate></item><item><title><![CDATA[Groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/direct-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Direct groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Tue, 21 Jan 2025 17:30:57 GMT</pubDate></item><item><title><![CDATA[Normal subgroups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Normal subgroup
+Let  be a group and  be a subgroup. Then  is a normal subgroup if for every , , i.e. for every , , and we write 
+<br>Remark
+Let  be a group and  be a subgroup. Then the following are equivalent:
+
+<br>
+<br>For every , 
+<br>For every , 
+<br>For every , 
+
+Proof:<br>
+(i)(iv): Clear since .<br>
+(i)(ii): Clear since .<br>
+(iii)(iv): We have  meaning  and . Since the same applies for , we are done.<br>
+(ii)(iii): Since every  is bijective, we have (ii)<br>
+ for every , <br>
+ for every , <br>
+ for every ,  since  is a group.
+<br>Theorem: Kernels are normal subgroups
+Let  be a homomorphism. Then .
+Proof:<br>
+For every  and every  we have  so .
+<br>Remark
+
+<br>For any group , the trivial subgroup  is normal.
+<br>If  is abelian, then every subgroup is normal since .
+
+<br>Theorem
+Let  be a group and . Then
+
+<br> for every .
+<br> is a group with respect to the multiplication in a), with unit element .
+<br>The canonical projection  defined by  for every , is a surjective group homomorphism with .
+
+Proof:<br>
+a) Since  is normal, we have  and , so b) For any  we have , so inverses exist.<br>
+c) It is surjective by definition. It is a homomorphism since . Finally, we have  since if  then .
+<br>From this we see that there is a strong correlation between kernels and normal subgroups; every kernel is a normal subgroup and every normal subgroup is the kernel of some homomorphism.<br>Theorem: Universal property of quotient groups
+Let  be a group homomorphism and  such that . Then there is a unique group homomorphism  such that . Moreover,
+
+<br>
+<br>
+<br>
+<br> is injective if and only if .
+
+Proof:<br>
+Define  by . This is well-defined since if  then , so . This also shows uniqueness of , since it must satisfy .<br>
+a) Clear by definition of .<br>
+b) .<br>
+c) Follows from b).<br>
+d) We know  is injective iff , iff .
+<br>Corollary
+If  is a surjective group homomorphism, then  is canonically isomorphic to .
+<br>Theorem: First isomorphism theorem
+Let  be a group, , and . Then:
+
+<br>
+<br>
+<br>
+<br>The canonical homomorphism  is an isomorphism.
+
+ Proof:<br>
+c) Clear because .<br>
+b) Since  is normal we have  which implies  so  is closed under composition, and we also have , so , so  is closed under inverses, meaning .<br>
+a) We construct a homomorphism  by  which is surjective and .<br>
+d) From the universal property we get a bijection .
+<br>Theorem: Second isomorphism theorem
+Let  be a group,  and  such that . Then
+
+<br>
+<br>
+<br>The canonical homomorphism  is an isomorphism.
+
+ Proof:<br>
+a) Clear since .<br>
+b) We define  as . This is well defined since if  then  so .  is also surjective, and  so .<br>
+c) From the universal property we get a bijection .
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/normal-subgroups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Normal subgroups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 09:13:48 GMT</pubDate></item><item><title><![CDATA[Groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a><br>Definition: Properties
 Let  be a set together with a map .
 Associativity:  for all <br>
