@@ -1,4 +1,173 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 22 Jan 2025 10:16:34 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 22 Jan 2025 10:16:32 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Cosets]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 22 Jan 2025 17:21:41 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 22 Jan 2025 17:21:37 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Counting]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: 
+We define .
+<br>Definition: Size of set
+Let  be a set. If there exists a bijection between  and , we say that  has size or cardinality , and write .
+<br>Theorem
+Let . If there exists an injection from  to , then .
+Proof:<br>
+We use <a data-tooltip-position="top" aria-label="Induction" data-href="Induction" href="https://samdooo.github.io/Anteckningar/Induction" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Induction</a><a data-tooltip-position="top" aria-label="Induction" data-href="Induction" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/induction.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Induction</a> on . If  the result is clear. Now suppose  is an injection. Firstly, we know , so  for some . We can then define an injection : 
+
+<br>If  for every , then let  for every .
+<br>If  for some , let  (we know  because  is injective), and let  for every .<br>
+Then, from our induction hypothesis, we get that , so .
+
+<br>Remark
+The contrapositive of the theorem above is called the pidgeonhole principle and says that if  then there does not exist a injection from  to .
+<br>Theorem: Size is unique
+Let  be a set with size  and . Then .
+Proof:<br>
+There exists bijections  and . This means  and  are injections from  to  and  to , respectively, meaning  and , so .
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/counting.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Counting.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 14:43:20 GMT</pubDate></item><item><title><![CDATA[Induction]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Axiom: Principle of induction
+Let  be a statement for every . If  and if  for every , then  for every .<br>
+
+<br>Terminology
+In an inductive proof, we call  the induction basis,  the induction hypothesis and  the induction step.
+<br>Note that for an inductive proof to work, there only needs to exist a bijective map between the sequence of statements and the natural numbers. For example, if we want to prove that  is true for every , then we can of course use induction here too. To use the principle of induction, we would for example let , but this is not a step one would actually take in a proof.<br>Theorem
+Every number  can be written as  for some number of ones, that we call .
+Proof:<br>
+We use induction. The statement is obviously true for . Now, if  can be written as , then  can be written as the sum of one more , so the statement is also true for . Hence, it is true for every .
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/induction.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Induction.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 15:27:45 GMT</pubDate></item><item><title><![CDATA[Infinite sets]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Finite set, infinite set
+A set  is called finite if it is empty or  for some . If  is not finite it is called infinite.
+<br>Theorem
+ is infinite.
+Proof:<br>
+We know  is nonempty since . Now suppose  is finite, so that . Then let . Then  should be in , but we have  for every , so , which is a contradiction.
+<br>Theorem
+The set of all prime numbers is infinite.
+Proof:<br>
+Suppose the set of all prime numbers is . Then let . Clearly  is not a multiple of any  since . This means  is a prime not in , which is a contradiction.
+<br>Theorem
+Let  be a set and  be a bijection. Then  is infinite.
+Proof:<br>
+If  is finite, there is a bijection , so  is a bijection between  and , which is a contradiction.
+<br>Definition: Countable set
+Let  be a set. If there exists a bijection between  and , we call  countably infinite* or just countable.
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/infinite-sets.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Infinite sets.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 14:59:58 GMT</pubDate></item><item><title><![CDATA[Integers]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>We don't have subtraction yet, but know what we are aiming for; we know that once we have subtraction we can represent any integer as  where . However, there are many ways express the same integer this way, so it makes sense to group together all possible ways to express the same integer into <a data-tooltip-position="top" aria-label="Relations > ^d3a7bb" data-href="Relations#^d3a7bb" href="https://samdooo.github.io/Anteckningar/Relations#^d3a7bb" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Equivalence classes</a><a data-tooltip-position="top" aria-label="Relations > ^d3a7bb" data-href="Relations#^d3a7bb" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/relations.html#^d3a7bb" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Equivalence classes</a>. We know that , which is a relation solely on natural numbers! We also see that the relation is reflexive, , symmetric, , and transitive, so it is indeed an equivalence relation, meaning equivalence classes make sense.<br>Definition: Construction of the integers
+Let , and define an equivalence relation  on  by  The set of integers  is the set of equivalence classes of  with respect to . We define addition and multiplication on integers as follows:  We also define  and  for every . For every  we denote  with .
+<br>Theorem
+ and  for every .
+Proof:<br>
+We have , so  for every . We also have , so  for every .
+<br>Theorem
+If  for some  where , then .
+Proof:<br>
+We have . Since , we have either  or  for some . If , then   meaning  giving . The proof is analogous for if .
+<br>Definition: Less than, greater than
+Let . We say that  is less than , denoted , if  where  and . If  is less than  we say that  is less than  and write .
+<br>Theorem
+If  such that  and  such that , then .
+Proof:<br>
+We have  where . This means  We thus want to show that which is true because we know  and .
+<br>Definition: Lower bound, upper bound
+For a subset , an integer  is a lower bound if  for every , and an integer  is an upper bound if  for every .
+<br>Notice that since  and  do not need to be in , they are not unique.]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/integers.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Integers.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 16:56:37 GMT</pubDate></item><item><title><![CDATA[Minimality and maximality]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Least and greatest member
+Let . An element  is called a least member if  for every , and an element  is called a greatest member if  for every .
+<br>Theorem
+Every nonempty subset  of  has a least member.
+Proof:<br>
+Since  is nonempty, by <a data-tooltip-position="top" aria-label="Induction > ^6a7f31" data-href="Induction#^6a7f31" href="https://samdooo.github.io/Anteckningar/Induction#^6a7f31" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Theorem</a><a data-tooltip-position="top" aria-label="Induction > ^6a7f31" data-href="Induction#^6a7f31" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/induction.html#^6a7f31" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem</a>, we can sum  until we reach a number in , which must be a least member of .
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/minimality-and-maximality.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Minimality and maximality.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 14:02:45 GMT</pubDate></item><item><title><![CDATA[Natural numbers]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Axioms of natural numbers
+We define the natural numbers  to be a set together with an operation addition  and an operation multiplication  such that  is a <a data-tooltip-position="top" aria-label="Groups" data-href="Groups" href="https://samdooo.github.io/Anteckningar/Groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">commutative semigroup</a><a data-tooltip-position="top" aria-label="Groups" data-href="Groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">commutative semigroup</a> and  is a <a data-tooltip-position="top" aria-label="Groups" data-href="Groups" href="https://samdooo.github.io/Anteckningar/Groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">commutative monoid</a><a data-tooltip-position="top" aria-label="Groups" data-href="Groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">commutative monoid</a> with unit , with the following axioms:
+
+<br>If  for any , then .
+<br> for every 
+<br><a data-tooltip-position="top" aria-label="^bb32a3" data-href="#^bb32a3" href="https://samdooo.github.io/Anteckningar/about:blank#^bb32a3" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Law of trichotomy</a><a data-tooltip-position="top" aria-label="^bb32a3" data-href="#^bb32a3" href="https://samdooo.github.io/Anteckningar/about:blank#^bb32a3" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Law of trichotomy</a>
+<br><a data-tooltip-position="top" aria-label="Induction > ^07b21a" data-href="Induction#^07b21a" href="https://samdooo.github.io/Anteckningar/Induction#^07b21a" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Principle of induction</a><a data-tooltip-position="top" aria-label="Induction > ^07b21a" data-href="Induction#^07b21a" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/induction.html#^07b21a" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Principle of induction</a>
+
+<br>Definition: Multiple of 
+ is a multiple of , denoted , if there exists a  such that .
+<br>Theorem
+If  and , then  for every .
+Proof:<br>
+We have  and . This gives  by the distributative property.
+<br>Definition: Less than, greater than
+Let . We say that  is less than , denoted , if there exists an  such that . If  is less than , we say that  is greater than  and write .
+<br>Axiom: Law of trichotomy
+Exactly one of the three statements  is true for any .
+<br>An important consequence of this definition is that  for every .<br>Theorem: Reflexivity of 
+If  and , then .
+Proof:<br>
+We have  and , so .
+<br>Theorem
+Let . If , then .
+Proof:<br>
+Assume . WLOG, let . Then , so  which means  which is clearly false since  and only one can be true at once.
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/natural-numbers.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Natural numbers.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 16:40:56 GMT</pubDate></item><item><title><![CDATA[Relations]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Relation
+Let  be a set. A relation on  is a subset of . If  is a relation on , we define the statement  for every .
+<br>For example, ,  and  are relations on .<br>Definition: Equivalence relation
+Let  be a relation on a set . We define the following properties of :
+
+<br>Reflexivity:  for every 
+<br>Symmetry:  for every 
+<br>Transitivity:  for every 
+
+If  is reflexive, symmetric, and transitive, we call it an equivalence relation.
+<br>Definition: Equivalence class
+Let  be an equivalence relation on a set , and let . Then  is called an equivalence class with respect to  if  for every  and  for every .
+ denotes the equivalence class of , and contains every  such that .
+<br>Theorem
+Let  be an equivalence relation on a set . Then every element  is contained in one and only one equivalence class of  with respect to , namely .
+Proof:<br>
+Suppose  is an equivalence class of  with respect to  such that . Then we have , so .
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/relations.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Relations.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 15:47:18 GMT</pubDate></item><item><title><![CDATA[Sets]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a><br>Definition: Set
+A set is an unordered collection of objects. We can construct in different ways, such as by a list:  or by a property: If  is an element of a set  we write .
+<br>Notation
+In this course we use the notation .
+<br>Definition: Subset
+If  are sets such that every element of  is in , we call  a subset of  and write . If also , we call  a proper subset of  and write .
+<br>Remark
+The expression  in this course refers to .
+<br>Definition: Intersection, union
+For any two sets  the intersection of  and  is  and the union of  and  is 
+<br>Definition: Cartesian product
+For any two sets  We define the Cartesian product 
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/sets.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Sets.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 15:19:48 GMT</pubDate></item><item><title><![CDATA[The logical framework]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Statement
+A statement is a declarative sentence that is either true, denoted by  or false, denoted by .
+<br>Definition: Logical operations
+For any statements , we define the following statements:
+
+<br> pronounced "not " is  if , otherwise .
+<br> pronounced " and " is  if both  and , otherwise .
+<br> pronounced " or " is  if either  or , otherwise .
+<br> pronounced " implies " is  if  and not , otherwise .
+<br> pronounced " if and only if " is  if either both  and , or neither  nor , otherwise . If , we call  and  logically equivalent.
+
+<br>The definition of  deserves a small discussion. This definition feels weird since we are not used to " implies " being a logical statement in the same sense as " and ", but of course, it is either true or false, so it is a logical statement. What we need to keep in mind is that we are often not interested in knowing if , but rather in proving . So we often know that the statement  is true, without knowing whether  or  are true. Then if we succeed in proving , we also know .<br>Remark
+We can define  
+<br>Theorem: Contrapositive
+For any two statements , Proof:<br>
+We have 
+<br>So proving that  can be done by proving that , which is often useful. The statement  is called the contrapositive of the statement , and the theorem above thus shows that these are logically equivalent.]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/the-logical-framework.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/The logical framework.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 13:37:16 GMT</pubDate></item><item><title><![CDATA[Discrete mathematics]]></title><description><![CDATA[ 
+ <br>
+<br><a data-href="Sets" href="https://samdooo.github.io/Anteckningar/Sets" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Sets</a><a data-href="Sets" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/sets.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Sets</a>
+<br><a data-href="The logical framework" href="https://samdooo.github.io/Anteckningar/The logical framework" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">The logical framework</a><a data-href="The logical framework" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/the-logical-framework.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">The logical framework</a>
+<br><a data-href="Natural numbers" href="https://samdooo.github.io/Anteckningar/Natural numbers" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Natural numbers</a><a data-href="Natural numbers" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/natural-numbers.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Natural numbers</a>
+<br><a data-href="Induction" href="https://samdooo.github.io/Anteckningar/Induction" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Induction</a><a data-href="Induction" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/induction.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Induction</a>
+<br><a data-href="Minimality and maximality" href="https://samdooo.github.io/Anteckningar/Minimality and maximality" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Minimality and maximality</a><a data-href="Minimality and maximality" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/minimality-and-maximality.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Minimality and maximality</a>
+<br><a data-href="Counting" href="https://samdooo.github.io/Anteckningar/Counting" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Counting</a><a data-href="Counting" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/counting.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Counting</a>
+<br><a data-href="Relations" href="https://samdooo.github.io/Anteckningar/Relations" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Relations</a><a data-href="Relations" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/relations.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Relations</a>
+<br>
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics.html</link><guid isPermaLink="false">Matematik/Discrete mathematics.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 15:37:50 GMT</pubDate></item><item><title><![CDATA[Groups and rings]]></title><description><![CDATA[ 
+ <br><br>
+<br><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/Groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Groups</a><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups</a>
+<br><a data-href="Permutation groups" href="https://samdooo.github.io/Anteckningar/Permutation groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Permutation groups</a><a data-href="Permutation groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/permutation-groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Permutation groups</a>
+<br><a data-href="Subgroups" href="https://samdooo.github.io/Anteckningar/Subgroups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Subgroups</a><a data-href="Subgroups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/subgroups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Subgroups</a>
+<br><a data-href="Direct groups" href="https://samdooo.github.io/Anteckningar/Direct groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Direct groups</a><a data-href="Direct groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/direct-groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Direct groups</a>
+<br><a data-href="Homomorphisms" href="https://samdooo.github.io/Anteckningar/Homomorphisms" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Homomorphisms</a><a data-href="Homomorphisms" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/homomorphisms.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Homomorphisms</a>
+<br><a data-href="Cosets" href="https://samdooo.github.io/Anteckningar/Cosets" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Cosets</a><a data-href="Cosets" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/cosets.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Cosets</a>
+<br><a data-href="Normal subgroups" href="https://samdooo.github.io/Anteckningar/Normal subgroups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Normal subgroups</a><a data-href="Normal subgroups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/normal-subgroups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Normal subgroups</a>
+<br><a data-href="Cyclic groups" href="https://samdooo.github.io/Anteckningar/Cyclic groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Cyclic groups</a><a data-href="Cyclic groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/cyclic-groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Cyclic groups</a>
+<br>
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings.html</link><guid isPermaLink="false">Matematik/Groups and rings.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 12:49:35 GMT</pubDate></item><item><title><![CDATA[Cosets]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Coset
 Let  be a group and  be a <a data-tooltip-position="top" aria-label="Subgroups" data-href="Subgroups" href="https://samdooo.github.io/Anteckningar/Subgroups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Subgroup</a><a data-tooltip-position="top" aria-label="Subgroups" data-href="Subgroups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/subgroups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Subgroup</a>. A left coset of  in  is a subset of the form  where . We define  as the set of all left cosets of  in .
 Right cosets are defined analogously, so  and .
@@ -280,12 +449,7 @@ Let  be a group and . Then  is a subgroup of  if and only if  is a submonoid of 
 Let  be a group and  where . Then  is a subgroup of  if and only if , or in other words,  for all .
 Proof:<br>
 If  is a subgroup of , it is clear that  since  is a group and thus closed under composition and inverses. If instead , we can take any  and know that , so . This also means  for all , which finally means that  for all . So  is indeed a subgroup of . 
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/subgroups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Subgroups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Thu, 16 Jan 2025 21:12:31 GMT</pubDate></item><item><title><![CDATA[Groups and rings]]></title><description><![CDATA[ 
- <br>
-<br><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/Groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Groups</a><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups</a>
-<br><a data-href="Permutation groups" href="https://samdooo.github.io/Anteckningar/Permutation groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Permutation groups</a><a data-href="Permutation groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/permutation-groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Permutation groups</a>
-<br>
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings.html</link><guid isPermaLink="false">Matematik/Groups and rings.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 15 Jan 2025 18:44:24 GMT</pubDate></item><item><title><![CDATA[Ortogonalitet och projektioner]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik/linjär-algebra" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik/linjär-algebra</a> 
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/subgroups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Subgroups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Thu, 16 Jan 2025 21:12:31 GMT</pubDate></item><item><title><![CDATA[Ortogonalitet och projektioner]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik/linjär-algebra" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik/linjär-algebra</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik/linjär-algebra" class="tag" target="_blank" rel="noopener nofollow">#matematik/linjär-algebra</a> <br><a data-href="Inre produktrum" href="https://samdooo.github.io/Anteckningar/Inre produktrum" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Inre produktrum</a><a data-href="Inre produktrum" href="https://samdooo.github.io/Anteckningar/matematik/linjär-algebra/inre-produktrum.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Inre produktrum</a> ger oss ett sätt att definiera vad som menas med att två vektorer är ortogonala, alltså vinkelräta mot varandra.<br>Definition: Ortogonalitet
 Om  där  är ett inre produktrum och  så kallar vi  och  ortogonala mot varandra och skriver . Vi kallar en mängd vektorer ortogonal om vektorerna är parvis ortogonala.
 <br>Definition: Ortogonal och ortonormal bas
