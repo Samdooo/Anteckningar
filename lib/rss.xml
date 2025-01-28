@@ -1,4 +1,27 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 28 Jan 2025 10:27:20 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 28 Jan 2025 10:27:18 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Combinatorics]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 28 Jan 2025 20:19:42 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 28 Jan 2025 20:19:41 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Group actions]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Group action
+Let  be a group and  any set. An action or operation of  on  is a map  such that
+
+<br> for every .
+<br> for every  and .
+
+<br>Remark
+A group action can be seen as just a homomorphism from  to . This is because for any , the map  is a bijection since it has the inverse . So the map that takes  to the map  is a homomorphism from  to .
+<br>Definition: Stabilizer subgroup, orbit
+Let  be a group,  any set,  and  be a group action by  on . The stabilizer subgroup or isotropy subgroup of  in  is The -orbit of  is and the orbit space is Furthermore, we call the group action transitive if .
+<br>Remark
+We can define an equivalence relation  on  by This makes the orbits of  equivalence classes with respect to :Thus we see that  is the disjoint union of its orbits.
+<br>Corollary: The orbit equation
+Let  be a group,  any set and  a group action by  on . If  is finite, 
+<br>Theorem: The orbit stabilizer theorem
+Let  be a group,  any set,  and  be a group action by  on . Then the -map  induces a bijection  where  is the stabilizer of . Furthermore, Proof:<br>
+The map  given by  is clearly surjective. For any  we see that This means that the map  given by  is well-defined, surjective and injective, so a bijection.
+<br>Definition
+Let  be a group,  any set,  and  be a group action by  on . Then 
+<br>Lemma: Burnside's lemma
+Let  be a finite group,  any set and . Then Proof:<br>
+Let . We then have and meaning that The sizes of the left and right expression being the same then gives  from which the statement follows directly.
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/group-actions.html</link><guid isPermaLink="false">Matematik/Groups and rings/Group actions.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Tue, 28 Jan 2025 20:17:45 GMT</pubDate></item><item><title><![CDATA[Combinatorics]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Take two finite sets  and consider a subset  of the <a data-tooltip-position="top" aria-label="Sets > ^7919a5" data-href="Sets#^7919a5" href="https://samdooo.github.io/Anteckningar/Sets#^7919a5" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Set of all pairs</a><a data-tooltip-position="top" aria-label="Sets > ^7919a5" data-href="Sets#^7919a5" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/sets.html#^7919a5" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Set of all pairs</a> of elements from  and . Now say we want to count the elements in . For each  we can define and then get Likewise, we can define and then get <br>Theorem: The multiplication principle
 Let  be finite nonempty sets and  be nonempty. Then with  and . Also, if  for every  and  for every , then .
 Furthermore, .
