@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 31 Jan 2025 15:28:53 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 31 Jan 2025 15:28:50 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Classification of permutations]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 01 Feb 2025 10:12:05 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 01 Feb 2025 10:12:02 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Classification of permutations]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Type
 Let . The type of  is the partition of  corresponding to the sizes of the <a data-tooltip-position="top" aria-label="Permutations > ^2310b0" data-href="Permutations#^2310b0" href="https://samdooo.github.io/Anteckningar/Permutations#^2310b0" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Cycles</a><a data-tooltip-position="top" aria-label="Permutations > ^2310b0" data-href="Permutations#^2310b0" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/permutations.html#^2310b0" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Cycles</a> of .
 <br>Definition: Conjugate permutations
@@ -15,7 +15,7 @@ For any  we denote the number of cycles of  by .
 <br>Lemma
 For any  and transposition ,  is either  or .
 Proof:<br>
-We have two cases: either  transposes elements in a single cycle of , or elements in different cycles of . In the first case, suppose we have a transposition of  and , meaning we have since  and , meaning .
+We have two cases: either  transposes elements in a single cycle of , or elements in different cycles of . In the first case, suppose we have a transposition of  and , meaning we have since  and , meaning . In the second case, suppose we have a transposition of  and , meaning we have since  and , meaning .
 <br>Theorem
 Let  be the composition of  transpositions and also the composition of  compositions. Then  and  have the same parity.
 Proof:<br>
@@ -27,7 +27,120 @@ The sign of a permutation , denoted , is  if it is odd, otherwise .
 For any integer  exactly half of the permutations in  are even and exactly half of them are odd.
 Proof:<br>
 Let  be all unique even permutations of . Then take any transposition . We see that  are all odd, and that if , then , so they are all unique. Now for any odd  we know  is even, meaning  for some , meaning , but  so  meaning every odd permutation is among .
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/classification-of-permutations.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Classification of permutations.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Fri, 31 Jan 2025 15:28:24 GMT</pubDate></item><item><title><![CDATA[Multinomial numbers]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/classification-of-permutations.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Classification of permutations.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Sat, 01 Feb 2025 08:56:25 GMT</pubDate></item><item><title><![CDATA[Centers and centralizers]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Centralizer, center
+Let  be a group and  be any subset. The centralizer of  is and the center of  is 
+<br>Remark
+Every centralizer is a subgroup since if  then . Also,  is the kernel of  where , since  if and only if  for every , if and only if  for every . Finally,  since it is a kernel, and .
+<br>Theorem
+A group  is abelian if and only if  is cyclic.
+Proof:<br>
+If  is abelian,  so  is the trivial group and therefore cyclic.
+Now assume  is cyclic, so  for some . Take any . We get  and , meaning  and  for some , which in turn means 
+<br>Definition: Representative, system of representatives
+For any orbit , an element  is called a representative of .
+A system of representatives for a family of orbits  is a family  of representatives where  is a representative of  for every .
+<br>Theorem: The Class Equation
+Consider the conjugation action  of a finite group  and let  be a system of representatives of the orbits contained in  (where '' denotes setminus). Then Proof:<br>
+The point of the theorem is that  can be partitioned into its conjugacy classes, which are the equivalence classes with conjugacy as equivalence relation. We know each element in  has only itself as conjugacy class, since every conjugation does nothing. Hence instead of writing out  for every element in  we combine them into just . So left to sum is the sizes of all conjugacy classes larger than one. We see that since our group action is conjugation, the conjugacy classes are precisely the orbits. Also, we see that  is just the <a data-tooltip-position="top" aria-label="Group actions > ^64c44e" data-href="Group actions#^64c44e" href="https://samdooo.github.io/Anteckningar/Group actions#^64c44e" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Stabilizer</a><a data-tooltip-position="top" aria-label="Group actions > ^64c44e" data-href="Group actions#^64c44e" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/group-actions.html#^64c44e" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Stabilizer</a> of , meaning  is indeed the size of the orbit of , by the <a data-tooltip-position="top" aria-label="Group actions > ^30b4c5" data-href="Group actions#^30b4c5" href="https://samdooo.github.io/Anteckningar/Group actions#^30b4c5" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Orbit stabilizer theorem</a><a data-tooltip-position="top" aria-label="Group actions > ^30b4c5" data-href="Group actions#^30b4c5" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/group-actions.html#^30b4c5" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Orbit stabilizer theorem</a>.
+<br>Corollary
+If  where  is prime, then  is abelian.
+Proof:<br>
+We know  is a normal subgroup, meaning its order divides , meaning it's either 1, , or .
+If , then , meaning  is abelian.<br>
+If , then , meaning  is cyclic by <a data-tooltip-position="top" aria-label="Cyclic groups > ^a05e78" data-href="Cyclic groups#^a05e78" href="https://samdooo.github.io/Anteckningar/Cyclic groups#^a05e78" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Theorem</a><a data-tooltip-position="top" aria-label="Cyclic groups > ^a05e78" data-href="Cyclic groups#^a05e78" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/cyclic-groups.html#^a05e78" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem</a>, meaning  is abelian. Note that since  is abelian, , so this case doesn't even happen.<br>
+If , the <a data-tooltip-position="top" aria-label="^1a014f" data-href="#^1a014f" href="https://samdooo.github.io/Anteckningar/about:blank#^1a014f" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Class equation</a><a data-tooltip-position="top" aria-label="^1a014f" data-href="#^1a014f" href="https://samdooo.github.io/Anteckningar/about:blank#^1a014f" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Class equation</a> gives that where we know each  is either ,  or , and since they are all greater than  (since only the orbits of elements of  have size ), it's either  or . This means the right hand side is divisible by , but clearly the left hand side isn't, meaning .
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/centers-and-centralizers.html</link><guid isPermaLink="false">Matematik/Groups and rings/Centers and centralizers.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Sat, 01 Feb 2025 09:29:37 GMT</pubDate></item><item><title><![CDATA[Cyclic groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Cyclic group
+Let  be a group and . Then  is the smallest subgroup of  containing , called the subgroup generated by .
+If  for some , we write  and call it the cyclic group generated by .
+<br>Theorem
+Let  be a group and . Then Proof:<br>
+Let  be the right hand expression above. By the construction of , we know . We also know that , so . For any  such that  it is clear that  since each element of  is in  and thus all compositions of elements of . Thus , so .
+<br>Remark
+Cyclic groups are abelian since .
+<br>Example
+ is called the free cyclic group. For any  we also have  and  If  we get  which is called the cyclic group of order .
+<br>We call them the free cyclic group and cyclic groups of order  because we can show that every cyclic group is isomorphic to one of these. For that we first need a few lemmas.<br>Lemma
+If  is a group,  is cyclic if and only if there exists a surjective .
+Proof:<br>
+: We have .<br>
+: Let , and we get , which combined with the fact that  is surjective means that .
+<br>Lemma
+If , then  for some .
+Proof:<br>
+If , then . Otherwise, let  (which exists since if  then ). Then we clearly have . Finally, let . Then we have  for some , which means , implying that  by minimality, so .
+<br>Theorem
+Let  be a cyclic group. Then
+
+<br>If , .
+<br>If , .
+
+Proof:<br>
+Since  is syclic there exists a surjective . The universal property gives a bijection . We know  for some , so  where in the first case, , and in the second, .
+<br>Theorem
+Let  be a cyclic group and . Then  is cyclic.
+Proof:<br>
+By <a data-tooltip-position="top" aria-label="^481423" data-href="#^481423" href="https://samdooo.github.io/Anteckningar/about:blank#^481423" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lemma</a><a data-tooltip-position="top" aria-label="^481423" data-href="#^481423" href="https://samdooo.github.io/Anteckningar/about:blank#^481423" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lemma</a>, there exists a surjective homomorphism , so . By <a data-tooltip-position="top" aria-label="^7b5424" data-href="#^7b5424" href="https://samdooo.github.io/Anteckningar/about:blank#^7b5424" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lemma</a><a data-tooltip-position="top" aria-label="^7b5424" data-href="#^7b5424" href="https://samdooo.github.io/Anteckningar/about:blank#^7b5424" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lemma</a>, there exists an  such that . If , then , and otherwise,  which by <a data-tooltip-position="top" aria-label="^481423" data-href="#^481423" href="https://samdooo.github.io/Anteckningar/about:blank#^481423" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lemma</a><a data-tooltip-position="top" aria-label="^481423" data-href="#^481423" href="https://samdooo.github.io/Anteckningar/about:blank#^481423" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lemma</a> means that  is cyclic.
+<br>Definition: Order of element
+Let  be a group and . The order of  is 
+<br>This means that if ,  and .<br>Theorem: Fermat's Little Theorem
+Let  be a finite group and . Then Proof:<br>
+The divisibility follows from <a data-tooltip-position="top" aria-label="Cosets > ^920282" data-href="Cosets#^920282" href="https://samdooo.github.io/Anteckningar/Cosets#^920282" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lagrange's Theorem</a><a data-tooltip-position="top" aria-label="Cosets > ^920282" data-href="Cosets#^920282" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/cosets.html#^920282" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lagrange's Theorem</a>, and the second part follows from the fact that .
+<br>Corollary: Fermat's Little Theorem, classic version
+Let  be prime and . Then Proof:<br>
+Let  (recall that '' denotes exclusion of zero). We first show that  is a group with respect to multiplication. Multiplication is well defined as  since  divides neither  nor , so  does not divide  either since  is prime, meaning , so . Furthermore, this multiplication is injective since if , then , so  meaning  since . This means , so . Since  is clearly a unit element, it follows that inverse elements exist, hence  is a group under multiplication.
+Now, if , then . Otherwise, we have , which by the group theoretic version of Fermat's Little Theorem means that 
+<br>Corollary
+Let  be a finite group with order , where  is prime. Then
+
+<br>,
+<br>For all , , and .
+
+Proof:<br>
+b) Since , we know  since  is prime and . Hence , so .<br>
+a) From <a data-tooltip-position="top" aria-label="^124bb5" data-href="#^124bb5" href="https://samdooo.github.io/Anteckningar/about:blank#^124bb5" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Theorem</a><a data-tooltip-position="top" aria-label="^124bb5" data-href="#^124bb5" href="https://samdooo.github.io/Anteckningar/about:blank#^124bb5" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem</a>, we know .
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/cyclic-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Cyclic groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Sat, 01 Feb 2025 09:14:20 GMT</pubDate></item><item><title><![CDATA[Group actions]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Group action
+Let  be a group and  any set. An action or operation of  on  is a map  such that
+
+<br> for every .
+<br> for every  and .
+
+<br>Remark
+A group action can be seen as just a homomorphism from  to . This is because for any , the map  is a bijection since it has the inverse . So the map that takes  to the map  is a homomorphism from  to .
+<br>Definition: Stabilizer subgroup, orbit
+Let  be a group,  any set,  and  be a group action by  on . The stabilizer subgroup or isotropy subgroup of  in  is The -orbit of  is and the orbit space is Furthermore, we call the group action transitive if .
+<br>Remark
+We can define an equivalence relation  on  by This makes the orbits of  equivalence classes with respect to :Thus we see that  is the disjoint union of its orbits.
+<br>Corollary: The orbit equation
+Let  be a group,  any set and  a group action by  on . If  is finite, 
+<br>Theorem: The orbit stabilizer theorem
+Let  be a group,  any set,  and  be a group action by  on . Then the -map  induces a bijection  where  is the stabilizer of . Furthermore, Proof:<br>
+The map  given by  is clearly surjective. For any  we see that This means that the map  given by  is well-defined, surjective and injective, so a bijection.
+<br>Definition
+Let  be a group,  any set,  and  be a group action by  on . Then 
+<br>Lemma: Burnside's lemma
+Let  be a finite group,  any set and . Then Proof:<br>
+Let . We then have and meaning that The sizes of the left and right expression being the same then gives  from which the statement follows directly.
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/group-actions.html</link><guid isPermaLink="false">Matematik/Groups and rings/Group actions.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Sat, 01 Feb 2025 09:07:56 GMT</pubDate></item><item><title><![CDATA[Sylow Groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Conjugate
+Let  be a group.<br>
+ is conjugate to  if there exists a  such that .<br>
+ is conjugate to  if there exists a  such that .
+<br>Definition: -group, -Sylow subgroup
+Let  be a finite group and  be prime.<br>
+ is a -group if  for some .<br>
+ is called a -Sylow subgroup if  for some  and  where .
+<br>In other words, given a group  whose order is the prime factorization , a<br>
+-Sylow subgroup is a subgroup with order .<br>Theorem: Sylow Theorems
+Let  be a finite group and  be prime.
+
+<br> contains at least one -Sylow subgroup. More precisely, for any -subgroup  there is a -Sylow subgroup  such that .
+<br>Let  be a -Sylow subgroup and . Then  is a -Sylow subgroup if and only if  is conjugate to .
+<br>Let  be the number of -Sylow subgroups of . Then  and .
+
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/sylow-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Sylow Groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Sat, 01 Feb 2025 09:52:06 GMT</pubDate></item><item><title><![CDATA[Multinomial numbers]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Multinomial numbers
 Let  and . Also, let . Then the number of surjections  such that  where  for every  is denoted and is called a multinomial number.
 <br>In this way, multinomial numbers are generalizations of <a data-tooltip-position="top" aria-label="Unordered selections > ^2ce857" data-href="Unordered selections#^2ce857" href="https://samdooo.github.io/Anteckningar/Unordered selections#^2ce857" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Binomial numbers</a><a data-tooltip-position="top" aria-label="Unordered selections > ^2ce857" data-href="Unordered selections#^2ce857" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/unordered-selections.html#^2ce857" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Binomial numbers</a>. In possibly easier terms, it is the number of ways to choose a sequence of sets  where  such that  is the disjoint union of all 's.<br>Theorem: Formula for multinomial numbers
@@ -175,30 +288,7 @@ We know a function  is corresponds to an -tuple of elements of , meaning an elem
 <br>We notice that if we restrict the functions  to only injective ones, we instead model selection without repetition of  things from .<br>Theorem
 The number of ordered selections without repetition of  things from a set  of size  is the number of injections from  to , which is given by Proof:<br>
 We have  options for ,  options for  and so on.
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/words-and-selections.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Words and selections.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 29 Jan 2025 12:20:59 GMT</pubDate></item><item><title><![CDATA[Group actions]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
- <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Group action
-Let  be a group and  any set. An action or operation of  on  is a map  such that
-
-<br> for every .
-<br> for every  and .
-
-<br>Remark
-A group action can be seen as just a homomorphism from  to . This is because for any , the map  is a bijection since it has the inverse . So the map that takes  to the map  is a homomorphism from  to .
-<br>Definition: Stabilizer subgroup, orbit
-Let  be a group,  any set,  and  be a group action by  on . The stabilizer subgroup or isotropy subgroup of  in  is The -orbit of  is and the orbit space is Furthermore, we call the group action transitive if .
-<br>Remark
-We can define an equivalence relation  on  by This makes the orbits of  equivalence classes with respect to :Thus we see that  is the disjoint union of its orbits.
-<br>Corollary: The orbit equation
-Let  be a group,  any set and  a group action by  on . If  is finite, 
-<br>Theorem: The orbit stabilizer theorem
-Let  be a group,  any set,  and  be a group action by  on . Then the -map  induces a bijection  where  is the stabilizer of . Furthermore, Proof:<br>
-The map  given by  is clearly surjective. For any  we see that This means that the map  given by  is well-defined, surjective and injective, so a bijection.
-<br>Definition
-Let  be a group,  any set,  and  be a group action by  on . Then 
-<br>Lemma: Burnside's lemma
-Let  be a finite group,  any set and . Then Proof:<br>
-Let . We then have and meaning that The sizes of the left and right expression being the same then gives  from which the statement follows directly.
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/group-actions.html</link><guid isPermaLink="false">Matematik/Groups and rings/Group actions.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 29 Jan 2025 11:02:39 GMT</pubDate></item><item><title><![CDATA[Counting]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/words-and-selections.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Words and selections.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 29 Jan 2025 12:20:59 GMT</pubDate></item><item><title><![CDATA[Counting]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: 
 We define .
 <br>Definition: Size of set
@@ -456,57 +546,7 @@ Proof:<br>
 Translation  by  is bijective, hence the result.
 <br>Corollary: Theorem of Lagrange
 If  is a finite group and  is a subgroup, then 
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/cosets.html</link><guid isPermaLink="false">Matematik/Groups and rings/Cosets.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 09:39:22 GMT</pubDate></item><item><title><![CDATA[Cyclic groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
- <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Cyclic group
-Let  be a group and . Then  is the smallest subgroup of  containing , called the subgroup generated by .
-If  for some , we write  and call it the cyclic group generated by .
-<br>Theorem
-Let  be a group and . Then Proof:<br>
-Let  be the right hand expression above. By the construction of , we know . We also know that , so . For any  such that  it is clear that  since each element of  is in  and thus all compositions of elements of . Thus , so .
-<br>Remark
-Cyclic groups are abelian since .
-<br>Example
- is called the free cyclic group. For any  we also have  and  If  we get  which is called the cyclic group of order .
-<br>We call them the free cyclic group and cyclic groups of order  because we can show that every cyclic group is isomorphic to one of these. For that we first need a few lemmas.<br>Lemma
-If  is a group,  is cyclic if and only if there exists a surjective .
-Proof:<br>
-: We have .<br>
-: Let , and we get , which combined with the fact that  is surjective means that .
-<br>Lemma
-If , then  for some .
-Proof:<br>
-If , then . Otherwise, let  (which exists since if  then ). Then we clearly have . Finally, let . Then we have  for some , which means , implying that  by minimality, so .
-<br>Theorem
-Let  be a cyclic group. Then
-
-<br>If , .
-<br>If , .
-
-Proof:<br>
-Since  is syclic there exists a surjective . The universal property gives a bijection . We know  for some , so  where in the first case, , and in the second, .
-<br>Theorem
-Let  be a cyclic group and . Then  is cyclic.
-Proof:<br>
-By <a data-tooltip-position="top" aria-label="^481423" data-href="#^481423" href="https://samdooo.github.io/Anteckningar/about:blank#^481423" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lemma</a><a data-tooltip-position="top" aria-label="^481423" data-href="#^481423" href="https://samdooo.github.io/Anteckningar/about:blank#^481423" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lemma</a>, there exists a surjective homomorphism , so . By <a data-tooltip-position="top" aria-label="^7b5424" data-href="#^7b5424" href="https://samdooo.github.io/Anteckningar/about:blank#^7b5424" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lemma</a><a data-tooltip-position="top" aria-label="^7b5424" data-href="#^7b5424" href="https://samdooo.github.io/Anteckningar/about:blank#^7b5424" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lemma</a>, there exists an  such that . If , then , and otherwise,  which by <a data-tooltip-position="top" aria-label="^481423" data-href="#^481423" href="https://samdooo.github.io/Anteckningar/about:blank#^481423" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lemma</a><a data-tooltip-position="top" aria-label="^481423" data-href="#^481423" href="https://samdooo.github.io/Anteckningar/about:blank#^481423" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lemma</a> means that  is cyclic.
-<br>Definition: Order of element
-Let  be a group and . The order of  is 
-<br>This means that if ,  and .<br>Theorem: Fermat's Little Theorem
-Let  be a finite group and . Then Proof:<br>
-The divisibility follows from <a data-tooltip-position="top" aria-label="Cosets > ^920282" data-href="Cosets#^920282" href="https://samdooo.github.io/Anteckningar/Cosets#^920282" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lagrange's Theorem</a><a data-tooltip-position="top" aria-label="Cosets > ^920282" data-href="Cosets#^920282" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/cosets.html#^920282" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lagrange's Theorem</a>, and the second part follows from the fact that .
-<br>Corollary: Fermat's Little Theorem, classic version
-Let  be prime and . Then Proof:<br>
-Let  (recall that '' denotes exclusion of zero). We first show that  is a group with respect to multiplication. Multiplication is well defined as  since  divides neither  nor , so  does not divide  either since  is prime, meaning , so . Furthermore, this multiplication is injective since if , then , so  meaning  since . This means , so . Since  is clearly a unit element, it follows that inverse elements exist, hence  is a group under multiplication.
-Now, if , then . Otherwise, we have , which by the group theoretic version of Fermat's Little Theorem means that 
-<br>Corollary
-Let  be a finite group with order , where  is prime. Then
-
-<br>,
-<br>For all , , and .
-
-Proof:<br>
-b) Since , we know  since  is prime and . Hence , so .<br>
-a) From <a data-tooltip-position="top" aria-label="^124bb5" data-href="#^124bb5" href="https://samdooo.github.io/Anteckningar/about:blank#^124bb5" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Theorem</a><a data-tooltip-position="top" aria-label="^124bb5" data-href="#^124bb5" href="https://samdooo.github.io/Anteckningar/about:blank#^124bb5" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem</a>, we know .
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/cyclic-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Cyclic groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 10:16:22 GMT</pubDate></item><item><title><![CDATA[Direct groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/cosets.html</link><guid isPermaLink="false">Matematik/Groups and rings/Cosets.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 22 Jan 2025 09:39:22 GMT</pubDate></item><item><title><![CDATA[Direct groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a><br>Definition: Direct product
 Let  be a family of groups. We define the direct product of these groups as the group given by the set  where  denotes a disjoint union, meaning we preserve the information about which group each element comes from. The operation  of the direct product is defined componentwise as  for all .
 <br>We want to preserve the information about which group each element comes from because we want to, given two elements, know which operation should be used on them. This definition allows for index sets of any size and cardinality. If the family of groups is of finite size  we can see each element of the product as an -tuple, and if the index set is countably infinite we can see each element of the product as an infinite tuple, just like with regular set products.<br>Notation
