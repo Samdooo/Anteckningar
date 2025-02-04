@@ -1,6 +1,6 @@
 {
   "vaultName": "Anteckningar",
-  "lastExport": 1738404722351,
+  "lastExport": 1738687361483,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-light show-inline-title show-ribbon",
   "useCustomHeadContent": false,
@@ -8,19 +8,24 @@
   "files": [
     "Matematik/Discrete mathematics/Classification of permutations.md",
     "Matematik/Discrete mathematics/Combinatorics.md",
+    "Matematik/Discrete mathematics/Congruence.md",
     "Matematik/Discrete mathematics/Counting.md",
     "Matematik/Discrete mathematics/Divisibility.md",
     "Matematik/Discrete mathematics/Euler's function.md",
+    "Matematik/Discrete mathematics/Graph colouring.md",
+    "Matematik/Discrete mathematics/Graphs.md",
     "Matematik/Discrete mathematics/Greatest common divisor.md",
     "Matematik/Discrete mathematics/Induction.md",
     "Matematik/Discrete mathematics/Infinite sets.md",
     "Matematik/Discrete mathematics/Integers.md",
+    "Matematik/Discrete mathematics/Latin squares.md",
     "Matematik/Discrete mathematics/Minimality and maximality.md",
     "Matematik/Discrete mathematics/Möbius function.md",
     "Matematik/Discrete mathematics/Multinomial numbers.md",
     "Matematik/Discrete mathematics/Natural numbers.md",
     "Matematik/Discrete mathematics/Partitions.md",
     "Matematik/Discrete mathematics/Partitions of integers.md",
+    "Matematik/Discrete mathematics/Paths and cycles.md",
     "Matematik/Discrete mathematics/Permutations.md",
     "Matematik/Discrete mathematics/Prime numbers.md",
     "Matematik/Discrete mathematics/Rational numbers.md",
@@ -29,6 +34,7 @@
     "Matematik/Discrete mathematics/Sets.md",
     "Matematik/Discrete mathematics/The logical framework.md",
     "Matematik/Discrete mathematics/The Sieve principle.md",
+    "Matematik/Discrete mathematics/Trees.md",
     "Matematik/Discrete mathematics/Unordered selections.md",
     "Matematik/Discrete mathematics/Words and selections.md",
     "Matematik/Groups and rings/Centers and centralizers.md",
@@ -186,85 +192,85 @@
   ],
   "fileInfo": {
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
@@ -276,229 +282,229 @@
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1738404722351,
-      "sourceSize": 54753,
+      "modifiedTime": 1738687361483,
+      "sourceSize": 59023,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 25255,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1738404722351,
-      "sourceSize": 7036,
+      "modifiedTime": 1738687361483,
+      "sourceSize": 7544,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 137228,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 187,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 400794,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 262,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 77,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
@@ -600,13 +606,13 @@
       "dependencies": []
     },
     "Anteckningar.md": {
-      "modifiedTime": 1736118484773,
-      "sourceSize": 22,
+      "modifiedTime": 1738687361483,
+      "sourceSize": 72,
       "exportedPath": "anteckningar.html",
       "dependencies": []
     },
     "Matematik/Linjär algebra/Inre produktrum.md": {
-      "modifiedTime": 1736428565054,
+      "modifiedTime": 1738687361483,
       "sourceSize": 4607,
       "exportedPath": "matematik/linjär-algebra/inre-produktrum.html",
       "dependencies": []
@@ -690,8 +696,8 @@
       "dependencies": []
     },
     "Matematik/Groups and rings.md": {
-      "modifiedTime": 1737566497872,
-      "sourceSize": 163,
+      "modifiedTime": 1738687361483,
+      "sourceSize": 233,
       "exportedPath": "matematik/groups-and-rings.html",
       "dependencies": []
     },
@@ -798,8 +804,8 @@
       "dependencies": []
     },
     "Matematik/Discrete mathematics.md": {
-      "modifiedTime": 1738337330158,
-      "sourceSize": 577,
+      "modifiedTime": 1738687361483,
+      "sourceSize": 816,
       "exportedPath": "matematik/discrete-mathematics.html",
       "dependencies": []
     },
@@ -810,8 +816,8 @@
       "dependencies": []
     },
     "Matematik/Discrete mathematics/Greatest common divisor.md": {
-      "modifiedTime": 1737714363558,
-      "sourceSize": 1304,
+      "modifiedTime": 1738687361483,
+      "sourceSize": 1303,
       "exportedPath": "matematik/discrete-mathematics/greatest-common-divisor.html",
       "dependencies": []
     },
@@ -906,7 +912,7 @@
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1738404722351,
+      "modifiedTime": 1738687361483,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
@@ -918,9 +924,45 @@
       "dependencies": []
     },
     "Matematik/Groups and rings/Sylow Groups.md": {
-      "modifiedTime": 1738404722351,
-      "sourceSize": 1272,
+      "modifiedTime": 1738687361483,
+      "sourceSize": 7229,
       "exportedPath": "matematik/groups-and-rings/sylow-groups.html",
+      "dependencies": []
+    },
+    "Matematik/Discrete mathematics/Congruence.md": {
+      "modifiedTime": 1738687361483,
+      "sourceSize": 4206,
+      "exportedPath": "matematik/discrete-mathematics/congruence.html",
+      "dependencies": []
+    },
+    "Matematik/Discrete mathematics/Graph colouring.md": {
+      "modifiedTime": 1738687361483,
+      "sourceSize": 482,
+      "exportedPath": "matematik/discrete-mathematics/graph-colouring.html",
+      "dependencies": []
+    },
+    "Matematik/Discrete mathematics/Graphs.md": {
+      "modifiedTime": 1738687361483,
+      "sourceSize": 2500,
+      "exportedPath": "matematik/discrete-mathematics/graphs.html",
+      "dependencies": []
+    },
+    "Matematik/Discrete mathematics/Latin squares.md": {
+      "modifiedTime": 1738687361483,
+      "sourceSize": 1792,
+      "exportedPath": "matematik/discrete-mathematics/latin-squares.html",
+      "dependencies": []
+    },
+    "Matematik/Discrete mathematics/Paths and cycles.md": {
+      "modifiedTime": 1738687361483,
+      "sourceSize": 1108,
+      "exportedPath": "matematik/discrete-mathematics/paths-and-cycles.html",
+      "dependencies": []
+    },
+    "Matematik/Discrete mathematics/Trees.md": {
+      "modifiedTime": 1738687361483,
+      "sourceSize": 1543,
+      "exportedPath": "matematik/discrete-mathematics/trees.html",
       "dependencies": []
     }
   }
