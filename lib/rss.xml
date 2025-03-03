@@ -1,46 +1,131 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 12 Feb 2025 19:02:09 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 12 Feb 2025 19:02:06 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Finite abelian groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
- <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Corollary
-Let  be a finite abelian group. Then  has exactly one -Sylow subgroup, namely Proof:<br>
-Since all -Sylow subgroups are conjugate, and conjugations does nothing to an abelian group, there can only be one -Sylow subgroup, call it . Now we must show .
-: From <a data-tooltip-position="top" aria-label="^ab87c1" data-href="#^ab87c1" href="https://samdooo.github.io/Anteckningar/about:blank#^ab87c1" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Corollary (b)</a><a data-tooltip-position="top" aria-label="^ab87c1" data-href="#^ab87c1" href="https://samdooo.github.io/Anteckningar/about:blank#^ab87c1" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Corollary (b)</a> we know that since  is a -group, .
-: Firstly we show that  is a subgroup. For any  there are  such that . WLOG, let . Then , meaning , so . Furthermore, we have , so , meaning  is a subgroup. By <a data-tooltip-position="top" aria-label="^ab87c1" data-href="#^ab87c1" href="https://samdooo.github.io/Anteckningar/about:blank#^ab87c1" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Corollary (b)</a><a data-tooltip-position="top" aria-label="^ab87c1" data-href="#^ab87c1" href="https://samdooo.github.io/Anteckningar/about:blank#^ab87c1" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Corollary (b)</a> we know  is a -subgroup, meaning there must exist a -Sylow subgroup containing , and since  is the only -Sylow subgroup, .
-<br>Lemma
-Let  be a finite abelian group and  be subgroups of . The homomorphism  is injective if and only if for every , .
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 03 Mar 2025 14:48:57 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 03 Mar 2025 14:48:52 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Chinese Remainder Theorem]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Theorem: Chinese Remainder Theorem
+Let  and . Then there are solutions to The solutions are unique up to congruence mod .
 Proof:<br>
-: We know , so  being injective means that this is the only product that gives . If there would be some  in  and , then  so  would be obtainable by making  and , and .
-: We want to show that . Assume . Then  meaning , meaning . By induction, every .
+By <a data-tooltip-position="top" aria-label="Greatest common divisor > ^d37e34" data-href="Greatest common divisor#^d37e34" href="https://samdooo.github.io/Anteckningar/Greatest common divisor#^d37e34" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Theorem</a><a data-tooltip-position="top" aria-label="Greatest common divisor > ^d37e34" data-href="Greatest common divisor#^d37e34" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/greatest-common-divisor.html#^d37e34" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem</a> we know there are  such that . Then is a solution to the equation since we have Now suppose  and  are solutions to the equation. Then  and , meaning  and since  we thus have  meaning .
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/chinese-remainder-theorem.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Chinese Remainder Theorem.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Mon, 24 Feb 2025 09:35:10 GMT</pubDate></item><item><title><![CDATA[Fields]]></title><description><![CDATA[ 
+ <br>Definition: Skew field
+A skew field or division ring is a <a data-tooltip-position="top" aria-label="Rings" data-href="Rings" href="https://samdooo.github.io/Anteckningar/Rings" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Ring</a><a data-tooltip-position="top" aria-label="Rings" data-href="Rings" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/rings.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Ring</a>  such that .
+<br>Definition: Field
+A field is a commutative skew field.
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/fields.html</link><guid isPermaLink="false">Matematik/Groups and rings/Fields.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Mon, 24 Feb 2025 09:14:49 GMT</pubDate></item><item><title><![CDATA[Ideals]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Ideal
+Let  be a ring. A subset  is an ideal in  if
+
+<br> is an additive subgroup of , and
+<br> for every  and .<br>
+If  is an ideal of , we write .
+
+<br>Example
+
+<br> for any .
+<br> for any .<br>
+These are the trivial ideals. Note that if  is a field, then these are the only ideals since every element can be reached from any element (except ) by multiplication. This also means  has no non-trivial ideals.
+<br>. These are all the ideals of !
+
 <br>Theorem
-Let  be a finite abelian group. Then  is the direct product of its -Sylow subgroups. In other words, if Proof:<br>
-The map  given by  is a homomorphism since  is abelian. We first use <a data-tooltip-position="top" aria-label="^d2038f" data-href="#^d2038f" href="https://samdooo.github.io/Anteckningar/about:blank#^d2038f" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lemma</a><a data-tooltip-position="top" aria-label="^d2038f" data-href="#^d2038f" href="https://samdooo.github.io/Anteckningar/about:blank#^d2038f" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lemma</a> to show that  is injective. Assume  where each . Then there are 's such that , meaning where  are exponents we don't care about since they are multiplying  anyway. Since we also know , we have that  is a common factor of  and , but these are all distinct primes, so  meaning . Hence  is injective. It follows from the sizes of -Sylow groups that the product of the sizes of  is , meaning  is also surjective. So  is indeed an isomorphism between  and .
-<br>Furthermore, we can show that each of these subgroups are products of cyclic groups.<br>Lemma
-Let  be an abelian -group. Let  be of maximal order. Then there exists a subgroup  such that  is an isomorphism.
+Let  be a commutative ring.
+
+<br>Let . Then  is the smallest ideal in  containing . This is called the principal ideal generated by .
+<br>Let . Then  is the smallest ideal in  containing . If , we say that  is finitely generated. 
+
+<br>Theorem
+Let  be a ring, . Then
+
+<br>.
+<br>.
+<br>.
+
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/ideals.html</link><guid isPermaLink="false">Matematik/Groups and rings/Ideals.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Mon, 24 Feb 2025 09:16:29 GMT</pubDate></item><item><title><![CDATA[Power series and Polynomials]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> ]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/power-series-and-polynomials.html</link><guid isPermaLink="false">Matematik/Groups and rings/Power series and Polynomials.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Mon, 24 Feb 2025 09:15:37 GMT</pubDate></item><item><title><![CDATA[Ring homomorphisms and Factor rings]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Ring homomorphism
+Let  be rings. Then  is a ring homomorphism if
+
+<br> is a group homomorphism with respect to , meaning  and
+<br> is a monoid homomorphism with respect to , meaning 
+
+<br>Theorem
+Let  be a ring homomorphism.
+
+<br>.
+<br> is a subring of .
+<br> is a group homomorphism with respect to 
+<br> is a subring of   .
+
+<br>Corollary
+Let  be a ring homomorphism,  and  a field. Then  is injective.
 Proof:<br>
-Since  is a -group, . We induce on . If  then , so the base case holds. Now take any . We know  for some .
-Claim 1: For every , .<br>
-Proof: We know  for some , implying If  we are done. Otherwise, we can find a  such that . Pick such  of minimal order.
-Claim 2: .<br>
-Proof: Consider . Since  is of minimal order, . This means  for some . Now we get So . Also,  since , and so  meaning  since we are in a -group. This means , so let . Define . We firstly observe that  since , and secondly we see that . So we conclude that  and by the minimality of  we have .
-Now let . Since  is of prime order, we know  is cyclic. Furthermore, we know . To apply the induction hypothesis, we need to find an element of maximal order in . We can show that  is such an element. By Cor. 1.3.13, for every  where , . This means  since if there is some  in , then it generates all of , but . We now get that  since , meaning . But the order is clearly at most , which is the next possible order, so , meaning  indeed has maximal order. 
-Now we can apply the induction hypothesis, meaning there exists a subgroup  such that . Now notice that there is a one-to-one correspondence between each  and each . this is true since we can use the canonical projection  and map  and . We now use this to get  meaning  and .
-Claim 3: .<br>
-Proof: Let . We then get  by the previous paragraph. This in turn means that .
-Finally, this means  is injective, meaning 
-<br>Theorem: Fundamental Theorem of Finite Abelian Groups
-Every finite abelian group is the direct product of cyclic groups of prime-power order.
+, so either  or . But , so .
+<br>Remark
+Let  and  be ring homomorphisms. Then  is a ring homomorphism.
+Also, if  is bijective, then  is a ring homomorphism.
+<br>Example
+Let  be rings. The following are ring homomorphisms.
+
+<br>The inclusion map .
+<br>We can send formal polynomial to polynomial functions by<br>
+<br>
+. Note that in general,  is not injective.<br>
+For example, let . Then , but .
+<br>For a fixed , .
+
+<br>Theorem
+Let  be a ring and . Then
+
+<br> defines an equivalence relation on . The equivalence classes .
+<br>The set  of all equivalence classes is a ring with This is called a factor ring or quotient ring, or residue class ring.
+<br>The canonical projection  is a surjectve ring homomorphism with .
+
 Proof:<br>
-We have which by Theorem means . Furthermore we know where  and  has maximal order. This means and  is a -group, . By induction we get .
-<br>Example 1.5.10
-a)   abelian and .<br>
-b)  and  abelian   or .<br>
-c) , non-abelian, could be , but also the quaternion group. The quaternion group has 8 elements  with relations Exercise: show that this is a group!<br>
-Subgroups: , , , , . We can show that these are all normal!
-<br>Theorem: Fundamental Theorem of Finitely Generated Abelian Groups
-Let  be abelian such that there is a subset  such that , where . Then  where  is a finite abelian group.
-<br>Lemma
-Consider  for some  with factorization . Then there is a unique subgroup of order , namely .
+Recall that  is an abelian group. This means  is a normal subgroup. This means  is a factor group and that  is a surjective group homomorphism, and . 
+We still need to show that the multiplication is well defined. Let  and . We know  and . This means since every term has a factor in  and .
+Hence,  is also a monoid homomorphism with respect to .
+<br>Theorem: Universal property of 
+Let  be a ring homomorphism and . Then there is a unique ring homomorphism  such that .
+
+<br>
+<br>
+<br>
+<br> is injective  .
+
 Proof:<br>
-Clearly it's a subgroup of order . We know show uniqueness. Let . By Fermat, we know that for every  meaning every element in  is a multiple of , more concretely, . We also know  so .
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/finite-abelian-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Finite abelian groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 12 Feb 2025 18:48:57 GMT</pubDate></item><item><title><![CDATA[Sylow Groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+We already know that there is a unique group homomorphism  with the same properties. Left to show is that  is a ring homomorphism. Exercise!
+<br>Corollary
+Let  be a surjective ring homomorphism and . Then .
+<br>Example
+Constructive way:<br>
+Can also use the universal property.
+<br>Theorem: First isomorphism theorem
+Let  be a ring and  a subring, and . Then .
+<br>Theorem: Second isomorphism theorem
+Let  be a ring and  be ideals. Then .
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/ring-homomorphisms-and-factor-rings.html</link><guid isPermaLink="false">Matematik/Groups and rings/Ring homomorphisms and Factor rings.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Thu, 20 Feb 2025 09:12:01 GMT</pubDate></item><item><title><![CDATA[Rings]]></title><description><![CDATA[ 
+ <br>Definition: Ring
+A ring is a set  together with two maps  and  such that
+
+<br> is an <a data-tooltip-position="top" aria-label="Groups > ^5927de" data-href="Groups#^5927de" href="https://samdooo.github.io/Anteckningar/Groups#^5927de" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Abelian group</a><a data-tooltip-position="top" aria-label="Groups > ^5927de" data-href="Groups#^5927de" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html#^5927de" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Abelian group</a>,
+<br> is a monoid,
+<br> is distributive over , meaning for every .
+
+The additive and multiplicative unit elements are denoted  and , respectively, and are called identities in the context of rings.
+The additive inverse of  is denoted .
+<br>Theorem
+Let  be a ring. Then
+
+<br>
+<br>
+
+for every .
+Proof:
+
+<br>, and the same for .
+<br>, and the same for .
+
+<br>Definition: Subring, ring extension
+Let  be a ring.  is a subring of  if  is a ring and . The pair  is called a ring extension.
+<br>Definition: Unit
+Let  be a ring. Then whose elements are called units.
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/rings.html</link><guid isPermaLink="false">Matematik/Groups and rings/Rings.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Mon, 24 Feb 2025 09:12:51 GMT</pubDate></item><item><title><![CDATA[Sylow Groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Definition: Conjugate
 Let  be a group.<br>
  is conjugate to  if there exists a  such that .<br>
@@ -102,12 +187,10 @@ Let  be a group and  such that . Then
 <br> is a group homomorphism.
 <br> is injective.
 
-Proof:
-
-<br>We have  since  is normal, and likewise,  since , too, is normal. Since , we thus know .
-<br>We have by (a).
-<br>We have 
-
+Proof:<br>
+4. {a} We have  since  is normal, and likewise,  since , too, is normal. Since , we thus know .<br>
+5. We have by (a).<br>
+6. We have 
 <br>Corollary
 Let  be a finite group and  be prime.
 
@@ -116,17 +199,15 @@ Let  be a finite group and  be prime.
 <br>Let . Then  is a -Sylow subgroup of  if and only if  is a maximal -group in .
 <br>Let  be a -Sylow subgroup. Then .
 
-Proof:
+Proof:<br>
+5. {a} We know by <a data-tooltip-position="top" aria-label="^e42d18" data-href="#^e42d18" href="https://samdooo.github.io/Anteckningar/about:blank#^e42d18" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Theorem</a><a data-tooltip-position="top" aria-label="^e42d18" data-href="#^e42d18" href="https://samdooo.github.io/Anteckningar/about:blank#^e42d18" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem</a> that there is a -Sylow subgroup  of some order  for some positive . This means there is an  where , and we know , so  for some positive . We then get that  has order  since .<br>
+6.  Let . We have  since .<br>
+: Let  be a prime such that . Then by (a) there is a  such that , which by our assumption means .<br>
+7. : We know  and  for some  and  where . Then we know any -subgroup has order  where  since its order must divide , meaning it is at most as large as .<br>
+: Since  is a -group in , there is a -Sylow subgroup containing , and by the maximality of ,  must be that -Sylow subgroup.<br>
+8. By <a data-tooltip-position="top" aria-label="^e42d18" data-href="#^e42d18" href="https://samdooo.github.io/Anteckningar/about:blank#^e42d18" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Theorem</a><a data-tooltip-position="top" aria-label="^e42d18" data-href="#^e42d18" href="https://samdooo.github.io/Anteckningar/about:blank#^e42d18" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem</a> we know all -Sylow subgroups are conjugate, meaning if and only if there is only one -Sylow subgroup, it is invariant under conjugation, meaning it's normal.<br>
 
-<br>We know by <a data-tooltip-position="top" aria-label="^e42d18" data-href="#^e42d18" href="https://samdooo.github.io/Anteckningar/about:blank#^e42d18" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Theorem</a><a data-tooltip-position="top" aria-label="^e42d18" data-href="#^e42d18" href="https://samdooo.github.io/Anteckningar/about:blank#^e42d18" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem</a> that there is a -Sylow subgroup  of some order  for some positive . This means there is an  where , and we know , so  for some positive . We then get that  has order  since .
-<br> Let . We have  since .<br>
-: Let  be a prime such that . Then by (a) there is a  such that , which by our assumption means .
-<br>: We know  and  for some  and  where . Then we know any -subgroup has order  where  since its order must divide , meaning it is at most as large as .<br>
-: Since  is a -group in , there is a -Sylow subgroup containing , and by the maximality of ,  must be that -Sylow subgroup.
-<br>By <a data-tooltip-position="top" aria-label="^e42d18" data-href="#^e42d18" href="https://samdooo.github.io/Anteckningar/about:blank#^e42d18" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Theorem</a><a data-tooltip-position="top" aria-label="^e42d18" data-href="#^e42d18" href="https://samdooo.github.io/Anteckningar/about:blank#^e42d18" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem</a> we know all -Sylow subgroups are conjugate, meaning if and only if there is only one -Sylow subgroup, it is invariant under conjugation, meaning it's normal.<br>
-
-
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/sylow-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Sylow Groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 12 Feb 2025 19:01:03 GMT</pubDate></item><item><title><![CDATA[Groups and rings]]></title><description><![CDATA[ 
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/sylow-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Sylow Groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Fri, 14 Feb 2025 12:56:22 GMT</pubDate></item><item><title><![CDATA[Groups and rings]]></title><description><![CDATA[ 
  <br><br>
 <br><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/Groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Groups</a><a data-href="Groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups</a>
 <br><a data-href="Permutation groups" href="https://samdooo.github.io/Anteckningar/Permutation groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Permutation groups</a><a data-href="Permutation groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/permutation-groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Permutation groups</a>
@@ -140,7 +221,54 @@ Proof:
 <br><a data-href="Centers and centralizers" href="https://samdooo.github.io/Anteckningar/Centers and centralizers" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Centers and centralizers</a><a data-href="Centers and centralizers" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/centers-and-centralizers.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Centers and centralizers</a>
 <br><a data-href="Sylow Groups" href="https://samdooo.github.io/Anteckningar/Sylow Groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Sylow Groups</a><a data-href="Sylow Groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/sylow-groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Sylow Groups</a>
 <br><a data-href="Finite abelian groups" href="https://samdooo.github.io/Anteckningar/Finite abelian groups" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Finite abelian groups</a><a data-href="Finite abelian groups" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/finite-abelian-groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Finite abelian groups</a>
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings.html</link><guid isPermaLink="false">Matematik/Groups and rings.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 12 Feb 2025 18:49:33 GMT</pubDate></item><item><title><![CDATA[Bipartite graphs]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+<br><br>
+<br><a data-href="Rings" href="https://samdooo.github.io/Anteckningar/Rings" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Rings</a><a data-href="Rings" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/rings.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Rings</a>
+<br><a data-href="Ideals" href="https://samdooo.github.io/Anteckningar/Ideals" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Ideals</a><a data-href="Ideals" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/ideals.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Ideals</a>
+<br><a data-href="Ring homomorphisms and Factor rings" href="https://samdooo.github.io/Anteckningar/Ring homomorphisms and Factor rings" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Ring homomorphisms and Factor rings</a><a data-href="Ring homomorphisms and Factor rings" href="https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/ring-homomorphisms-and-factor-rings.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Ring homomorphisms and Factor rings</a>
+<br>
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings.html</link><guid isPermaLink="false">Matematik/Groups and rings.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Mon, 24 Feb 2025 09:16:46 GMT</pubDate></item><item><title><![CDATA[Finite abelian groups]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-groups" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-groups</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-groups" class="tag" target="_blank" rel="noopener nofollow">#matematik-groups</a> <br>Corollary
+Let  be a finite abelian group. Then  has exactly one -Sylow subgroup, namely Proof:<br>
+Since all -Sylow subgroups are conjugate, and conjugations does nothing to an abelian group, there can only be one -Sylow subgroup, call it . Now we must show .
+: From <a data-tooltip-position="top" aria-label="^ab87c1" data-href="#^ab87c1" href="https://samdooo.github.io/Anteckningar/about:blank#^ab87c1" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Corollary (b)</a><a data-tooltip-position="top" aria-label="^ab87c1" data-href="#^ab87c1" href="https://samdooo.github.io/Anteckningar/about:blank#^ab87c1" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Corollary (b)</a> we know that since  is a -group, .
+: Firstly we show that  is a subgroup. For any  there are  such that . WLOG, let . Then , meaning , so . Furthermore, we have , so , meaning  is a subgroup. By <a data-tooltip-position="top" aria-label="^ab87c1" data-href="#^ab87c1" href="https://samdooo.github.io/Anteckningar/about:blank#^ab87c1" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Corollary (b)</a><a data-tooltip-position="top" aria-label="^ab87c1" data-href="#^ab87c1" href="https://samdooo.github.io/Anteckningar/about:blank#^ab87c1" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Corollary (b)</a> we know  is a -subgroup, meaning there must exist a -Sylow subgroup containing , and since  is the only -Sylow subgroup, .
+<br>Lemma
+Let  be a finite abelian group and  be subgroups of . The homomorphism  is injective if and only if for every , .
+Proof:<br>
+: We know , so  being injective means that this is the only product that gives . If there would be some  in  and , then  so  would be obtainable by making  and , and .
+: We want to show that . Assume . Then  meaning , meaning . By induction, every .
+<br>Theorem
+Let  be a finite abelian group. Then  is the direct product of its -Sylow subgroups. In other words, if Proof:<br>
+The map  given by  is a homomorphism since  is abelian. We first use <a data-tooltip-position="top" aria-label="^d2038f" data-href="#^d2038f" href="https://samdooo.github.io/Anteckningar/about:blank#^d2038f" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Lemma</a><a data-tooltip-position="top" aria-label="^d2038f" data-href="#^d2038f" href="https://samdooo.github.io/Anteckningar/about:blank#^d2038f" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Lemma</a> to show that  is injective. Assume  where each . Then there are 's such that , meaning where  are exponents we don't care about since they are multiplying  anyway. Since we also know , we have that  is a common factor of  and , but these are all distinct primes, so  meaning . Hence  is injective. It follows from the sizes of -Sylow groups that the product of the sizes of  is , meaning  is also surjective. So  is indeed an isomorphism between  and .
+<br>Furthermore, we can show that each of these subgroups are products of cyclic groups.<br>Lemma
+Let  be an abelian -group. Let  be of maximal order. Then there exists a subgroup  such that  is an isomorphism.
+Proof:<br>
+Since  is a -group, . We induce on . If  then , so the base case holds. Now take any . We know  for some .
+Claim 1: For every , .<br>
+Proof: We know  for some , implying If  we are done. Otherwise, we can find a  such that . Pick such  of minimal order.
+Claim 2: .<br>
+Proof: Consider . Since  is of minimal order, . This means  for some . Now we get So . Also,  since , and so  meaning  since we are in a -group. This means , so let . Define . We firstly observe that  since , and secondly we see that . So we conclude that  and by the minimality of  we have .
+Now let . Since  is of prime order, we know  is cyclic. Furthermore, we know . To apply the induction hypothesis, we need to find an element of maximal order in . We can show that  is such an element. By Cor. 1.3.13, for every  where , . This means  since if there is some  in , then it generates all of , but . We now get that  since , meaning . But the order is clearly at most , which is the next possible order, so , meaning  indeed has maximal order. 
+Now we can apply the induction hypothesis, meaning there exists a subgroup  such that . Now notice that there is a one-to-one correspondence between each  and each . this is true since we can use the canonical projection  and map  and . We now use this to get  meaning  and .
+Claim 3: .<br>
+Proof: Let . We then get  by the previous paragraph. This in turn means that .
+Finally, this means  is injective, meaning 
+<br>Theorem: Fundamental Theorem of Finite Abelian Groups
+Every finite abelian group is the direct product of cyclic groups of prime-power order.
+Proof:<br>
+We have which by Theorem means . Furthermore we know where  and  has maximal order. This means and  is a -group, . By induction we get .
+<br>Example 1.5.10
+a)   abelian and .<br>
+b)  and  abelian   or .<br>
+c) , non-abelian, could be , but also the quaternion group. The quaternion group has 8 elements  with relations Exercise: show that this is a group!<br>
+Subgroups: , , , , . We can show that these are all normal!
+<br>Theorem: Fundamental Theorem of Finitely Generated Abelian Groups
+Let  be abelian such that there is a subset  such that , where . Then  where  is a finite abelian group.
+<br>Lemma
+Consider  for some  with factorization . Then there is a unique subgroup of order , namely .
+Proof:<br>
+Clearly it's a subgroup of order . We know show uniqueness. Let . By Fermat, we know that for every  meaning every element in  is a multiple of , more concretely, . We also know  so .
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/groups-and-rings/finite-abelian-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Finite abelian groups.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Wed, 12 Feb 2025 18:48:57 GMT</pubDate></item><item><title><![CDATA[Bipartite graphs]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Bipartite graph
 A graph  is bipartite if , where  is the <a data-tooltip-position="top" aria-label="Graph colouring > ^6d0273" data-href="Graph colouring#^6d0273" href="https://samdooo.github.io/Anteckningar/Graph colouring#^6d0273" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Chromatic number</a><a data-tooltip-position="top" aria-label="Graph colouring > ^6d0273" data-href="Graph colouring#^6d0273" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/graph-colouring.html#^6d0273" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Chromatic number</a> of .
 <br>Theorem
