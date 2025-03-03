@@ -1,4 +1,21 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 03 Mar 2025 14:48:57 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 03 Mar 2025 14:48:52 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Chinese Remainder Theorem]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 03 Mar 2025 14:58:35 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 03 Mar 2025 14:58:34 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Infinite sets]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Finite set, infinite set
+A set  is called finite if it is empty or  for some . If  is not finite it is called infinite.
+<br>Theorem
+ is infinite.
+Proof:<br>
+We know  is nonempty since . Now suppose  is finite, so that . Then let . Then  should be in , but we have  for every , so , which is a contradiction.
+<br>Theorem
+The set of all prime numbers is infinite.
+Proof:<br>
+Suppose the set of all prime numbers is . Then let . Clearly  is not a multiple of any  since . This means  is a prime not in , which is a contradiction.
+<br>Theorem
+Let  be a set and  be a bijection. Then  is infinite.
+Proof:<br>
+If  is finite, there is a bijection , so  is a bijection between  and , which is a contradiction.
+<br>Definition: Countable set
+Let  be a set. If there exists a bijection between  and , we call  countably infinite or just countable.
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/infinite-sets.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Infinite sets.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Mon, 03 Mar 2025 14:58:27 GMT</pubDate></item><item><title><![CDATA[Chinese Remainder Theorem]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Theorem: Chinese Remainder Theorem
 Let  and . Then there are solutions to The solutions are unique up to congruence mod .
 Proof:<br>
@@ -785,24 +802,7 @@ The expression  in this course refers to .
 For any two sets  the intersection of  and  is  and the union of  and  is 
 <br>Definition: Cartesian product
 For any two sets  We define the Cartesian product 
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/sets.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Sets.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Tue, 28 Jan 2025 10:08:33 GMT</pubDate></item><item><title><![CDATA[Infinite sets]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
- <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Finite set, infinite set
-A set  is called finite if it is empty or  for some . If  is not finite it is called infinite.
-<br>Theorem
- is infinite.
-Proof:<br>
-We know  is nonempty since . Now suppose  is finite, so that . Then let . Then  should be in , but we have  for every , so , which is a contradiction.
-<br>Theorem
-The set of all prime numbers is infinite.
-Proof:<br>
-Suppose the set of all prime numbers is . Then let . Clearly  is not a multiple of any  since . This means  is a prime not in , which is a contradiction.
-<br>Theorem
-Let  be a set and  be a bijection. Then  is infinite.
-Proof:<br>
-If  is finite, there is a bijection , so  is a bijection between  and , which is a contradiction.
-<br>Definition: Countable set
-Let  be a set. If there exists a bijection between  and , we call  countably infinite or just countable.
-]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/infinite-sets.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Infinite sets.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Fri, 24 Jan 2025 13:17:54 GMT</pubDate></item><item><title><![CDATA[Prime numbers]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/sets.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Sets.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Tue, 28 Jan 2025 10:08:33 GMT</pubDate></item><item><title><![CDATA[Prime numbers]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Coprime
 Let . If ,  are called coprime.
 <br>From <a data-tooltip-position="top" aria-label="Greatest common divisor > ^d37e34" data-href="Greatest common divisor#^d37e34" href="https://samdooo.github.io/Anteckningar/Greatest common divisor#^d37e34" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Bézout's identity</a><a data-tooltip-position="top" aria-label="Greatest common divisor > ^d37e34" data-href="Greatest common divisor#^d37e34" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/greatest-common-divisor.html#^d37e34" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Bézout's identity</a> we thus have that for any coprime numbers  there are  such that .<br>Theorem
