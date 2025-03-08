@@ -1,4 +1,54 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 03 Mar 2025 14:58:35 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 03 Mar 2025 14:58:34 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Infinite sets]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://samdooo.github.io/Anteckningar/</link><image><url>https://samdooo.github.io/Anteckningar/lib/media/favicon.png</url><title>Anteckningar</title><link>https://samdooo.github.io/Anteckningar/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 08 Mar 2025 09:39:25 GMT</lastBuildDate><atom:link href="https://samdooo.github.io/Anteckningar/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 08 Mar 2025 09:39:23 GMT</pubDate><copyright><![CDATA[Samdooo]]></copyright><ttl>60</ttl><dc:creator>Samdooo</dc:creator><item><title><![CDATA[Directed graphs]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Directed graph
+A directed graph or digraph  is a set  whose members are called vertices, together with a set , whose members are called edges or arcs, and we write .
+<br>Note that formally, a directed graph  is just a <a data-tooltip-position="top" aria-label="Relations" data-href="Relations" href="https://samdooo.github.io/Anteckningar/Relations" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Relation</a><a data-tooltip-position="top" aria-label="Relations" data-href="Relations" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/relations.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Relation</a> on : This means that results for relations can be applied to digraphs too. For example, a symmetric relation implies that , so all arcs in the graph can be thought of as double pointed.<br>Definition: Directed walk, directed path
+A directed walk in a digraph  is a sequence of vertices  such that  for every .
+A directed path is a directed walk where all vertices are distinct.
+A directed cycle is a directed walk where all vertices are distinct except that .
+<br>Definition: Tournament
+A tournament is a digraph with exactly one arc between each pair of vertices.
+<br>Theorem
+In any tournament there is a directed path containing all vertices.
+Proof:<br>
+We show that any path not containing all vertices can be made longer. Take any path  and suppose  is a vertex not in the path. Then, if  is an edge, we can prepend  and we are done. Otherwise,  is an edge. Then if  is an edge,  can be inserted between  and . Otherwise,  is an edge. Continue this process until either  is inserted, or we reach , meaning  is an edge, meaning  can be appended to the end and we are done.
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/directed-graphs.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Directed graphs.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Fri, 07 Mar 2025 15:26:31 GMT</pubDate></item><item><title><![CDATA[Networks and flows]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
+ <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Network, weight function
+A network is a <a data-tooltip-position="top" aria-label="Directed graphs" data-href="Directed graphs" href="https://samdooo.github.io/Anteckningar/Directed graphs" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Directed graph</a><a data-tooltip-position="top" aria-label="Directed graphs" data-href="Directed graphs" href="https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/directed-graphs.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Directed graph</a>  together with a weight or capacity function .
+<br>Definition: Source, sink
+Let  be a network.
+A source is a vertex  such that all arcs containing  are directed away from .
+A sink is a vertex  such that all arcs containing  are directed towards .
+<br>We will consider networks where a source and sink exist.<br>Definition: Flow
+A flow from the source  to the sink  in a network  is a function  such that for every  where , and where  for every , where  is the capacity function.
+<br>Theorem
+Let  be a network with a source  and sink , and let  be a flow in . Then Proof:<br>
+We have 
+<br>Definition: Volume
+The volume of a flow  is 
+<br>Definition: Cut
+Let  be a network and  be a partition of  such that  and . Then  is called a cut, and the capacity of the cut is 
+<br>Theorem
+If  is a flow from  to  and  is any cut, then Proof:<br>
+
+<br>Theorem
+If  is a flow from  to  and  is any cut, then .
+Proof:<br>
+By <a data-tooltip-position="top" aria-label="^ce748b" data-href="#^ce748b" href="https://samdooo.github.io/Anteckningar/about:blank#^ce748b" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Theorem</a><a data-tooltip-position="top" aria-label="^ce748b" data-href="#^ce748b" href="https://samdooo.github.io/Anteckningar/about:blank#^ce748b" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem</a>, we have 
+<br>Now, suppose that  is a maximum flow and that  is a cut with corresponding minimum capacity. From the theorem above we thus know that<br>
+We will see later that this is actually an equality.<br>Definition: Residual graph
+Let  be a network and  a flow in . The residual graph of  with respect to  is a network  with the vertices of , and where
+
+<br>For each edge , if , there is a forward edge  in  with capacity .
+<br>For each edge , if , there is a backward edge  in  with capacity .
+
+<br>The residual graph thus shows where additional flow can be added or removed. The forward edges show where additional flow can be introduced without exceeding the capacity, and the backward edges show where flow can be removed without introducing negative flow.<br>Definition: Augmenting path
+Let  be a network and  a flow in  with residual graph . An augmenting path is a directed path in  from  to .
+<br>A way to maximize flow given a network is now clear; find an augmenting path and introduce more flow along it. Specifically, it is clear that a flow of precisely the minimum capacity along the augmenting path can be introduced. We can show that by repeating this process until no augmenting path exists, always yields a maximum flow.<br>Theorem
+Let  be a network. The maximum volume of a flow from  to  is equal to the minimum capacity of a cut separating  and .
+Proof:<br>
+Let  be a flow in , and let  be its residual graph. If there is an augmenting path in , introduce a flow of precisely the minimum capacity along the augmenting path. Repeat this process until there is no augmenting path.
+We are thus left with a flow  in  such that there is no augmenting path. Let  be the vertices reachable by directed paths from  in  (such paths are sometimes called incomplete augmenting paths), and  be the rest of the vertices. Then, for any  and  where  we know  since if  there would be an edge  in  making  reachable from , contradicting that . Hence Furthermore, for any  and  where  we know  since if  there would be an edge  in  making  reachable from , contradicting that . Hence By <a data-tooltip-position="top" aria-label="^2c5455" data-href="#^2c5455" href="https://samdooo.github.io/Anteckningar/about:blank#^2c5455" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Theorem</a><a data-tooltip-position="top" aria-label="^2c5455" data-href="#^2c5455" href="https://samdooo.github.io/Anteckningar/about:blank#^2c5455" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem</a>, this flow is maximal.
+]]></description><link>https://samdooo.github.io/Anteckningar/matematik/discrete-mathematics/networks-and-flows.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Networks and flows.md</guid><dc:creator><![CDATA[Samdooo]]></dc:creator><pubDate>Sat, 08 Mar 2025 09:39:11 GMT</pubDate></item><item><title><![CDATA[Infinite sets]]></title><description><![CDATA[<a class="tag" href="https://samdooo.github.io/Anteckningar/?query=tag:matematik-discmath" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#matematik-discmath</a> 
  <br><a href="https://samdooo.github.io/Anteckningar?query=tag:matematik-discmath" class="tag" target="_blank" rel="noopener nofollow">#matematik-discmath</a> <br>Definition: Finite set, infinite set
 A set  is called finite if it is empty or  for some . If  is not finite it is called infinite.
 <br>Theorem
