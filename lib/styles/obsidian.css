@@ -3160,12 +3160,33 @@ ul>li {
 
 ol>li::marker,
 ul>li::marker {
-    color: black
+    color: var(--list-marker-color)
+}
+
+.callout ul,
+.callout ol {
+    padding-inline-start: 20px;
+    /* Adjust as needed */
+}
+
+.callout ul {
+    list-style-type: disc;
+    /* For bullet points */
+}
+
+.callout ol {
+    list-style-type: decimal;
+    /* For numbered lists */
 }
 
 ol>li.is-collapsed::marker,
 ul>li.is-collapsed::marker {
     color: var(--list-marker-color-collapsed)
+}
+
+.callout .markdown-rendered ul,
+.callout .markdown-rendered ol {
+  padding-inline-start: 20px; /* Restore padding */
 }
 
 .markdown-rendered ol,
