@@ -3163,6 +3163,21 @@ ul>li::marker {
     color: var(--list-marker-color)
 }
 
+li {
+    display: list-item !important;
+}
+
+ul {
+    list-style-type: disc !important; /* or square, circle */
+    padding-left: 20px; /* Ensure proper spacing */
+}
+
+li::marker {
+    color: black !important; /* Make sure markers are visible */
+    font-size: 1em; /* Adjust if necessary */
+}
+
+
 ol>li.is-collapsed::marker,
 ul>li.is-collapsed::marker {
     color: var(--list-marker-color-collapsed)
