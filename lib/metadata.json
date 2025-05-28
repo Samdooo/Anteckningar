@@ -1,13 +1,14 @@
 {
   "vaultName": "Anteckningar",
-  "lastExport": 1743064908719,
+  "lastExport": 1748444162506,
   "pluginVersion": "1.8.01",
-  "validBodyClasses": "publish css-settings-manager theme-light show-inline-title show-ribbon",
+  "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
   "useCustomHeadContent": false,
   "useCustomFavicon": true,
   "files": [
     "Fysik/Fysik för Teknisk Matematik/Analytical Mechanics/A Single Particle.md",
     "Fysik/Fysik för Teknisk Matematik/Analytical Mechanics/Angular momentum.md",
+    "Fysik/Fysik för Teknisk Matematik/Analytical Mechanics/Conserved quantities.md",
     "Fysik/Fysik för Teknisk Matematik/Analytical Mechanics/Energy.md",
     "Fysik/Fysik för Teknisk Matematik/Analytical Mechanics/mathematical_pendulum.png",
     "Fysik/Fysik för Teknisk Matematik/Analytical Mechanics/Noether's Theorem and Symmetries.md",
@@ -55,25 +56,47 @@
     "Matematik/Discrete mathematics/Trees.md",
     "Matematik/Discrete mathematics/Unordered selections.md",
     "Matematik/Discrete mathematics/Words and selections.md",
+    "Matematik/Groups and rings/Exam/Cheat sheet.md",
+    "Matematik/Groups and rings/Lecture notes/Centers and centralizers.md",
+    "Matematik/Groups and rings/Lecture notes/Cosets.md",
+    "Matematik/Groups and rings/Lecture notes/Cyclic groups.md",
+    "Matematik/Groups and rings/Lecture notes/Direct groups.md",
+    "Matematik/Groups and rings/Lecture notes/Euclidean domains.md",
+    "Matematik/Groups and rings/Lecture notes/F13.md",
+    "Matematik/Groups and rings/Lecture notes/Field Extensions.md",
+    "Matematik/Groups and rings/Lecture notes/Fields.md",
+    "Matematik/Groups and rings/Lecture notes/Finite abelian groups.md",
+    "Matematik/Groups and rings/Lecture notes/Finite Fields.md",
+    "Matematik/Groups and rings/Lecture notes/Group actions.md",
+    "Matematik/Groups and rings/Lecture notes/Groups.md",
+    "Matematik/Groups and rings/Lecture notes/Homomorphisms.md",
+    "Matematik/Groups and rings/Lecture notes/Ideals.md",
+    "Matematik/Groups and rings/Lecture notes/Modules.md",
+    "Matematik/Groups and rings/Lecture notes/Normal subgroups.md",
+    "Matematik/Groups and rings/Lecture notes/Permutation groups.md",
+    "Matematik/Groups and rings/Lecture notes/Power series and Polynomials.md",
+    "Matematik/Groups and rings/Lecture notes/Ring homomorphisms and Factor rings.md",
+    "Matematik/Groups and rings/Lecture notes/Rings.md",
+    "Matematik/Groups and rings/Lecture notes/Subgroups.md",
+    "Matematik/Groups and rings/Lecture notes/Sylow Groups.md",
+    "Matematik/Groups and rings/Lecture notes/Unique Factorization Domains.md",
+    "Matematik/Groups and rings/Actions.md",
+    "Matematik/Groups and rings/Actions and First Structures.md",
     "Matematik/Groups and rings/Centers and centralizers.md",
     "Matematik/Groups and rings/Cosets.md",
     "Matematik/Groups and rings/Cyclic groups.md",
-    "Matematik/Groups and rings/Direct groups.md",
-    "Matematik/Groups and rings/Euclidean domains.md",
-    "Matematik/Groups and rings/Fields.md",
-    "Matematik/Groups and rings/Finite abelian groups.md",
-    "Matematik/Groups and rings/Group actions.md",
-    "Matematik/Groups and rings/Groups.md",
+    "Matematik/Groups and rings/Direct products.md",
+    "Matematik/Groups and rings/Factor rings and Ideals.md",
     "Matematik/Groups and rings/Homomorphisms.md",
-    "Matematik/Groups and rings/Ideals.md",
+    "Matematik/Groups and rings/Integral domains.md",
+    "Matematik/Groups and rings/Introducing Rings.md",
+    "Matematik/Groups and rings/More orbits and stabilizers.md",
     "Matematik/Groups and rings/Normal subgroups.md",
-    "Matematik/Groups and rings/Permutation groups.md",
-    "Matematik/Groups and rings/Power series and Polynomials.md",
-    "Matematik/Groups and rings/Ring homomorphisms and Factor rings.md",
-    "Matematik/Groups and rings/Rings.md",
-    "Matematik/Groups and rings/Subgroups.md",
-    "Matematik/Groups and rings/Sylow Groups.md",
-    "Matematik/Groups and rings/Unique Factorization Domains.md",
+    "Matematik/Groups and rings/Orbits and stabilizers.md",
+    "Matematik/Groups and rings/Quotients.md",
+    "Matematik/Groups and rings/Ring homomorphisms.md",
+    "Matematik/Groups and rings/Substructures.md",
+    "Matematik/Groups and rings/Sylow groups.md",
     "Matematik/Linjär algebra/Adjungerade avbildningar.md",
     "Matematik/Linjär algebra/Alternerande och skevsymmetriska avbildningar.md",
     "Matematik/Linjär algebra/Direkta summor.md",
@@ -104,7 +127,8 @@
     "Matematik/Linjär algebra/Yttre algebran.md",
     "Matematik/Linjär algebra/Yttre potenser.md",
     "Matematik/Discrete mathematics.md",
-    "Matematik/Groups and rings.md",
+    "Matematik/Groups and Rings.md",
+    "Matematik/Groups and rings, Lectures.md",
     "Matematik/Linjär algebra.md",
     "Anteckningar.md",
     "lib/scripts/graph-wasm.wasm",
@@ -159,7 +183,8 @@
     "lib/styles/theme.css",
     "lib/styles/global-variable-styles.css",
     "lib/styles/main-styles.css",
-    "lib/styles/snippets.css"
+    "lib/styles/snippets.css",
+    "fysik/fysik-för-teknisk-matematik/analytical-mechanics/mathematical_pendulum.png"
   ],
   "mainDependencies": [
     "lib/scripts/graph-wasm.wasm",
@@ -218,85 +243,85 @@
   ],
   "fileInfo": {
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
@@ -308,229 +333,229 @@
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1743064908719,
-      "sourceSize": 81481,
+      "modifiedTime": 1748444162506,
+      "sourceSize": 101210,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 25255,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1743064908719,
-      "sourceSize": 9778,
+      "modifiedTime": 1748444162506,
+      "sourceSize": 12426,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1743064908719,
-      "sourceSize": 137466,
+      "modifiedTime": 1748444162506,
+      "sourceSize": 138258,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 187,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 400794,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 262,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 143,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
@@ -632,8 +657,8 @@
       "dependencies": []
     },
     "Anteckningar.md": {
-      "modifiedTime": 1738687361483,
-      "sourceSize": 72,
+      "modifiedTime": 1748444162506,
+      "sourceSize": 82,
       "exportedPath": "anteckningar.html",
       "dependencies": []
     },
@@ -721,57 +746,27 @@
       "exportedPath": "matematik/linjär-algebra/kroppar.html",
       "dependencies": []
     },
-    "Matematik/Groups and rings.md": {
-      "modifiedTime": 1742751759321,
-      "sourceSize": 516,
-      "exportedPath": "matematik/groups-and-rings.html",
-      "dependencies": []
-    },
-    "Matematik/Groups and rings/Groups.md": {
-      "modifiedTime": 1737143087360,
-      "sourceSize": 3021,
-      "exportedPath": "matematik/groups-and-rings/groups.html",
-      "dependencies": []
-    },
-    "Matematik/Groups and rings/Permutation groups.md": {
-      "modifiedTime": 1737143087360,
-      "sourceSize": 1127,
-      "exportedPath": "matematik/groups-and-rings/permutation-groups.html",
-      "dependencies": []
-    },
-    "Matematik/Groups and rings/Direct groups.md": {
-      "modifiedTime": 1737540992230,
-      "sourceSize": 1320,
-      "exportedPath": "matematik/groups-and-rings/direct-groups.html",
-      "dependencies": []
-    },
     "Matematik/Groups and rings/Homomorphisms.md": {
-      "modifiedTime": 1737143087360,
-      "sourceSize": 6190,
+      "modifiedTime": 1748444162506,
+      "sourceSize": 7850,
       "exportedPath": "matematik/groups-and-rings/homomorphisms.html",
       "dependencies": []
     },
-    "Matematik/Groups and rings/Subgroups.md": {
-      "modifiedTime": 1737143087360,
-      "sourceSize": 1719,
-      "exportedPath": "matematik/groups-and-rings/subgroups.html",
-      "dependencies": []
-    },
     "Matematik/Groups and rings/Cosets.md": {
-      "modifiedTime": 1737540992230,
-      "sourceSize": 2170,
+      "modifiedTime": 1748444162506,
+      "sourceSize": 2577,
       "exportedPath": "matematik/groups-and-rings/cosets.html",
       "dependencies": []
     },
     "Matematik/Groups and rings/Cyclic groups.md": {
-      "modifiedTime": 1739365630728,
-      "sourceSize": 5907,
+      "modifiedTime": 1748444162506,
+      "sourceSize": 7500,
       "exportedPath": "matematik/groups-and-rings/cyclic-groups.html",
       "dependencies": []
     },
     "Matematik/Groups and rings/Normal subgroups.md": {
-      "modifiedTime": 1737540992230,
-      "sourceSize": 5501,
+      "modifiedTime": 1748444162506,
+      "sourceSize": 5183,
       "exportedPath": "matematik/groups-and-rings/normal-subgroups.html",
       "dependencies": []
     },
@@ -871,12 +866,6 @@
       "exportedPath": "matematik/discrete-mathematics/combinatorics.html",
       "dependencies": []
     },
-    "Matematik/Groups and rings/Group actions.md": {
-      "modifiedTime": 1739365630728,
-      "sourceSize": 3249,
-      "exportedPath": "matematik/groups-and-rings/group-actions.html",
-      "dependencies": []
-    },
     "Matematik/Discrete mathematics/Euler's function.md": {
       "modifiedTime": 1738163122404,
       "sourceSize": 2262,
@@ -938,21 +927,15 @@
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1743064908719,
+      "modifiedTime": 1748444162506,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
     },
     "Matematik/Groups and rings/Centers and centralizers.md": {
-      "modifiedTime": 1738404722351,
-      "sourceSize": 3690,
+      "modifiedTime": 1748444162506,
+      "sourceSize": 5696,
       "exportedPath": "matematik/groups-and-rings/centers-and-centralizers.html",
-      "dependencies": []
-    },
-    "Matematik/Groups and rings/Sylow Groups.md": {
-      "modifiedTime": 1741013332465,
-      "sourceSize": 9222,
-      "exportedPath": "matematik/groups-and-rings/sylow-groups.html",
       "dependencies": []
     },
     "Matematik/Discrete mathematics/Congruence.md": {
@@ -1015,46 +998,10 @@
       "exportedPath": "matematik/discrete-mathematics/matchings.html",
       "dependencies": []
     },
-    "Matematik/Groups and rings/Finite abelian groups.md": {
-      "modifiedTime": 1739386926272,
-      "sourceSize": 9204,
-      "exportedPath": "matematik/groups-and-rings/finite-abelian-groups.html",
-      "dependencies": []
-    },
     "Matematik/Discrete mathematics/Chinese Remainder Theorem.md": {
       "modifiedTime": 1741013332465,
       "sourceSize": 756,
       "exportedPath": "matematik/discrete-mathematics/chinese-remainder-theorem.html",
-      "dependencies": []
-    },
-    "Matematik/Groups and rings/Fields.md": {
-      "modifiedTime": 1741013332465,
-      "sourceSize": 206,
-      "exportedPath": "matematik/groups-and-rings/fields.html",
-      "dependencies": []
-    },
-    "Matematik/Groups and rings/Ideals.md": {
-      "modifiedTime": 1741013332465,
-      "sourceSize": 1550,
-      "exportedPath": "matematik/groups-and-rings/ideals.html",
-      "dependencies": []
-    },
-    "Matematik/Groups and rings/Power series and Polynomials.md": {
-      "modifiedTime": 1741013332465,
-      "sourceSize": 20,
-      "exportedPath": "matematik/groups-and-rings/power-series-and-polynomials.html",
-      "dependencies": []
-    },
-    "Matematik/Groups and rings/Ring homomorphisms and Factor rings.md": {
-      "modifiedTime": 1741013332465,
-      "sourceSize": 4430,
-      "exportedPath": "matematik/groups-and-rings/ring-homomorphisms-and-factor-rings.html",
-      "dependencies": []
-    },
-    "Matematik/Groups and rings/Rings.md": {
-      "modifiedTime": 1741013332465,
-      "sourceSize": 1222,
-      "exportedPath": "matematik/groups-and-rings/rings.html",
       "dependencies": []
     },
     "Matematik/Discrete mathematics/Directed graphs.md": {
@@ -1082,8 +1029,8 @@
       "dependencies": []
     },
     "Fysik/Fysik för Teknisk Matematik/Analytical Mechanics.md": {
-      "modifiedTime": 1743064908719,
-      "sourceSize": 145,
+      "modifiedTime": 1748444162506,
+      "sourceSize": 213,
       "exportedPath": "fysik/fysik-för-teknisk-matematik/analytical-mechanics.html",
       "dependencies": []
     },
@@ -1091,12 +1038,6 @@
       "modifiedTime": 1742751759321,
       "sourceSize": 176,
       "exportedPath": "fysik/fysik-för-teknisk-matematik/kursplan.html",
-      "dependencies": []
-    },
-    "Matematik/Groups and rings/Euclidean domains.md": {
-      "modifiedTime": 1742751759321,
-      "sourceSize": 5462,
-      "exportedPath": "matematik/groups-and-rings/euclidean-domains.html",
       "dependencies": []
     },
     "fysik/fysik-för-teknisk-matematik/analytical-mechanics/lagrangian-mechanics/mathematical_pendulum.png": {
@@ -1130,8 +1071,8 @@
       "dependencies": []
     },
     "Fysik/Fysik för Teknisk Matematik/Analytical Mechanics/Noether's Theorem and Symmetries.md": {
-      "modifiedTime": 1743064908719,
-      "sourceSize": 1912,
+      "modifiedTime": 1748444162506,
+      "sourceSize": 2428,
       "exportedPath": "fysik/fysik-för-teknisk-matematik/analytical-mechanics/noether's-theorem-and-symmetries.html",
       "dependencies": []
     },
@@ -1149,16 +1090,244 @@
         "fysik/fysik-för-teknisk-matematik/analytical-mechanics/mathematical_pendulum.png"
       ]
     },
-    "Matematik/Groups and rings/Unique Factorization Domains.md": {
-      "modifiedTime": 1743064908719,
-      "sourceSize": 13184,
-      "exportedPath": "matematik/groups-and-rings/unique-factorization-domains.html",
-      "dependencies": []
-    },
     "fysik/fysik-för-teknisk-matematik/analytical-mechanics/mathematical_pendulum.png": {
       "modifiedTime": 1743064908719,
       "sourceSize": 26647,
       "exportedPath": "fysik/fysik-för-teknisk-matematik/analytical-mechanics/mathematical_pendulum.png",
+      "dependencies": []
+    },
+    "Fysik/Fysik för Teknisk Matematik/Analytical Mechanics/Conserved quantities.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 1911,
+      "exportedPath": "fysik/fysik-för-teknisk-matematik/analytical-mechanics/conserved-quantities.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Exam/Cheat sheet.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 17072,
+      "exportedPath": "matematik/groups-and-rings/exam/cheat-sheet.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Centers and centralizers.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 3813,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/centers-and-centralizers.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Cosets.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 2211,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/cosets.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Cyclic groups.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 5948,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/cyclic-groups.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Direct groups.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 1320,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/direct-groups.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Euclidean domains.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 5462,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/euclidean-domains.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/F13.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 5223,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/f13.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Field Extensions.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 10119,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/field-extensions.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Fields.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 206,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/fields.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Finite abelian groups.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 9204,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/finite-abelian-groups.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Finite Fields.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 3664,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/finite-fields.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Group actions.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 3249,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/group-actions.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Groups.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 3021,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/groups.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Homomorphisms.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 6234,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/homomorphisms.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Ideals.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 1550,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/ideals.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Modules.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 1454,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/modules.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Normal subgroups.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 5501,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/normal-subgroups.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Permutation groups.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 1127,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/permutation-groups.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Power series and Polynomials.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 20,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/power-series-and-polynomials.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Ring homomorphisms and Factor rings.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 4430,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/ring-homomorphisms-and-factor-rings.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Rings.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 1222,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/rings.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Subgroups.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 1719,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/subgroups.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Sylow Groups.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 9304,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/sylow-groups.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Lecture notes/Unique Factorization Domains.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 14207,
+      "exportedPath": "matematik/groups-and-rings/lecture-notes/unique-factorization-domains.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Actions.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 4500,
+      "exportedPath": "matematik/groups-and-rings/actions.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Actions and First Structures.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 9645,
+      "exportedPath": "matematik/groups-and-rings/actions-and-first-structures.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Direct products.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 1996,
+      "exportedPath": "matematik/groups-and-rings/direct-products.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Factor rings and Ideals.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 5339,
+      "exportedPath": "matematik/groups-and-rings/factor-rings-and-ideals.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Integral domains.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 1153,
+      "exportedPath": "matematik/groups-and-rings/integral-domains.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Introducing Rings.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 6788,
+      "exportedPath": "matematik/groups-and-rings/introducing-rings.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/More orbits and stabilizers.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 1048,
+      "exportedPath": "matematik/groups-and-rings/more-orbits-and-stabilizers.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Orbits and stabilizers.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 3187,
+      "exportedPath": "matematik/groups-and-rings/orbits-and-stabilizers.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Quotients.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 4260,
+      "exportedPath": "matematik/groups-and-rings/quotients.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Ring homomorphisms.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 1498,
+      "exportedPath": "matematik/groups-and-rings/ring-homomorphisms.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Substructures.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 2663,
+      "exportedPath": "matematik/groups-and-rings/substructures.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings/Sylow groups.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 1438,
+      "exportedPath": "matematik/groups-and-rings/sylow-groups.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and Rings.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 649,
+      "exportedPath": "matematik/groups-and-rings.html",
+      "dependencies": []
+    },
+    "Matematik/Groups and rings, Lectures.md": {
+      "modifiedTime": 1748444162506,
+      "sourceSize": 861,
+      "exportedPath": "matematik/groups-and-rings,-lectures.html",
       "dependencies": []
     }
   }
