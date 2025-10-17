@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <body>
+
     <script>
         (async function () {
+
             const scriptUrls = [
                 "https://cdn.jsdelivr.net/npm/jsxgraph@1.4.4/distrib/jsxgraphcore.js",
                 "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
@@ -18,7 +21,7 @@
                     document.head.appendChild(script);
                 });
             });
-            
+
             const styleUrls = [
                 "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
             ];
@@ -37,14 +40,21 @@
             // Wait for scripts and styles to load
             await Promise.all(scriptPromises);
             await Promise.all(stylePromises);
-            
+
             // Create container
-            const id = "jsxgraph-" + Math.floor(Math.random() * 1e6);
+            const id = "jsxgraph";
             const box = document.createElement("div");
             box.id = id;
             box.style.width = "100%";
             box.style.height = "400px";
             document.body.appendChild(box);
+            
+            const motherId = "jsxgraph-mother";
+            const motherBox = document.createElement("div");
+            motherBox.id = motherId;
+            motherBox.style.width = "100%";
+            motherBox.style.height = "100px";
+            document.body.appendChild(motherBox);
 
             // Initialize JSXGraph
             JXG.Options.text.cssStyle = 'font-family: MJXZERO, MJXTEX, "Times New Roman", serif';
@@ -52,6 +62,14 @@
             JXG.Options.axis.label.fontSize = 16;
             JXG.Options.axis.ticks.label.fontSize = 16;
             JXG.Options.text.useKatex = true;
+            JXG.Options.text.color = "black";
+
+            const motherBoard = JXG.JSXGraph.initBoard(motherId, {
+                boundingbox: [-10, -10, 10, 10],
+                axis: false,
+                showCopyright: false,
+                showNavigation: false
+            });
 
             const board = JXG.JSXGraph.initBoard(id, {
                 boundingbox: [-6, 4, 6, -4],
@@ -65,7 +83,8 @@
                 zoom: {
                     enabled: true,
                     factor: 1.1,
-                    wheel: true
+                    wheel: true,
+                    needShift: false
                 },
                 navigation: {
                     enabled: true,
@@ -74,8 +93,10 @@
                     reset: true
                 },
             });
+            
+            motherBoard.addChild(board);
 
-            const kSlider = board.create('slider', [[-5, 3], [2, 3], [0.1, 1, 5]], {
+            kSlider = motherBoard.create('slider', [[-5, 3], [2, 3], [0.1, 1, 5]], {
                 name: 'k',
                 width: 12,
                 snapWidth: 0.01,
@@ -96,8 +117,9 @@
                     strokeColor: 'darkblue',
                     strokeWidth: 2,
                     highlight: false
-                }
+                },
             });
+
 
             board.create('text', [0, 0,
                 function () {
