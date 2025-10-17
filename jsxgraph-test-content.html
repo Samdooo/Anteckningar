@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        (async function () {
+            const scriptUrls = [
+                "https://cdn.jsdelivr.net/npm/jsxgraph@1.4.4/distrib/jsxgraphcore.js",
+                "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+            ];
+
+            const scriptPromises = scriptUrls.map(url => {
+                return new Promise((resolve, reject) => {
+                    const script = document.createElement("script");
+                    script.src = url;
+                    script.async = true;
+                    script.onload = () => resolve(script);
+                    script.onerror = () => reject(new Error(`Failed to load: ${url}`));
+                    document.head.appendChild(script);
+                });
+            });
+            
+            const styleUrls = [
+                "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+            ];
+
+            const stylePromises = styleUrls.map(url => {
+                return new Promise((resolve, reject) => {
+                    const link = document.createElement("link");
+                    link.rel = "stylesheet";
+                    link.href = url;
+                    link.onload = () => resolve(link);
+                    link.onerror = () => reject(new Error(`Failed to load style: ${url}`));
+                    document.head.appendChild(link);
+                });
+            });
+
+            // Wait for scripts and styles to load
+            await Promise.all(scriptPromises);
+            await Promise.all(stylePromises);
+            
+            // Create container
+            const id = "jsxgraph-" + Math.floor(Math.random() * 1e6);
+            const box = document.createElement("div");
+            box.id = id;
+            box.style.width = "100%";
+            box.style.height = "400px";
+            document.body.appendChild(box);
+
+            // Initialize JSXGraph
+            JXG.Options.text.cssStyle = 'font-family: MJXZERO, MJXTEX, "Times New Roman", serif';
+            JXG.Options.text.fontSize = 18;
+            JXG.Options.axis.label.fontSize = 16;
+            JXG.Options.axis.ticks.label.fontSize = 16;
+            JXG.Options.text.useKatex = true;
+
+            const board = JXG.JSXGraph.initBoard(id, {
+                boundingbox: [-6, 4, 6, -4],
+                axis: true,
+                showCopyright: false,
+                pan: {
+                    enabled: true,
+                    needTwoFingers: false,
+                    needShift: false
+                },
+                zoom: {
+                    enabled: true,
+                    factor: 1.1,
+                    wheel: true
+                },
+                navigation: {
+                    enabled: true,
+                    pan: true,
+                    zoom: true,
+                    reset: true
+                },
+            });
+
+            const kSlider = board.create('slider', [[-5, 3], [2, 3], [0.1, 1, 5]], {
+                name: 'k',
+                width: 12,
+                snapWidth: 0.01,
+                highline: { strokeColor: 'blue', strokeWidth: 3 },
+                label: { offset: [-15, 15] },
+                point1: {
+                    face: 'o',
+                    size: 8,
+                    fillColor: 'blue',
+                    strokeColor: 'darkblue',
+                    strokeWidth: 2,
+                    highlight: false
+                },
+                point2: {
+                    face: 'o',
+                    size: 8,
+                    fillColor: 'blue',
+                    strokeColor: 'darkblue',
+                    strokeWidth: 2,
+                    highlight: false
+                }
+            });
+
+            board.create('text', [0, 0,
+                function () {
+                    return 'f(x) = \\int_0^t \\sin(x)';
+                }], { fontSize: 24 });
+
+            const A = board.create("point", [-3, -1], { name: "A" });
+            const B = board.create("point", [3, 1], { name: "B" });
+            board.create("line", [A, B]);
+            const sineGraph = board.create('functiongraph', [
+                function (x) { return Math.sin(kSlider.Value() * x); }], {
+                strokeColor: 'blue',
+                strokeWidth: 2
+            });
+        })().catch(error => {
+            console.error('Failed to load scripts:', error);
+        });
+    </script>
+</body>
+
+</html>
