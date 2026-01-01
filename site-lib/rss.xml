@@ -1,4 +1,35 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Anteckningar</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 31 Dec 2025 15:01:57 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 31 Dec 2025 15:01:48 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Optimality conditions]]></title><description><![CDATA[Remark
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Anteckningar</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 01 Jan 2026 11:45:06 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 01 Jan 2026 11:45:03 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Lagrange relaxation]]></title><description><![CDATA[Remark
+Here, we consider an optimization problem of the form where is some set and .
+Remark
+Constraints for a problem like can thus either be of the form or simply be encapsulated in . Constraints of the form are called explicit while the rest are called implicit. It is clear that any explicit constraint just as well can be made implicit, but for reasons we will see later we here distinguish between them.
+Definition: Relaxed Lagrange problem
+Given a with , the corresponding relaxed Lagrange problem with respect to the explicit contraints of is The elements of are called Lagrange multipliers.
+We can see this as instead of having as a constraint, we make it contribute to the cost, so that breaking the constraint makes the solution more costly. This is the sense in which we "relax" the problem; some previously nonfeasible solutions might become feasible.Definition: Lagrangian
+The Lagrangian for is Definition: Global optimality conditions
+A pair satisfies the global optimality conditions whenever ,
+,
+,
+. Theorem
+Whenever satisfy the global optimality conditions, is optimal.
+Proof:
+By (4) we know , so by (1), (2), and (3), for any , and is feasible since , so it is indeed optimal.
+Definition: Dual objective function
+The dual objective function for is Theorem: Weak duality
+If and , then .
+Proof:
+We have since and .
+Definition: Dual problem
+The dual problem to is Lemma
+If , , and , then and are optimal to and , respectively.
+Proof:
+For any , by the <a data-tooltip-position="top" aria-label="^cae570" data-href="#^cae570" href="#^cae570" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">previous theorem</a><a data-tooltip-position="top" aria-label="^cae570" data-href="#^cae570" href="#^cae570" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">previous theorem</a> we have so is optimal to , and for any we have so is optimal to .
+Theorem
+A pair satisfies the global optimality conditions for if and only if is optimal to , is optimal to ,
+. Proof:<br>
+: Suppose satisfy the global optimality conditions. Then, by a <a data-tooltip-position="top" aria-label="^cae570" data-href="#^cae570" href="#^cae570" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">previous theorem</a><a data-tooltip-position="top" aria-label="^cae570" data-href="#^cae570" href="#^cae570" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">previous theorem</a>, is optimal. Also, so by the previous lemma, is also optimal.
+: Suppose (1)-(3) are satisfied. Then and by feasibility. Also, so from (3) we get and Theorem is a concave function on .
+Proof:
+Take and . Then ]]></description><link>matematik/optimization/lagrange-relaxation.html</link><guid isPermaLink="false">Matematik/Optimization/Lagrange relaxation.md</guid><pubDate>Thu, 01 Jan 2026 11:43:58 GMT</pubDate></item><item><title><![CDATA[Optimality conditions]]></title><description><![CDATA[Remark
 Here, we consider a <a data-tooltip-position="top" aria-label="The convex optimization problem" data-href="The convex optimization problem" href="matematik/optimization/convex-optimization/the-convex-optimization-problem.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">convex optimization problem</a><a data-tooltip-position="top" aria-label="The convex optimization problem" data-href="The convex optimization problem" href="matematik/optimization/convex-optimization/the-convex-optimization-problem.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">convex optimization problem</a> with inequality conditions, where all and all 's are convex and continuously differentiable.
 <br>Theorem
 If and satisfy the <a data-tooltip-position="top" aria-label="Inequality constraints > ^0dcaca" data-href="Inequality constraints#^0dcaca" href="matematik/optimization/inequality-constraints.html#^0dcaca" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">KKT conditions</a><a data-tooltip-position="top" aria-label="Inequality constraints > ^0dcaca" data-href="Inequality constraints#^0dcaca" href="matematik/optimization/inequality-constraints.html#^0dcaca" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">KKT conditions</a> ,
