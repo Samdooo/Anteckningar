@@ -1,4 +1,35 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Anteckningar</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 02 Jan 2026 06:40:19 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 02 Jan 2026 06:40:16 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Inequality constraints, alternative]]></title><description><![CDATA[Remark
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Anteckningar</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 07 Jan 2026 23:05:10 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 07 Jan 2026 23:05:06 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[canvas test]]></title><description><![CDATA[Optimization theory regards methods of solving problems that are of the general following form:Definition: Optimization problem, feasible region, cost function
+An optimization problem is a problem of the following form: where is a set called the feasible region, and where is a real-valued function called the cost function or objective function.
+Remark
+Unless otherwise stated, is assumed to be a subset of .
+Definition: Optimal value, feasible solution, optimal solution
+The optimal value of an optimization problem is .
+A vector is called a feasible solution whenever .
+A vector is called a (global) optimal solution whenever for all .
+Remark
+If an optimal solution exists, then is the optimal value. This is because is a minimum of and is thus the infimum.
+Definition: Local optimal solution, global optimal solution
+A vector is called a local optimal solution if there exists a such that whenever such that , .
+The optimization problemDuality (optimization) - Wikipedia]]></description><link>matematik/optimization/canvas-test.html</link><guid isPermaLink="false">Matematik/Optimization/canvas test.canvas</guid><pubDate>Wed, 07 Jan 2026 23:04:16 GMT</pubDate></item><item><title><![CDATA[Minimizers]]></title><description><![CDATA[Remark
+Here, we consider a general optimization problem where and is any function.
+Definition: Global minimizer, local minimizer
+A point is a global minimizer of if for all .
+A point is a local minimizer of if there exists a such that for all where .
+It follows immediately that all global minimizers are local; we can choose any .Definition: Hessian
+Suppose is twice continuously differentiable. The Hessian of at a point is Theorem
+Suppose is differentiable. If is an interior point of and local minimizer of , then If furthermore is twice continuously differentiable, then the Hessian is positive semidefinite.
+Proof:
+Let with . Define by for some such that is a global minimum in its neighbourhood of radius . Then is a global minimum of . We get since by minimality, . But also, so for the derivative to exist we must have .
+Now suppose . Since is twice continuously differentiable, is continuous and there thus exists a such that on . By Taylor expansion, for every there exists a with and since we get , contradicting the minimality of . Thus .
+Since all directional derivatives are zero we have . We also know that where is the Hessian, meaning so is indeed positive semidefinite.
+]]></description><link>matematik/optimization/minimizers.html</link><guid isPermaLink="false">Matematik/Optimization/Minimizers.md</guid><pubDate>Mon, 05 Jan 2026 11:05:48 GMT</pubDate></item><item><title><![CDATA[Convexity]]></title><description><![CDATA[Definition: Convex set
+Let . Then is convex if the all line segments between any two points in are contained in , that is, if for every and we have Definition: Convex function
+Let be convex and . Then is convex if for every and we have Furthermore, is strictly convex if it also holds that whenever and , the inequality above is strict.
+Theorem
+Let be convex and let be continuously differentiable. Then is convex if and only if for all .
+Theorem
+Let be convex with a nonempty interior and let be twice continuously differentiable. is convex if and only if is positive semidefinite for all , where is the <a data-tooltip-position="top" aria-label="Minimizers" data-href="Minimizers" href="matematik/optimization/minimizers.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Hessian</a><a data-tooltip-position="top" aria-label="Minimizers" data-href="Minimizers" href="matematik/optimization/minimizers.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Hessian</a> of at .
+If is positive definite for all , then is strictly convex. ]]></description><link>matematik/optimization/convex-optimization/convexity.html</link><guid isPermaLink="false">Matematik/Optimization/Convex optimization/Convexity.md</guid><pubDate>Fri, 02 Jan 2026 13:12:32 GMT</pubDate></item><item><title><![CDATA[Inequality constraints, alternative]]></title><description><![CDATA[Remark
 Here, we consider an <a data-tooltip-position="top" aria-label="The optimization problem" data-href="The optimization problem" href="matematik/optimization/the-optimization-problem.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">optimization problem</a><a data-tooltip-position="top" aria-label="The optimization problem" data-href="The optimization problem" href="matematik/optimization/the-optimization-problem.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">optimization problem</a> of the form where and are continuously differentiable. We also let Begin by noting that whenever all constraints are fulfilled strictly, we are in the interior of and thus whenever local optimal points are there, we will find them by solving , i.e. finding stationary points. The rest of this page will discuss finding optimal solutions on the boundary of , which is significantly harder.Definition: Active indices
 Let . Then is the corresponding active index set.
 <br>Remark
@@ -254,26 +285,7 @@ A solution is a basic feasible solution whenever it is basic and feasible.
 A solution is called degenerate whenever some coordinate of is zero, otherwise non-degenerate.
 We can now formalize and prove our initial intuition.Theorem: The fundamental theorem of linear programming If there exists a feasible solution, then there exists a basic feasible solution.
 If there exists an optimal solution, then there exists an optimal basic feasible solution. Proof: Let be a feasible solution. Let be the distinct indices of the nonzero coordinates of . If we are done. Suppose . Then cannot be injective. Take some nonzero and WLOG, assume some coordinate of is negative (otherwise, we could negate to get such a vector). Then there is some smallest such that has some zero coordinate. Since we choose the smallest such , the rest of the coordinates of remain nonnegative. Thus is another feasible solution with one more zero coordinate than . Repeat until .
-Starting from an optimal solution , the exact same algorithm works. Notice that if , then , but then there exists a with a feasible solution and meaning contradicting the optimality of . Thus we must always have and so at no step of the algorithm does the cost change. ]]></description><link>matematik/optimization/linear-optimization/basic-feasible-solutions.html</link><guid isPermaLink="false">Matematik/Optimization/Linear optimization/Basic feasible solutions.md</guid><pubDate>Mon, 29 Dec 2025 19:32:26 GMT</pubDate></item><item><title><![CDATA[Convexity]]></title><description><![CDATA[Definition: Convex set
-Let . Then is convex if the all line segments between any two points in are contained in , that is, if for every and we have Definition: Convex function
-Let be convex and . Then is convex if for every and we have Furthermore, is strictly convex if it also holds that whenever and , the inequality above is strict.
-Theorem
-Let be convex and let be continuously differentiable. Then is convex if and only if for all .
-Theorem
-Let be convex with a nonempty interior and let be twice continuously differentiable. is convex if and only if is positive semidefinite for all , where is the <a data-tooltip-position="top" aria-label="Minimizers" data-href="Minimizers" href="matematik/optimization/minimizers.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Hessian</a><a data-tooltip-position="top" aria-label="Minimizers" data-href="Minimizers" href="matematik/optimization/minimizers.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Hessian</a> of at .
-If is positive definite for all , then is strictly convex. ]]></description><link>matematik/optimization/convex-optimization/convexity.html</link><guid isPermaLink="false">Matematik/Optimization/Convex optimization/Convexity.md</guid><pubDate>Mon, 29 Dec 2025 16:33:31 GMT</pubDate></item><item><title><![CDATA[Minimizers]]></title><description><![CDATA[Remark
-Here, we consider a general optimization problem where and is any function.
-Definition: Global minimizer, local minimizer
-A point is a global minimizer of if for all .
-A point is a local minimizer of if there exists a such that for all where .
-It follows immediately that all local minimizers are global; we can choose any .Definition: Hessian
-Suppose is twice continuously differentiable. The Hessian of at a point is Theorem
-Suppose is differentiable. If is an interior point of and local minimizer of , then If furthermore is twice continuously differentiable, then the Hessian is positive semidefinite.
-Proof:
-Let with . Define by for some such that is a global minimum in its neighbourhood of radius . Then is a global minimum of . We get since by minimality, . But also, so for the derivative to exist we must have .
-Now suppose . Since is twice continuously differentiable, is continuous and there thus exists a such that on . By Taylor expansion, for every there exists a with and since we get , contradicting the minimality of . Thus .
-Since all directional derivatives are zero we have . We also know that where is the Hessian, meaning so is indeed positive semidefinite.
-]]></description><link>matematik/optimization/minimizers.html</link><guid isPermaLink="false">Matematik/Optimization/Minimizers.md</guid><pubDate>Mon, 29 Dec 2025 15:51:57 GMT</pubDate></item><item><title><![CDATA[Anteckningar]]></title><description><![CDATA[
+Starting from an optimal solution , the exact same algorithm works. Notice that if , then , but then there exists a with a feasible solution and meaning contradicting the optimality of . Thus we must always have and so at no step of the algorithm does the cost change. ]]></description><link>matematik/optimization/linear-optimization/basic-feasible-solutions.html</link><guid isPermaLink="false">Matematik/Optimization/Linear optimization/Basic feasible solutions.md</guid><pubDate>Mon, 29 Dec 2025 19:32:26 GMT</pubDate></item><item><title><![CDATA[Anteckningar]]></title><description><![CDATA[
 <a data-href="Linjär algebra" href="matematik/linjär-algebra.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Linjär algebra</a><a data-href="Linjär algebra" href="matematik/linjär-algebra.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Linjär algebra</a>
 <br><a data-href="Discrete mathematics" href="matematik/discrete-mathematics.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Discrete mathematics</a><a data-href="Discrete mathematics" href="matematik/discrete-mathematics.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Discrete mathematics</a>
 <br><a data-href="Groups and rings, Lectures" href="matematik/groups-and-rings,-lectures.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Groups and rings, Lectures</a><a data-href="Groups and rings, Lectures" href="matematik/groups-and-rings,-lectures.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups and rings, Lectures</a>
