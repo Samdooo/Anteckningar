@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Anteckningar</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 26 Feb 2026 22:44:51 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 26 Feb 2026 22:44:44 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Continuity]]></title><description><![CDATA[Remark
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Anteckningar</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 27 Feb 2026 07:37:37 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 27 Feb 2026 07:37:34 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Continuity]]></title><description><![CDATA[Remark
 We take to be metric spaces with metric .
 Definition: Continuity
 Let and . We say that is continuous in a point if there for every exists a such that We say that is continuous on if it is continuous in every point in .
@@ -13,7 +13,34 @@ Theorem
 If is continuous and bijective, then is continuous.
 Definition: Uniform continuity
 A map is uniformly continuous on if there for every exists a such that for all points .
-]]></description><link>matematik/real-analysis/raw-notes/continuity.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Continuity.md</guid><pubDate>Thu, 26 Feb 2026 22:44:19 GMT</pubDate></item><item><title><![CDATA[Limits]]></title><description><![CDATA[Remark
+Theorem
+If is compact and is continuous, then is uniformly continuous.
+Proof:
+Take some . For every , let such that Let . Then the 's form an open cover, so there is a finite subcover . We can then choose Theorem
+Let and be continuous.
+If is connected, is connected.
+Proof:
+Suppose for separated sets . Let and . Then and . Also, is closed since is continuous, so . We know meaning . In the same way, . So and are separated, contradicting that is connected.
+Definition: Directed limit
+Let . For any , we say that if for every sequence in , is defined analogously.
+Definition: Kinds of discontinuities
+Let . If is not continuous in but and exist, we say that the discontinuity in is of the first kind, and otherwise the second kind.
+Definition: Monotonic function
+A map is monotonically increasing if for all . Monotonic decreasing is defined analogously.
+Theorem
+Let be monotonic. Then and exist for every .
+Proof:
+Assume WLOG that is increasing. We have that is bounded above by . Thus exists. Let be a sequence in such that . Then, for every there exists such that , meaning for every , since is increasing. Since there exists such that for every , thus meaning . Thus . In the same way, exists.
+Theorem
+Let be monotonic. Then the number of discontinuities of is countable.
+Proof:
+Assume WLOG that is increasing. Let be the set of discontinuities. Then, for any we have , so we can choose such that . For any distinct we must have , so we get a bijection from to a subset of .
+Definition: Limits at infinity
+The neighborhoods of are .
+The neighborhoods of are .
+The neighborhoods of are .
+Let and . Let . We then say that if there for every neighborhood of exists a neighborhood of such that and .
+]]></description><link>matematik/real-analysis/raw-notes/continuity.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Continuity.md</guid><pubDate>Fri, 27 Feb 2026 07:34:10 GMT</pubDate></item><item><title><![CDATA[Limits]]></title><description><![CDATA[Remark
 We take to be metric spaces with metric .
 Definition: Limit
 Let , let , and let be a limit point of . Then we say that if there for every exists a such that Theorem
