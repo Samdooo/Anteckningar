@@ -1,61 +1,289 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Anteckningar</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 11 Mar 2026 21:28:53 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 11 Mar 2026 21:28:39 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[13]]></title><description><![CDATA[Formulera Lax ekvivalenssats och visa ett exempel på att stabilitet och konsistens medför konvergens för en numerisk metod som approximerar en partiell differentialekvation.Vi börjar med ett rättställt linjärt problem , och har approximationer . Vi inför begreppen
-Stabilitet: De approximerade lösningsoperatorerna är uniformt begränsade (begränsade av en och samma konstant), och lösningsoperatorn är begränsad.
-Konsistens: och när Konvergens: när .
-Lax ekvivalenssats säger då att stabilitet+konsistens är ekvivalent med konvergens.
-Exempel:
-Vi tar värmeledningsproblemet Fouriertransformering av ekvationen ger och därmed
-Därmed är den exakta lösningsoperatorn för ett tidssteg. Vi jämför nu med differensmetoden: alltså där . Fouriertransformering ger då där alltså . Vi får nu
-Stabilitet: Vi har och därmed är för något ett tillräckligt krav för stabilitet. Vi behöver därmed att inte exploderar och därmed , alltså så stabilitet gäller om .
-Konsistens: Vi har och därmed ty om så gäller och om så gäller Därmed gäller konsistens ty Konvergens följer nu från dessa samt att : Alternativ:Låt vara ett Hilbert-funktionsrum och låt vara ett rättställt linjärt problem. Låt vara ett motsvarande funktionsrum med approximativa funktioner, låt vara projektionen av på , låt vara motsvarande approximerade problem, för alla .Vi inför följande begrepp:
-Stabilitet: Alla är uniformt begränsade (begränsade av en och samma konstant). är begränsad.
-Konsistens: och när .
-Konvergens: när .
-Lax ekvivalenssats säger då att stabilitet+konsistens konvergens.Exempel:
-Vi tar värmeledningsproblemet där och . Fouriertransformering i -led ger Vi tar nu den vanliga finit differens-approximationen med något och . Vi får då att är den exakta operatorn för ett tidssteg. Vi jämför nu med finita differensmetoden, där vi har att där . Fouriertransformering i -led ger där alltså . Vi får nu
-Stabilitet: Vi har så vi har stabilitet om när , d.v.s. , vilket sker om .
-Konsistens: Vi har med Parselvals formel och därmed ty om så gäller med Taylorutveckling att och om så gäller Därmed får vi när , alltså har vi konsistens.
-Konvergens: Följer från stabilitet+konsistens: så eftersom och får vi när .
-Alternativ 3:
-Låt vara ett funktionsrum och ett rum med approximationer. Låt vara ett rättställt linjärt problem i och låt för alla vara motsvarande approximerade problem i . Vi inför följande:
-Stabilitet: Lösningsoperatorerna är uniformt begränsade (begränsade av en och samma konstant) och är begränsad.
-Konsistens: och när .
-Konvergens: när .
-Lax-ekvivalenssats säger då att stabilitet+konsistens=konvergens.
-Exempel:
-Vi tar värmeledningsekvationen på och , med finita differensmetoden, Fouriertransformering i -led av diffekvationen ger Därmed är den exakta lösningsoperatorn för ett tidssteg. För finita differensen får vi med Fouriertransformering där alltså är lösningsoperatorn för finita differensmetoden, givet och .Vi undersöker nu kriterierna för Lax-ekvivalenssats för dessa operatorer.
-Stabilitet: För stabilitet krävs alltså att inte exploderar, d.v.s. att ej exploderar, d.v.s. . Vi har därmed stabilitet om Eftersom gäller detta omm Eftersom har vi alltid , alltså kan inte explodera, så det räcker att för stabilitet.
-Konsistens: Vi har där den sista likheten gäller eftersom om så har vi med Taylorutveckling medan om har vi Därmed går när , så vi har konsistens.
-Konvergens: Följer nu från stabilitet+konsistens: Eftersom är varje och därmed har vi som går mot när , alltså har vi konvergens!
-Alternativ 4:
-Låt vara ett rättställt linjärt problem och låt vara motsvarande approximerade problem, för alla . Vi inför följande begrepp:
-Stabilitet: De approximerade lösningsoperatorerna är uniformt begränsade, d.v.s. begränsade av en och samma konstant, och lösningsoperatorn är begränsad.
-Konsistens: och när .
-Konvergens: när .
-Då gäller att stabilitet+konsistens=konvergens.
-Exempel:
-Vi tar värmeledningsekvationen och betraktar finita differensmetoden med framåtdifferens för tidsderivatan och centraldifferens för rumsderivatan, d.v.s. där . Fouriertransformering i -led av PDE:n ger Därmed är den exakta lösningsoperatorn för ett tidssteg. För finita differensmetoden får vi istället så är den approximerade lösningsoperatorn för ett tidssteg. Vi undersöker nu kraven för ekvivalenssatsen.
-Stabilitet: Vi behöver alltså här att och inte exploderar när . Eftersom kan den ej explodera. Vi får att Eftersom uppfylls detta om Alltså, om så har vi stabilitet.
-Konsistens: Konsistens gäller om när , vilket gäller om . Vi får att eftersom om så gäller med Taylorutveckling att och om gäller Därmed gäller när , alltså har vi konsistens.
-Konvergens: Vi har Från stabilitet vet vi att och därmed att varje , så vi har att Vi vet slutligen att det största värdet av är , samt från konsistens att . Därmed är Med Parsevals identitet räcker det att konvergensen sker i Fourier-rummet.
-]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/13.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/13.md</guid><pubDate>Wed, 11 Mar 2026 20:39:10 GMT</pubDate></item><item><title><![CDATA[10]]></title><description><![CDATA[Bevisa en feluppskattning av finita elementmetoden för i med randvillkoren .Vi skriver först problemet på variationsform. Låt Vi tar en testfunktion och får vilket med partiell integration blir Definiera därmed Problemet blir då att hitta s.a. för alla .För finita elementmetoden tar vi något och definierar Målet med finita differensmetoden är då att hitta s.a. för alla . För alla finns då ett s.a. där normen ges av .Bevis:
-Vi vet att det för alla finns s.a. samt att det finns och s.a. och för alla . Vi har då att och därmed Eftersom vi har får vi ]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/10.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/10.md</guid><pubDate>Wed, 11 Mar 2026 13:22:14 GMT</pubDate></item><item><title><![CDATA[4]]></title><description><![CDATA[Formulera och härled en maximumprincip för värmeledningsekvationen och använd detta för att visa entydighet av lösningar
-Värmeledningsekvationen är , och vi betraktar den på rektangeln given av och . Maximumprincipen säger att antar det största värdet antingen initialt () eller på sidorna ( eller ).Bevis: Låt vara det största värdet antar längs sidorna , och . Låt och sätt . Målet är att visa att på hela , vilket ger att för alla , och därmed . Vi vet att längs sidorna , , . uppfyller även Om hade antagit ett maximum på det inre av hade vi där haft och vilket hade motsagt olikheten ovan. Därmed antas inget maximum på det inre. Kvar är toppen , . Men där gäller isåfall och vilket också hade motsagt olikheten ovan. Ett maximum måste antas på , alltså görs det på någon av sidorna , , .Entydighet:
-Antag att och är lösningar till Bilda . Då uppfyller att Maximumprincipen ger då att maxvärdet av är , medan om vi applicerar samma på får vi att även minvärdet av är , och därmed är så .]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/4.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/4.md</guid><pubDate>Wed, 11 Mar 2026 09:09:27 GMT</pubDate></item><item><title><![CDATA[6]]></title><description><![CDATA[Härled en representationsformel för lösningen till värmeledningsekvationen med källterm i .Problemet ges av för givna . Låt där är källfunktionen, Lösningen ges då av representationsformeln Bevis:
-Problemet är linjärt eftersom operatorn är linjär. Därmed räcker det att visa att löser problemet och att löser problemet Det följer då att löser det ursprungliga problemet.Det är känt att källfunktionen konvergerar (i distributionsmening) mot -funktionen när . Därmed har vi Vi har även alltså uppfylls begynnelsevillkoren. Notera nu först att löser : Därmed får vi För utnyttjar vi återigen att när : Vi får även och därmed Därmed uppfyller både och även PDEn och sina respektiva villkor.ALTERNATIVT:Vi har PDE:n i , . Vi Fouriertransformerar i -led och får Med en integrerande faktor får vi vilket med BV:et ger Vi har att Därmed får vi genom faltning att ]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/6.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/6.md</guid><pubDate>Tue, 10 Mar 2026 10:30:30 GMT</pubDate></item><item><title><![CDATA[12]]></title><description><![CDATA[Låt vara ett Hilbertrum, låt vara en bilinjär form och vara en linjär form. Antag att är symmetrisk är -elliptisk: är kontinuerlig: är kontinuerlig: Då finns ett unikt s.a. för alla , och det :et uppfyller .
-Bevis:
-Vi antar att vi har energinormen som är ekvivalent med ty Vi vet att uppfyller för alla omm minimerar . Vi vet att existerar eftersom om har vi medan om har visom är en nedåt begränsad funktion av .Eftersom infimum existerar finns en följd så att . Vi ser att är en Cauchyföljd ty för alla har vi Eftersom är ett Hilbertrum konvergerar alltså mot något . Av kontinuitet av och följer att är kontinuerlig och därmed , så minimerar och uppfyller därmed för alla .Det följer att eftersom Antag nu att uppfyller för alla . Då har vi och därmed , så lösningen är unik.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/12.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/12.md</guid><pubDate>Wed, 04 Mar 2026 09:00:35 GMT</pubDate></item><item><title><![CDATA[17]]></title><description><![CDATA[**Visa att -funktionen är en distribution och att konvergerar svagt (dvs i distributionsmening) mot -funktionen när .Vi definierar så att för Schwartz-funktioner . är då linjär ty och kontinuerlig ty om så gäller Definiera nu distributionerna enligt När fås då vilket med variabelbytet ger när , alltså konvergerar mycket riktigt mot när .]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/17.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/17.md</guid><pubDate>Mon, 02 Mar 2026 14:17:53 GMT</pubDate></item><item><title><![CDATA[16]]></title><description><![CDATA[Formulera och härled medelvärdesegenskapen för harmoniska funktioner.Låt vara en harmonisk funktion på en cirkel. Då är värdet av i origo lika med medelvärdet av på cirkelns omkrets.Bevis:
-Låt vara cirkelns radie, och låt . Vi får med Poissons formel I fås därmed vilket är medelvärdet av på cirkelns omkrets.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/16.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/16.md</guid><pubDate>Mon, 02 Mar 2026 14:01:00 GMT</pubDate></item><item><title><![CDATA[15]]></title><description><![CDATA[Formulera och härled Poissons representationsformel för harmoniska funktioner i en cirkel.Vi har alltså Vi kan skriva om detta med polära koordinater: Vi utför variabelseparation och ansätter därmed , och kräver även att ska vara begränsad. Då får vi Om får vi uppenbarligen inga icketriviala periodiska lösningar för . Om får vi de periodiska lösningarna för . Om slutligen får vi som är -periodisk om för något , d.v.s. .För får vi Vi ansätter och får För att ska bli begränsad kan vi inte ha , alltså måste vi ha , alltså . Vi kan nu ta linjärkombinationer av dessa lösningar: eller på komplex form: Randvillkoren ger då och enligt ortogonalitet, Insättning ger Vi delar upp serien i geometriska serier och får Om vi sätter har vi alltså Insättning ger slutligen Poissons lösningsformel ]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/15.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/15.md</guid><pubDate>Mon, 02 Mar 2026 13:25:39 GMT</pubDate></item><item><title><![CDATA[14]]></title><description><![CDATA[Formulera och bevisa en maximumprincip för harmoniska funktioner.För enkelhetens skull antar vi att vi är i , men allt generaliseras till godtycklig dimension.Låt vara öppen, sammanhängande och begränsad. Om är harmonisk, d.v.s. uppfyller i , där . Då gäller Bevis:
-Låt och . Antag att är en inre maxpunkt till . Isåfall har vi men så detta är omöjligt. Därmed antar sitt max på randen , låt denna punkt vara . Då har vi där , som finns eftersom är begränsad. Detta gäller för alla och därmed är för alla , så satsen följer.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/14.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/14.md</guid><pubDate>Mon, 02 Mar 2026 12:37:14 GMT</pubDate></item><item><title><![CDATA[11]]></title><description><![CDATA[Formulera och bevisa punktvis konvergens av FourierserierLåt vara -periodisk och kvadratiskt integrerbar. Låt Antag att är deriverbar i . Då konvergerar i , d.v.s. Bevis:
-Vi kan WLOG anta att och . Låt . I har vi genom Tayloruteckling och alltså är begränsad och därmed kvadratiskt integrerbar. Låt vara koefficienterna till . Då är Enligt Bessels olikhet gäller så eftersom är kvadratiskt integrerbar är serien konvergent och därmed måste när . Vi har därmed ]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/11.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/11.md</guid><pubDate>Mon, 02 Mar 2026 08:30:17 GMT</pubDate></item><item><title><![CDATA[9]]></title><description><![CDATA[Formulera och bevisa en uppskattning av interpolationsfel med kontinuerliga och styckvis linjära funktioner på intervallet .Låt vara ett funktionsrum och . Låt vara ett delrum med styckvis linjära funktioner på intervallen där . Vi definierar interpoleringen så att där ges av och för . Då gäller Bevis:
-Det finns enligt medelvärdessatsen ett s.a. för alla . Då gäller Därmed gäller Därmed får vi Vi får därmed ]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/9.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/9.md</guid><pubDate>Tue, 24 Feb 2026 09:53:08 GMT</pubDate></item><item><title><![CDATA[8]]></title><description><![CDATA[Formulera och bevisa en sats om finita elementmetodens optimala approximation av lösningen till i med randvillkoren i energinorm.Vi skriver först problemet på variationsform. Låt Vi tar en testfunktion och får vilket med partiell integration blir Definiera därmed Problemet blir då att hitta s.a. för alla .För finita differensmetoden tar vi något och definierar Målet med finita differensmetoden är då att hitta s.a. för alla . Satsen om optimal approximation säger då att med energinormen .Bevis:
-Låt lösa originalproblemet, låt lösa finit-differensproblemet. Tag något . Vi har då Vi får och därmed med Cauchy-Schwarz.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/8.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/8.md</guid><pubDate>Mon, 23 Feb 2026 11:08:03 GMT</pubDate></item><item><title><![CDATA[7]]></title><description><![CDATA[Formulera och bevisa en ekvivalens mellan partiella differentialekvationers variationsform och minimeringsformLåt vara en positivt definit, symmetrisk bilinjär form och låt vara en linjär form över något funktionsrum . Då gäller att variationsproblemet är ekvivalent med minimeringsproblemet Bevis:
-Antag först att löser variationsproblemet. Tag något . Vi har då och därmed löser även minimeringsproblemet.
-Antag nu istället att löser minimeringsproblemet. För alla och har vi då och därmed för alla , så vi måste ha , alltså löser även variationsproblemet.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/7.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/7.md</guid><pubDate>Mon, 23 Feb 2026 10:51:11 GMT</pubDate></item><item><title><![CDATA[5]]></title><description><![CDATA[Visa att energin bevaras för vågekvationen
-Vi har vågekvationen . Vi får den kinetiska energin Detta ger där konstanttermen försvinner i den partiella integrationen eftersom måste gå mot när för att integralen ska konvergera. Notera nu att , alltså Med och fås alltså .]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/5.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/5.md</guid><pubDate>Fri, 20 Feb 2026 11:48:12 GMT</pubDate></item><item><title><![CDATA[3]]></title><description><![CDATA[Formulera och härled d'Alemberts lösningsformel
-Begynnelsevärdesproblemet för vågekvationen är med begynnelsevillkor Ansätt Vi får då alltså som vi kan lösa ut och från: vilket ger och : Eftersom måste vi ha . Därmed är vilket är d'Alemberts lösningsformel.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/3.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/3.md</guid><pubDate>Fri, 20 Feb 2026 10:06:23 GMT</pubDate></item><item><title><![CDATA[2]]></title><description><![CDATA[Formulera en explicit finit differensmetod för en värmeledningsekvation och bevisa ett relaterat stabilitetsvillkor
-Vi antar konstant värmekapacitet och löser på där medan är given.
-Välj steglängder och och sätt Vi approximerar med framåtdifferens och med centraldifferens: Sätt . Vi får då finita differensmetoden Stabilitet: Vi gör variabelseparation och ansätter . Vi får Därmed är och Detta är en diskret variant av , så vi ansätter cosinus- och sinuslösningar: för något . Randvillkoret ger , så vi kan välja och alltså . Randvillkoret ger för något , d.v.s Därmed är för alla . Med fås alltså Eftersom måste vi ha för alla för stabilitet. Det vill säga varierar mellan och , alltså måste vi ha vilket alltså är vårt stabilitetsvillkor.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/2.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/2.md</guid><pubDate>Fri, 20 Feb 2026 09:16:57 GMT</pubDate></item><item><title><![CDATA[1]]></title><description><![CDATA[Härled värmeledningsekvationen
-Låt vara temperaturen och låt vara värmeenergin i ett visst område . Då får vi att där är den specifika värmekapaciteten och är densiteten. Ändringen i värmeenergin i måste motsvara värmeflödet genom dess yta, så där är värmekonduktiviteten. Divergenssatsen ger Detta gäller för alla , alltså måste vi ha likheten vilket är värmeledningsekvationen.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/1.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/1.md</guid><pubDate>Fri, 20 Feb 2026 09:16:38 GMT</pubDate></item><item><title><![CDATA[Continuity]]></title><description><![CDATA[Remark
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Anteckningar]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Anteckningar</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 23 Jul 2026 21:09:39 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 23 Jul 2026 21:09:38 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Anteckningar]]></title><description><![CDATA[
+<a data-href="Linjär algebra" href="matematik/linjär-algebra.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Linjär algebra</a><a data-href="Linjär algebra" href="matematik/linjär-algebra.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Linjär algebra</a>
+<br><a data-href="Discrete mathematics" href="matematik/discrete-mathematics.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Discrete mathematics</a><a data-href="Discrete mathematics" href="matematik/discrete-mathematics.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Discrete mathematics</a>
+<br><a data-href="Groups and rings, Lectures" href="matematik/groups-and-rings,-lectures.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Groups and rings, Lectures</a><a data-href="Groups and rings, Lectures" href="matematik/groups-and-rings,-lectures.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups and rings, Lectures</a>
+<br><a data-href="Optimization" href="matematik/optimization.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Optimization</a><a data-href="Optimization" href="matematik/optimization.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Optimization</a>
+]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Thu, 23 Jul 2026 21:00:01 GMT</pubDate></item><item><title><![CDATA[Measure spaces]]></title><description><![CDATA[Definition: Ring
+A ring on a set is a collection where , is a -ring if Definition: Algebra
+An algebra on a set is a ring where . is a -algebra if it is a -ring.
+Definition: Measure
+A measure on a -algebra is a map such that for all If are pairwise disjoint, then Definition: Elementary sets
+Given an interval , its measure is A subset is elementary if it is the union of finitely many intervals. The set of elementary subsets of is denoted .
+Definition: Outer measure
+Let . The outer measure of is Definition: Measurable set
+A subset is -measurable if for all , is the set of measurable subsets of . Let . Then is the Lebesgue -algebra, and is the Lebesgue measure, and is the Lebesgue measure space.
+Definition: Measurable function
+A map is measurable if the set is measurable, for all .
+Definition: Simple functions
+Let be measurable and and define If , then is a simple function and we let Furthermore, if is measurable and is simple, then Finally, if is nonnegative with measurable, then is integrable on if .
+Theorem
+Let be a sequence of measurable nonnegative maps on such that for all . If pointwise, then Theorem
+Let be a sequence of measurable nonnegative maps on such that there exists an integrable map with , and let . Then Theorem: Riemann-Lebesgue
+If on , then on and Furthermore, if is bounded on , then if and only if is continuous almost everywhere.
+Proof idea:
+Take a sequence of refined partitions whose largest subintervals go to . Let and be the respective step functions. Then for all , and is increasing whereas is decreasing. Thus and for some which also satisfy . Since is bounded, by the dominated convergence theorem, Since and are step functions, they are Lebesgue integrable and Since is Riemann integrable, these are equal and thus almost everywhere and . Since and are Lebesgue measurable it follows that is too and that .
+For the second part, look at oscillations; the limit of the diameter of the images of neighborhoods of a point, as the neighborhood's diamater goes to . is continuous in iff its oscillation in is . Note that the endpoints in all together are countable, so their measure is . Whenever , its oscillation is .
+: If , then almost everywhere meaning we have zero oscillation i.e. continuity almost everywhere.
+: If is bounded, and continuous almost everywhere, then almost everywhere meaning the upper and lower sums converge to the same limit, i.e. Riemann integrability.
+Definition: if is measurable and On these we define the -norm Theorem
+If , then and Proof:
+We have Now use the -formula: with , and we get for all , which means , that is, Theorem
+If , then .
+Proof:
+We have Defining on becomes a metric when quotienting by the equivalence relation of being equal almost everywhere. With some abuse of notation we will consider to be a metric on itself to talk about for example convergence.Theorem is a complete metric space.
+Theorem
+The continuous maps are dense in on .
+]]></description><link>matematik/real-analysis/raw-notes/measure-spaces.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Measure spaces.md</guid><pubDate>Tue, 26 May 2026 11:58:57 GMT</pubDate></item><item><title><![CDATA[Differentiation]]></title><description><![CDATA[Definition: Derivative
+Let and let . The derivative of is a map defined by wherever the limit exists and lies in .
+If is defined in , we say that is differentiable in .
+Theorem
+Let be differentiable. Then is continuous.
+Proof:
+We have for every .
+Definition: Local maximum/minimum
+Let be a metric space and . We say that has a local maximum in if there exists a such that for every .
+Theorem
+Let have a local maximum and be differentiable in . Then .
+Proof:
+We have so we must have .
+Rolles theorem
+Let be continuous on , differentiable on and . Then there exists a point where .
+Proof:
+If is constant, the result is clear. Otherwise, there exists either a global maximum or global minimum different from ; WLOG, let be a global maximum where . Then is also a local maximum, so .
+Mean value theorem
+Let be continuous on and differentiable on . Then there exists a point where Proof:
+Let . Then is continuous on , differentiable on and , so by Rolles theorem, there exists a point where , and we have Generalized mean value theorem
+Let be continuous on and differentiable on . Then there exists a point where Proof:
+Let Then is continuous on and differentiable on , and we have and By Rolles theorem there exists a point where meaning Theorem
+Let be differentiable on . Then If for every , then is increasing.
+If for every , then is constant.
+If for every , then is decreasing. Proof: If is not increasing the MVT gives a point where .
+If is not constant the MVT gives a point where .
+If is not decreasing the MVT gives a point where . Theorem
+Let be differentiable and let such that . Then there exists a point where .
+Proof:
+Let . Then so and . Thus there exists a point where and a point where , meaning there exists a global minimum of in ; let that point be . Then meaning .
+Corollary
+If is differentiable, then does not have any discontinuities of the first kind.
+Theorem: L'Hopital
+Let be differentiable on and for every . Furthermore, assume and when or that when . Then Proof:
+Idea: Use generalized mean value theorem and take limits; any strict upper bound on the derivative quotient becomes a non-strict upper bound on the other quotient, when taking limits.
+First, assume . Then, take some such that and take some such that . Then, there exists a such that for every . If , by the generalized mean value theorem there exists a with If when we get for every . If instead when , we can fix and choose with for every . We then have As we get Thus, for every there exists such that for every .
+In the same way, if then for every there exists such that for every .
+Taylor's formula
+Let such that is continuous on and exists on . Then, if and are distinct points on and then there exists a between and such that Proof:
+Since , there exists such that . Let is constructed such that for all , so it follows that for all . We know , so by Rolles theorem, for some between and . Repeating Rolles theorem, we finally get for some between and . This means ]]></description><link>matematik/real-analysis/raw-notes/differentiation.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Differentiation.md</guid><pubDate>Sat, 23 May 2026 22:00:03 GMT</pubDate></item><item><title><![CDATA[Implicit function theorem]]></title><description><![CDATA[Let be from to , and let such that . Let and suppose is invertible. Then
+There are open and with and such that there for every exists a unique with and .
+With as above, is from to , and .
+Proof ():
+Idea: Define and apply the inverse function theorem. For the last part, define and differentiate , use that the derivative must be on the acquired set where .
+Let for . Then is invertible and is . By the inverse function theorem, is invertible on some open neighborhood of , and is open with . Let be the set of such that . Then , and is open since is. If now , then for some , meaning . Suppose with the same that . Then but since is injective, we must have , which proves uniqueness.
+Let from . Then is by the inverse function theorem. Since , we get that is too. Finally, let . Then for and . We know in . The chain rule gives When we get and thus . Thus It follows from this and by the definition of that for every and thus Intuition: Consider a subset of defined by , where . Intuitively, this leaves degrees of freedom, so we question when this subset can be uniquely parameterised by in . And intuitively, this works locally if the -derivative of is invertible, as this gives the necessary change in to keep .]]></description><link>matematik/real-analysis/raw-notes/implicit-function-theorem.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Implicit function theorem.md</guid><pubDate>Fri, 22 May 2026 19:07:05 GMT</pubDate></item><item><title><![CDATA[Inverse function theorem]]></title><description><![CDATA[Let from some open to . If is invertible for some , with , then there are open neighborhoods of and , respectively, such that is injective on and , that is, exists. Furthermore, .Proof:
+Idea:
+First choose to restrict enough to keep invertible. For every point in the subdomain, introduce Gauss Newton-like iteration toward it. Prove that it has Lipschitz constant on .
+Injectivity: It follows from Lipschitz that fixed points are unique, i.e. injectivity of .
+Openness: Given a in the image, make a closed ball in containing its preimage. Show that the Gauss Newton like iterations map this preimage ball to itself, given that the target is sufficiently close to . It follows from Banach that there is a fixed point, giving existence i.e. the ball around is contained in the image of .
+Continuous differentiability: Consider changing an image point with some . There is a corresponding change in the domain point . Use the Lipschitz criterion of the Gauss Newton operator to establish an upper bound on as a function of . Then prove using the definition that , utilising that implies . It follows from this that since , and linear map inversion are continuous, is. Let . We know that is invertible if . Since is continuous, there is a neighborhood where Let . For every , let Then, for we have It follows from the mean value inequality that since is convex, for , Injectivity: Note that given a and , . By the Lipschitz criterion above, has at most one fixpoint in , so indeed is injective on .Openness: Let . Let such that . Let . By the Lipschitz criterion established, if , then is contraction on . We then have for , There is thus a such that for , That is, . Thus is a contraction on for which there exists a fixpoint where , so , meaning , so indeed is open.Continuous differentiability: We thus have a with . Take some . Then there are with . We then get We know has an inverse, call it . Then As , so this goes to , so indeed . Since and are continuous and linear map inversion is continuous, is continuous and .]]></description><link>matematik/real-analysis/raw-notes/inverse-function-theorem.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Inverse function theorem.md</guid><pubDate>Fri, 22 May 2026 18:23:54 GMT</pubDate></item><item><title><![CDATA[Analytic functions and special functions]]></title><description><![CDATA[Recall that a power series converges aboslutely in where .Theorem
+Let with convergence in . Then the series converges uniformly on any for . Furthermore, is continuous and differentiable on and Proof:
+Let . With we have , so by the -test we have uniform convergence on . Each partial sum is continuously differentiable on any , and so since we have and thus the converge uniformly on every . It follows that is differentiable with Theorem
+For every , Proof:
+Whenever we have meaning Theorem
+For every , Proof:
+Whenever we have for some , and . We get Theorem: is algebraically closed
+Let with and . Then for some .
+Proof:
+Idea: takes its lowest abslute value at some point , assume it is not . Shift so that is , and write the new polynomial as . Then . Choose a tiny so that dominates higher power terms and counters to move closer to , contradiction!
+Assume WLOG that , and let . Let . Then when . Since is continuous on we have for some . If , then let Then and . Let be the smallest integer such that and There then exists a such that . If and , then so With small enough , the RHS parenthesis is positive and thus which contradicts that . Thus and .
+Definition: Gamma function
+On we define Theorem
+For every , In particular, .
+Proof:
+We get Furthermore, It follows that .
+]]></description><link>matematik/real-analysis/raw-notes/analytic-functions-and-special-functions.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Analytic functions and special functions.md</guid><pubDate>Fri, 22 May 2026 11:32:36 GMT</pubDate></item><item><title><![CDATA[Series]]></title><description><![CDATA[Definition: Series
+Given a real sequence , its series is the formal sum Its :th partial sum is . If exists, we say that the series converges and that Theorem
+A series converges if and only if for every there exists such that for all .
+Proof:
+Follows directly from the series being convergent iff its partial sum sequence is convergent, iff it is Cauchy convergent.
+Corollary
+If converges, then .
+Examples Geometric series: if , otherwise it diverges. converges if , otherwise diverges. Definition: We define Euler's number Remark
+Euler's number exists since it is increasing and bounded by : Theorem
+Proof:
+We have for every . We also have Thus, fixing and bringing we get for every , meaning it is in fact .
+Theorem is irrational.
+Proof:
+Suppose . Then meaning But we also have and clearly the sum is not .
+Theorem: Root test
+Let be a series, and define . Then, If , then the series is convergent
+If , then the series is divergent Proof:
+If we can choose such that meaning there exists such that for every . Then meaning it is convergent. If instead we get a subsequence where meaning the terms do not go to zero, so the sum cannot be convergent.
+Theorem: Ratio test
+Let be a series. Then, If , the series converges.
+If for all for some , the series diverges. Proof: Choose some such that . Then there exists such that for every , meaning Same principle, but we get a diverging geometric series. Definition: Power series
+Given a sequence of complex numbers, its corresponding power series is the formal sum where the 's are called its coefficients.
+Theorem: Radius of convergence
+Let be a power series. Let and let . Then the series where converges if , and diverges if .
+Proof:
+Use the root test: we get which is if , and if .
+Theorem: Partial sums
+Let and be real sequences. Let , and let . Then, for all , Proof: Theorem: Leibniz
+Let be a nonnegative sequence where and . Then is convergent.
+Proof:
+Let be the :th partial sum. Then is increasing and is decreasing. The former is limited above by whereas the latter is limited below by . Thus both converge, and since they converge to the same limit, and thus the whole series converges.
+Definition: Absolute convergence
+A series is converges absolutely if converges.
+Theorem
+if converges absolutely, then it converges.
+Proof:
+Follows since so Cauchy convergence of the partial sums is implied.
+Theorem
+If and , and both converge absolutely, then converges absolutely, where .
+Proof:
+Let such that and . Then Thus is increasing and bounded, and thus converges.
+]]></description><link>matematik/real-analysis/raw-notes/series.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Series.md</guid><pubDate>Thu, 21 May 2026 18:01:12 GMT</pubDate></item><item><title><![CDATA[Banach fix point theorem]]></title><description><![CDATA[Definition: Contraction
+Let be a metric space and . If there exists a such that for all , then is called a contraction.
+Theorem: Banach fix point
+If is a complete metric space and is a contraction on , then there exists exactly one such that Proof:
+Uniqueness is clear: if are such that and , then Take some and let . Then clearly when , so is a Cauchy sequence and thus converges to some . We know is less than any , meaning it must be .
+Theorem
+The equation has a unique solution in some interval around , given that is bounded and continuous on an open set , and Lipschitz continuous w.r.t. , i.e. Proof idea:
+Let in , and choose such that and . In we have the closed subset (w.r.t. the uniform norm) Define such that This is well-defined since and is a contraction since It follows by Banach's fix point theorem that has a unique fixed point, and clearly the fixed points of are precisely the solutions to the differential equation.
+]]></description><link>matematik/real-analysis/raw-notes/banach-fix-point-theorem.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Banach fix point theorem.md</guid><pubDate>Thu, 21 May 2026 14:37:41 GMT</pubDate></item><item><title><![CDATA[Multivariable maps]]></title><description><![CDATA[Definition: Differentiability of A map where is differentiable at if there exists a linear map such that and we say in this case that Equivalently, such that when . We see immediately that differentiable in implies continuous in .Theorem
+Let where . Then is unique if it exists.
+Proof:
+Let and be linear maps such that and . By fixing any direction with and considering we get that must be the usual derivative, which is unique.
+Theorem
+Given , everywhere.
+Proof:
+We have Theorem: Chain rule
+If , where and if is differentiable in and is differentiable in , then Proof:
+Let , and . Then there are such that Given , set Notice then that With we then get and since as , the result follows.
+Definition: Partial derivative Theorem
+If is differentiable in , then is partially differentiable in w.r.t. every , and Proof:
+We have Theorem
+Let be convex and be differentiable. If there exists such that for all , then for all .
+Proof:
+Let be the line segment with and , and let on . By MVT there exists where Applying Cauchy Schwartz we get Corollary
+If everywhere, then is constant.
+Definition
+Let be open, . We say that if is differentiable in with continuous. Theorem
+Let be open, . Then is differentiable in with continuous if and only if all exist and are continuous in .
+Proof:
+: Clear. The case where suffices. Take and . There is then some ball with radius around where for all . With , let . Then Note that all segments from to lie in . The mean value theorem therefore gives 's such that We then get It follows that , and since all are continuous, so is .
+Note that is twice partially differentiable in , yet and . Thus orders of partial derivatives sometimes matter. But only when they are not continuous, as we will see now.Theorem
+Let and . Assume exist in every point in , and that is continuous in . Then exists and Proof:
+Take some and let be the rectangle . Let . Then for some by MVT. For we get for sufficiently small , meaning Fixing and letting we get and now letting we get ]]></description><link>matematik/real-analysis/raw-notes/multivariable-maps.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Multivariable maps.md</guid><pubDate>Thu, 21 May 2026 14:35:25 GMT</pubDate></item><item><title><![CDATA[Linear algebra]]></title><description><![CDATA[Definition: Matrix norm
+Given , We see immediately that for all .Theorem
+If , then and is uniformly continuous.
+Proof:
+Given a normal basis we have so if we have and therefore Thus . Furthermore, we have so for any we can choose getting Theorem is a norm on .
+Proof: Positive definite is clear.
+We have meaning We have meaning . We can thus define the metric on .Theorem
+Proof:
+We have Theorem
+Let be the subset of invertible operators. Then, If and , then is open in and is continuous. Proof: is non-invertible iff there exists with and . Then Since , we can always choose such that implies , so is open. Furthermore, given we have meaning With triangle inequality we have , so We can restrict to be sufficiently close to such that , which gives which is made arbitrarily small when is. ]]></description><link>matematik/real-analysis/raw-notes/linear-algebra.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Linear algebra.md</guid><pubDate>Thu, 21 May 2026 13:18:53 GMT</pubDate></item><item><title><![CDATA[More function sequences]]></title><description><![CDATA[Definition: Bounded function sequences where is pointwise bounded if is bounded, for every . is uniformly bounded if there exists an such that for every and .
+Definition: Equicontinuity
+A family of functions is equicontinuous if there for every exists a such that for all .
+We see immediately that if is equicontinuous, then every function in it is uniformly continuous.Theorem
+Let be pointwise bounded, where is countable. Then there exists a subsequence which is pointwise convergent.
+Proof:
+Let . Since is bounded, there exists a subsequence such that converges. Since is bounded, there exists a subsequence such that converges. Continue this indefinitely. Then converges pointwise.
+Theorem
+Let be compact, and converge uniformly on . Then is equicontinuous on .
+Proof:
+Let and let . We know that and all are continuous, meaning they are also uniformly continuous since is compact. This means there exists such that Since converges uniformly, there also exists such that We can thus take , since then the criterion clearly holds for , and for we get Theorem
+Let be compact. Then there exists a countable subset which is dense in .
+Proof:
+For every , take open -balls around each point in , and let be the finite set of midpoints of a finite subcover of this open cover. Then is countable, and for every and there is such that and thus for some , so is dense.
+Theorem
+Let be compact, , and let be pointwise bounded and equicontinuous on . Then is uniformly bounded on . has a uniformly convergent subsequence. Proof:
+Let be countable and dense in and let be pointwise convergent on . Let . By equicontinuity there exists such that Cover with finitely many -balls with midpoints . Each is bounded by some , meaning all on each -ball are bounded by , meaning all on are uniformly bounded by .
+For each there exists such that Let . Then, for all and there exists with and thus Relative compactness
+A subset is relatively compact if is compact.
+Corollary: Arzelà-Ascoli
+Let be a compact metric space and be a family of functions in . Then is relatively compact if and only if is uniformly bounded and equicontinuous.
+Proof:
+: Every sequence then has a uniformly convergent subsequence, and if we must have . Sequential compactness is equivalent to compactness in metric spaces, so is compact.
+: is then bounded in , meaning it is uniformly bounded. Now, let . Since is compact, let . Choose such that for every , Then, for any there exists with , so we get meaning is indeed equicontinuous.
+Theorem: Weierstrass approximation
+If is a continuous complex function on , then there exists a sequence of polynomials on such that uniformly on . If is real, may be taken real.
+Proof idea:
+We can WLOG assume and . Take where is chosen such that . We see that on any where . Now set where we take to be outside of . We get that which is a polynomial in , which is real if is. Now take and choose such that With we now get that where the first two terms can be made arbitrarily small since on , and the third term is at most .
+]]></description><link>matematik/real-analysis/raw-notes/more-function-sequences.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/More function sequences.md</guid><pubDate>Thu, 21 May 2026 12:29:51 GMT</pubDate></item><item><title><![CDATA[Function sequences]]></title><description><![CDATA[Definition: Convergence of functions
+Let be a sequence of complex valued functions on a set .
+If the sequence is convergent for every , we can define such that and we say that pointwise on .
+Definition: Uniform convergence of functions
+Let be a sequence of complex valued functions on a set .
+We say that converges uniformly on to a function if there for every exists an such that Clearly uniform convergence convergence.Definition: Series of functions
+Given complex valued functions on a set , we say that converges (uniformly) if the sequence where converges (uniformly).
+Theorem
+Let on . Then uniformly on for every there exists such that Proof:
+: Let and let such that . Then, for all we have : Let and let such that for all . Taking we get .
+Theorem
+If for every and , and converges, then converges uniformly.
+Proof:
+For every we get which by convergence of is less than any whenever for some .
+Theorem
+Let uniformly on , let be a limit point of and suppose Then converges and or in other words, Proof:
+Let . By uniform convergence there exists such that Taking we get , meaning is Cauchy convergent, meaning it converges to some . There exists such that and Take some . Then there exists such that Corollary
+If is a sequence of continuous maps and uniformly, then is continuous.
+Definition: Let be a metric space. is the space of complex valued, continuous, bounded maps on .
+Note that is a vector space.Definition: Supremum norm
+The supremum norm on is given by We can easily verify that the supremum norm on is a metric.Theorem in uniformly.
+Proof:
+We have in iff as , iff there for every exists such that which by definition is uniform convergence.
+Theorem along with the supremum norm is a complete metric space.
+Proof:
+Let be a Cauchy sequence in . By a previous theorem, being Cauchy is equivalent to it converging uniformly to some map . By a previous corollary, is continuous. For large we have meaning for every , and since is bounded so must be. Thus .
+Theorem
+Let on and uniformly. Then on and Proof:
+Let , and let such that . Since , take some partition such that . Then Corollary
+If on and on and this series converges uniformly, then Theorem
+Let be continuously differentiable on and let pointwise on , and assume the sequence converges uniformly on . Then is differentiable and Proof:
+Let . Since converges uniformly and each is continuous, is continuous. We have meaning from which it follows that .
+Theorem
+Let be differentiable on and for some . Assume converges uniformly on . Then converges uniformly on to some , and Proof left out
+]]></description><link>matematik/real-analysis/raw-notes/function-sequences.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Function sequences.md</guid><pubDate>Thu, 21 May 2026 10:13:27 GMT</pubDate></item><item><title><![CDATA[Riemann-Stieltjes integral]]></title><description><![CDATA[Definition: Partition of , Riemann integral
+A partition of is a sequence of finitely many points We define . If is bounded on we define We also define the upper sums and the lower sums With these we define the upper integral and the lower integral If and exist and , then we say that is Riemann-integrable on , denoted , and define Definition: Riemann-Stieltjes
+Let be increasing on , and let be a partition of . Let . Let With these we define the upper integral and the lower integral If and exist and , then we say that is Riemann-Stieltjes-integrable with respect to on , denoted , and define Definition: Refinement
+A partition of is a refinement of another partition of if .
+If are partitions of , then is their common refinement.
+Theorem
+If , then Proof:
+Let and . Then, for each interval there are such that and . We then have and for every , meaning from which it follows that . The second inequality follows in the same way.
+Theorem
+Proof:
+Given two partitions , let . Then we have By fixing and taking the infimum over we get and now taking the supremum over the inequality follows.
+Theorem
+Let be bounded. Then for every there exists a partition of such that .
+Proof:
+Let .
+: Let . Let be a partition where and let be a partition where . By letting we get : Clear since .
+Theorem
+Let be continuous. Then .
+Proof:
+Since is compact, is uniformly continuous on . Take some . Then there exists a such that . Let such that and let be a partition of where . Then Theorem
+Let be bounded with finitely many discontinuities, and let be continuous wherever is discontinuous. Then .
+Proof:
+Idea: Take partition where discontinuities are covered with sufficiently small intervals to let the boundedness of bound their contribution sufficiently. Let uniform continuity everywhere else take care of the rest.
+Take some . Let and let be the set of discontinuities for . Cover with finitely many disjoint intervals such that and such that each point in is interior to some interval. Then is compact and is continuous on , thus uniformly continuous. Choose such that whenever for . Take a partition such that each and , and such that , and furthermore such that whenever is not some . We know that each and that if is not some . Thus Theorem
+Let on such that on , and let be continuous on and . Then .
+Proof:
+Take some . Since is uniformly continuous there is some with and whenever . There is some partition such that . Let and be as usual for and and be the corresponding bounds for . Distribute among sets and where if , otherwise . Then, if we have , and otherwise we have where . This means It follows that Theorem
+If on , then .
+Proof:
+We have and since composing with continuous functions preserves integrability, it follows that .
+Theorem
+Let on . Let on . Then is uniformly continuous on , and if is continuous in , then is differentiable in and .
+Proof:
+Let and take some . Since is bounded, let . We then know that meaning that if we have so by taking we get , so indeed is continuous. Now suppose is continuous in and take some . Then there exists a where whenever , meaning meaning Theorem
+Let on . If there exists such that on , then Proof:
+Take some partition . For each , by the mean value theorem we know there exists a where , meaning and since it follows that is trapped between all under- and upper sums, so it must in fact be equal to the integral.
+Theorem
+Suppose . Then and in this case, Proof:
+Let . Then there exists a partition where The mean value theorem gives where Whenever we then have Let . We then get This means and in the same way we get that Theorem
+Let be increasing and surjective, and . Then Proof left out
+]]></description><link>matematik/real-analysis/raw-notes/riemann-stieltjes-integral.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Riemann-Stieltjes integral.md</guid><pubDate>Thu, 21 May 2026 09:50:58 GMT</pubDate></item><item><title><![CDATA[Continuity]]></title><description><![CDATA[Remark
 We take to be metric spaces with metric .
 Definition: Continuity
 Let and . We say that is continuous in a point if there for every exists a such that We say that is continuous on if it is continuous in every point in .
@@ -97,51 +325,14 @@ The neighborhoods of are .
 The neighborhoods of are .
 The neighborhoods of are .
 Let and . Let . We then say that if there for every neighborhood of exists a neighborhood of such that and .
-]]></description><link>matematik/real-analysis/raw-notes/continuity.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Continuity.md</guid><pubDate>Fri, 27 Feb 2026 07:34:10 GMT</pubDate></item><item><title><![CDATA[Limits]]></title><description><![CDATA[Remark
+]]></description><link>matematik/real-analysis/raw-notes/continuity.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Continuity.md</guid><pubDate>Fri, 27 Mar 2026 10:15:48 GMT</pubDate></item><item><title><![CDATA[Limits]]></title><description><![CDATA[Remark
 We take to be metric spaces with metric .
 Definition: Limit
 Let , let , and let be a limit point of . Then we say that if there for every exists a such that Theorem
 Let , let , and let be a limit point of . Then if and only if for every sequence in such that and .
 Proof:
 : Take such a sequence . Let . Then there exists such that . Since all but finitely many of lie -close to , there exists such that : Suppose it is not true that . Then there exists an such that for every there exists some with and . Choose such an for every . Then but since for every .
-]]></description><link>matematik/real-analysis/raw-notes/limits.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Limits.md</guid><pubDate>Thu, 26 Feb 2026 22:10:40 GMT</pubDate></item><item><title><![CDATA[Series]]></title><description><![CDATA[Definition: Series
-Given a real sequence , its series is the formal sum Its :th partial sum is . If exists, we say that the series converges and that Theorem
-A series converges if and only if for every there exists such that for all .
-Proof:
-Follows directly from the series being convergent iff its partial sum sequence is convergent, iff it is Cauchy convergent.
-Corollary
-If converges, then .
-Examples Geometric series: if , otherwise it diverges. converges if , otherwise diverges. Definition: We define Euler's number Remark
-Euler's number exists since it is increasing and bounded by : Theorem
-Proof:
-We have for every . We also have Thus, fixing with we have so bringing we get for every , meaning it is in fact .
-Theorem is irrational.
-Proof:
-Suppose . Then meaning But we also have and clearly the sum is not .
-Theorem: Root test
-Let be a series, and define . Then, If , then the series is convergent
-If , then the series is divergent Proof:
-If we can choose such that meaning there exists such that for every . Then meaning it is convergent. If instead we get a subsequence where meaning the terms do not go to zero, so the sum cannot be convergent.
-Theorem: Ratio test
-Let be a series. Then, If , the series converges.
-If for all for some , the series diverges. Proof: Choose some such that . Then there exists such that for every , meaning Same principle, but we get a diverging geometric series. Definition: Power series
-Given a sequence of complex numbers, its corresponding power series is the formal sum where the 's are called its coefficients.
-Theorem: Radius of convergence
-Let be a power series. Let and let . Then the series where converges if , and diverges if .
-Proof:
-Use the root test: we get which is if , and if .
-Theorem: Partial sums
-Let and be real sequences. Let , and let . Then, for all , Proof: Theorem: Leibniz
-Let be a nonnegative sequence where and . Then is convergent.
-Proof:
-Let be the :th partial sum. Then is increasing and is decreasing. The former is limited above by whereas the latter is limited below by . Thus both converge, and since they converge to the same limit, and thus the whole series converges.
-Definition: Absolute convergence
-A series is converges absolutely if converges.
-Theorem
-if converges absolutely, then it converges.
-Proof:
-Follows since so Cauchy convergence of the partial sums is implied.
-]]></description><link>matematik/real-analysis/raw-notes/series.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Series.md</guid><pubDate>Thu, 26 Feb 2026 21:55:52 GMT</pubDate></item><item><title><![CDATA[Sequences]]></title><description><![CDATA[Remark
+]]></description><link>matematik/real-analysis/raw-notes/limits.html</link><guid isPermaLink="false">Matematik/Real analysis/Raw notes/Limits.md</guid><pubDate>Thu, 26 Feb 2026 22:10:40 GMT</pubDate></item><item><title><![CDATA[Sequences]]></title><description><![CDATA[Remark
 We take to be a metric space with metric .
 Definition: Sequence, convergence
 A sequence in is a map converges to a point if for every there exists an such that for every .
@@ -236,19 +427,7 @@ A vector is called a (global) optimal solution whenever for all .
 <br><a data-href="No constraints" href="matematik/optimization/quadratic-optimization/no-constraints.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">No constraints</a><a data-href="No constraints" href="matematik/optimization/quadratic-optimization/no-constraints.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">No constraints</a>
 <br><a data-tooltip-position="top" aria-label="Matematik/Optimization/Quadratic optimization/Equality constraints" data-href="Matematik/Optimization/Quadratic optimization/Equality constraints" href="matematik/optimization/quadratic-optimization/equality-constraints.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Equality constraints</a><a data-tooltip-position="top" aria-label="Matematik/Optimization/Quadratic optimization/Equality constraints" data-href="Matematik/Optimization/Quadratic optimization/Equality constraints" href="matematik/optimization/quadratic-optimization/equality-constraints.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Equality constraints</a>
 <br><a data-href="Least squares" href="matematik/optimization/quadratic-optimization/least-squares.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Least squares</a><a data-href="Least squares" href="matematik/optimization/quadratic-optimization/least-squares.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Least squares</a>
-]]></description><link>matematik/optimization.html</link><guid isPermaLink="false">Matematik/Optimization.md</guid><pubDate>Thu, 08 Jan 2026 16:41:53 GMT</pubDate></item><item><title><![CDATA[canvas test]]></title><description><![CDATA[Optimization theory regards methods of solving problems that are of the general following form:Definition: Optimization problem, feasible region, cost function
-An optimization problem is a problem of the following form: where is a set called the feasible region, and where is a real-valued function called the cost function or objective function.
-Remark
-Unless otherwise stated, is assumed to be a subset of .
-Definition: Optimal value, feasible solution, optimal solution
-The optimal value of an optimization problem is .
-A vector is called a feasible solution whenever .
-A vector is called a (global) optimal solution whenever for all .
-Remark
-If an optimal solution exists, then is the optimal value. This is because is a minimum of and is thus the infimum.
-Definition: Local optimal solution, global optimal solution
-A vector is called a local optimal solution if there exists a such that whenever such that , .
-The optimization problemDuality (optimization) - Wikipedia]]></description><link>matematik/optimization/canvas-test.html</link><guid isPermaLink="false">Matematik/Optimization/canvas test.canvas</guid><pubDate>Wed, 07 Jan 2026 23:04:16 GMT</pubDate></item><item><title><![CDATA[Minimizers]]></title><description><![CDATA[Remark
+]]></description><link>matematik/optimization.html</link><guid isPermaLink="false">Matematik/Optimization.md</guid><pubDate>Thu, 08 Jan 2026 16:41:53 GMT</pubDate></item><item><title><![CDATA[Minimizers]]></title><description><![CDATA[Remark
 Here, we consider a general optimization problem where and is any function.
 Definition: Global minimizer, local minimizer
 A point is a global minimizer of if for all .
@@ -501,12 +680,7 @@ A solution is a basic feasible solution whenever it is basic and feasible.
 A solution is called degenerate whenever some coordinate of is zero, otherwise non-degenerate.
 We can now formalize and prove our initial intuition.Theorem: The fundamental theorem of linear programming If there exists a feasible solution, then there exists a basic feasible solution.
 If there exists an optimal solution, then there exists an optimal basic feasible solution. Proof: Let be a feasible solution. Let be the distinct indices of the nonzero coordinates of . If we are done. Suppose . Then cannot be injective. Take some nonzero and WLOG, assume some coordinate of is negative (otherwise, we could negate to get such a vector). Then there is some smallest such that has some zero coordinate. Since we choose the smallest such , the rest of the coordinates of remain nonnegative. Thus is another feasible solution with one more zero coordinate than . Repeat until .
-Starting from an optimal solution , the exact same algorithm works. Notice that if , then , but then there exists a with a feasible solution and meaning contradicting the optimality of . Thus we must always have and so at no step of the algorithm does the cost change. ]]></description><link>matematik/optimization/linear-optimization/basic-feasible-solutions.html</link><guid isPermaLink="false">Matematik/Optimization/Linear optimization/Basic feasible solutions.md</guid><pubDate>Mon, 29 Dec 2025 19:32:26 GMT</pubDate></item><item><title><![CDATA[Anteckningar]]></title><description><![CDATA[
-<a data-href="Linjär algebra" href="matematik/linjär-algebra.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Linjär algebra</a><a data-href="Linjär algebra" href="matematik/linjär-algebra.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Linjär algebra</a>
-<br><a data-href="Discrete mathematics" href="matematik/discrete-mathematics.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Discrete mathematics</a><a data-href="Discrete mathematics" href="matematik/discrete-mathematics.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Discrete mathematics</a>
-<br><a data-href="Groups and rings, Lectures" href="matematik/groups-and-rings,-lectures.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Groups and rings, Lectures</a><a data-href="Groups and rings, Lectures" href="matematik/groups-and-rings,-lectures.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups and rings, Lectures</a>
-<br><a data-href="Optimization" href="matematik/optimization.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Optimization</a><a data-href="Optimization" href="matematik/optimization.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Optimization</a>
-]]></description><link>anteckningar.html</link><guid isPermaLink="false">Anteckningar.md</guid><pubDate>Mon, 29 Dec 2025 15:32:28 GMT</pubDate></item><item><title><![CDATA[Duality]]></title><description><![CDATA[Remark
+Starting from an optimal solution , the exact same algorithm works. Notice that if , then , but then there exists a with a feasible solution and meaning contradicting the optimality of . Thus we must always have and so at no step of the algorithm does the cost change. ]]></description><link>matematik/optimization/linear-optimization/basic-feasible-solutions.html</link><guid isPermaLink="false">Matematik/Optimization/Linear optimization/Basic feasible solutions.md</guid><pubDate>Mon, 29 Dec 2025 19:32:26 GMT</pubDate></item><item><title><![CDATA[Duality]]></title><description><![CDATA[Remark
 Here, we consider a <a data-tooltip-position="top" aria-label="The linear optimization problem" data-href="The linear optimization problem" href="matematik/optimization/linear-optimization/the-linear-optimization-problem.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">linear optimization problem</a><a data-tooltip-position="top" aria-label="The linear optimization problem" data-href="The linear optimization problem" href="matematik/optimization/linear-optimization/the-linear-optimization-problem.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">linear optimization problem</a> in standard form, where and we assume .
 Given a linear optimization problem , one can instead consider its dual problem. The idea is that minimizing the cost is the same thing as maximizing a lower bound for the cost. We notice that given a we have This means that whenever we get as a lower bound for the cost . All such 's give us a valid lower bound, and we will discover that the largest such lower bound is actually the optimal value, i.e., it gives a perfect lower bound.Definition: Dual problem
 The dual problem to is Theorem: Weak duality
@@ -567,34 +741,25 @@ A field is a commutative skew field.
 <br><a data-href="Ideals" href="matematik/groups-and-rings/lecture-notes/ideals.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Ideals</a><a data-href="Ideals" href="matematik/groups-and-rings/lecture-notes/ideals.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Ideals</a>
 <br><a data-href="Ring homomorphisms and Factor rings" href="matematik/groups-and-rings/lecture-notes/ring-homomorphisms-and-factor-rings.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Ring homomorphisms and Factor rings</a><a data-href="Ring homomorphisms and Factor rings" href="matematik/groups-and-rings/lecture-notes/ring-homomorphisms-and-factor-rings.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Ring homomorphisms and Factor rings</a>
 <br><a data-href="Euclidean domains" href="matematik/groups-and-rings/lecture-notes/euclidean-domains.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Euclidean domains</a><a data-href="Euclidean domains" href="matematik/groups-and-rings/lecture-notes/euclidean-domains.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Euclidean domains</a>
-Rings Comm. rings Integral domains GCD domains UFD's PID's Euclidean domains Fields.]]></description><link>matematik/groups-and-rings,-lectures.html</link><guid isPermaLink="false">Matematik/Groups and rings, Lectures.md</guid><pubDate>Fri, 26 Sep 2025 13:49:27 GMT</pubDate></item><item><title><![CDATA[Subgroups]]></title><description><![CDATA[<a href=".?query=tag:matematik-groups" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#matematik-groups">#matematik-groups</a> <br>Definition: Submonoid, subgroup
-Let be sets, and . If and are <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Monoids</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Monoids</a> under the same operation, is called a submonoid of . If and are <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Groups</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups</a> under the same operation, is called a subgroup of and we write .
-We see that every group contains two trivial subgroups: itself and the trivial group . If a subgroup is not one of these two trivial subgroups, we often call it nontrivial.From this definition the following theorems follow directly and so we state them without proofs.Theorem
-Let be a monoid with unit , and . Then is a submonoid of if and only if and for all .
+Rings Comm. rings Integral domains GCD domains UFD's PID's Euclidean domains Fields.]]></description><link>matematik/groups-and-rings,-lectures.html</link><guid isPermaLink="false">Matematik/Groups and rings, Lectures.md</guid><pubDate>Fri, 26 Sep 2025 13:49:27 GMT</pubDate></item><item><title><![CDATA[Natural numbers]]></title><description><![CDATA[<a href=".?query=tag:matematik-discmath" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#matematik-discmath">#matematik-discmath</a> <br>Definition: Axioms of natural numbers
+We define the natural numbers to be a set together with an operation addition and an operation multiplication such that is a <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups" data-href="Matematik/Groups and rings/Lecture notes/Groups" href="matematik/groups-and-rings/lecture-notes/groups.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">commutative semigroup</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups" data-href="Matematik/Groups and rings/Lecture notes/Groups" href="matematik/groups-and-rings/lecture-notes/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">commutative semigroup</a> and is a <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups" data-href="Matematik/Groups and rings/Lecture notes/Groups" href="matematik/groups-and-rings/lecture-notes/groups.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">commutative monoid</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups" data-href="Matematik/Groups and rings/Lecture notes/Groups" href="matematik/groups-and-rings/lecture-notes/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">commutative monoid</a> with unit , with the following axioms: If for any , then . for every <br><a data-tooltip-position="top" aria-label="^bb32a3" data-href="#^bb32a3" href="#^bb32a3" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Law of trichotomy</a><a data-tooltip-position="top" aria-label="^bb32a3" data-href="#^bb32a3" href="#^bb32a3" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Law of trichotomy</a>
+<br><a data-tooltip-position="top" aria-label="Induction > ^07b21a" data-href="Induction#^07b21a" href="matematik/discrete-mathematics/induction.html#^07b21a" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Principle of induction</a><a data-tooltip-position="top" aria-label="Induction > ^07b21a" data-href="Induction#^07b21a" href="matematik/discrete-mathematics/induction.html#^07b21a" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Principle of induction</a> Definition: Multiple of is a multiple of , denoted , if there exists a such that .
 Theorem
-Let be a group and . Then is a subgroup of if and only if is a submonoid of and for all .
-We also find that we can find an often easier equivalent requirement for a subset to be a subgroup.Theorem
-Let be a group and where . Then is a subgroup of if and only if , or in other words, for all .
+If and , then for every .
 Proof:
-If is a subgroup of , it is clear that since is a group and thus closed under composition and inverses. If instead , we can take any and know that , so . This also means for all , which finally means that for all . So is indeed a subgroup of . ]]></description><link>matematik/groups-and-rings/lecture-notes/subgroups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Lecture notes/Subgroups.md</guid><pubDate>Fri, 26 Sep 2025 13:48:18 GMT</pubDate></item><item><title><![CDATA[Rings]]></title><description><![CDATA[Definition: Ring
-A ring is a set together with two maps and such that is an <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Abelian group</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Abelian group</a>, is a monoid, is distributive over , meaning for every . The additive and multiplicative unit elements are denoted and , respectively, and are called identities in the context of rings.
-The additive inverse of is denoted .
+We have and . This gives by the distributative property.
+Definition: Less than, greater than
+Let . We say that is less than , denoted , if there exists an such that . If is less than , we say that is greater than and write .
+Axiom: Law of trichotomy
+Exactly one of the three statements is true for any .
+An important consequence of this definition is that for every .Theorem: Reflexivity of If and , then .
+Proof:
+We have and , so .
 Theorem
-Let be a ring. Then for every .
-Proof: , and the same for .
-, and the same for . Definition: Subring, ring extension
-Let be a ring. is a subring of if is a ring and . The pair is called a ring extension.
-Definition: Unit
-Let be a ring. Then whose elements are called units.
-]]></description><link>matematik/groups-and-rings/lecture-notes/rings.html</link><guid isPermaLink="false">Matematik/Groups and rings/Lecture notes/Rings.md</guid><pubDate>Fri, 26 Sep 2025 13:48:18 GMT</pubDate></item><item><title><![CDATA[Permutation groups]]></title><description><![CDATA[<a href=".?query=tag:matematik-groups" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#matematik-groups">#matematik-groups</a> Definition: Permutation group
-Let be a set. We then define the permutation group on as together with composition .
-<br>We can quite easily see that for any , is a <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups" data-href="Matematik/Groups and rings/Lecture notes/Groups" href="matematik/groups-and-rings/lecture-notes/groups.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Group</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups" data-href="Matematik/Groups and rings/Lecture notes/Groups" href="matematik/groups-and-rings/lecture-notes/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Group</a> under composition . However, it is not necessarily commutative since the compositions of bijections are not necessarily commutative; swapping the first two elements and then the second two among three elements is different from swapping the second two and then the first two.Permutation groups are groups
-Let be a set. Then is a group.
+Let . If , then .
 Proof:
-If we know since the composition of two bijections is a bijection. Compositions are associative, and by definition invertible with the identity on as the unit element.
-Notation
-If , we define and call it the symmetric group of degree or the group of permutations of elements.
-]]></description><link>matematik/groups-and-rings/lecture-notes/permutation-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Lecture notes/Permutation groups.md</guid><pubDate>Fri, 26 Sep 2025 13:48:18 GMT</pubDate></item><item><title><![CDATA[Homomorphisms]]></title><description><![CDATA[<a href=".?query=tag:matematik-groups" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#matematik-groups">#matematik-groups</a> <br>Definition: Homomorphism
+Assume . WLOG, let . Then , so which means which is clearly false since and only one can be true at once.
+]]></description><link>matematik/discrete-mathematics/natural-numbers.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Natural numbers.md</guid><pubDate>Fri, 26 Sep 2025 13:48:18 GMT</pubDate></item><item><title><![CDATA[Homomorphisms]]></title><description><![CDATA[<a href=".?query=tag:matematik-groups" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#matematik-groups">#matematik-groups</a> <br>Definition: Homomorphism
 Let and be <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Monoids</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Monoids</a> with units , respectively. A map is a monoid homomorphism if and for all . If are <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Groups</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups</a>, we call a group homomorphism.
 Theorem
 Let be a map between groups. If for all , is a group homomorphism, and .
@@ -621,25 +786,34 @@ Let be a group and be a homomorphism. Then we have So any homomorphism from to a
 Let be a group and . We define the (left) translation map by as where for all .
 We note that translation by is generally not a homomorphism since . However, the map that takes to is an injective group homomorphism since and every if since and . This means can be identified with its image in , which thus is a subgroup of (for finite groups, this is the result of Cayley's theorem).Of course, we can also define the right translation map, and get basically the same results, but the maps are of course generally not the same. This asymmetry leads us to also look at conjugation.Definition Conjugation
 Let be a group and . We define the conjugation by as where for all . is also called an inner isomorphism of . And we define .
-We know that because , and is clearly an inverse of . This time, however, we only get that the map that takes to is still a homomorphism, but generally no longer an injective one. It's a homomorphism since and , but generally not injective since for example, if is abelian, we get for every .]]></description><link>matematik/groups-and-rings/lecture-notes/homomorphisms.html</link><guid isPermaLink="false">Matematik/Groups and rings/Lecture notes/Homomorphisms.md</guid><pubDate>Fri, 26 Sep 2025 13:48:18 GMT</pubDate></item><item><title><![CDATA[Natural numbers]]></title><description><![CDATA[<a href=".?query=tag:matematik-discmath" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#matematik-discmath">#matematik-discmath</a> <br>Definition: Axioms of natural numbers
-We define the natural numbers to be a set together with an operation addition and an operation multiplication such that is a <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups" data-href="Matematik/Groups and rings/Lecture notes/Groups" href="matematik/groups-and-rings/lecture-notes/groups.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">commutative semigroup</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups" data-href="Matematik/Groups and rings/Lecture notes/Groups" href="matematik/groups-and-rings/lecture-notes/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">commutative semigroup</a> and is a <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups" data-href="Matematik/Groups and rings/Lecture notes/Groups" href="matematik/groups-and-rings/lecture-notes/groups.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">commutative monoid</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups" data-href="Matematik/Groups and rings/Lecture notes/Groups" href="matematik/groups-and-rings/lecture-notes/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">commutative monoid</a> with unit , with the following axioms: If for any , then . for every <br><a data-tooltip-position="top" aria-label="^bb32a3" data-href="#^bb32a3" href="#^bb32a3" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Law of trichotomy</a><a data-tooltip-position="top" aria-label="^bb32a3" data-href="#^bb32a3" href="#^bb32a3" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Law of trichotomy</a>
-<br><a data-tooltip-position="top" aria-label="Induction > ^07b21a" data-href="Induction#^07b21a" href="matematik/discrete-mathematics/induction.html#^07b21a" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Principle of induction</a><a data-tooltip-position="top" aria-label="Induction > ^07b21a" data-href="Induction#^07b21a" href="matematik/discrete-mathematics/induction.html#^07b21a" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Principle of induction</a> Definition: Multiple of is a multiple of , denoted , if there exists a such that .
+We know that because , and is clearly an inverse of . This time, however, we only get that the map that takes to is still a homomorphism, but generally no longer an injective one. It's a homomorphism since and , but generally not injective since for example, if is abelian, we get for every .]]></description><link>matematik/groups-and-rings/lecture-notes/homomorphisms.html</link><guid isPermaLink="false">Matematik/Groups and rings/Lecture notes/Homomorphisms.md</guid><pubDate>Fri, 26 Sep 2025 13:48:18 GMT</pubDate></item><item><title><![CDATA[Permutation groups]]></title><description><![CDATA[<a href=".?query=tag:matematik-groups" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#matematik-groups">#matematik-groups</a> Definition: Permutation group
+Let be a set. We then define the permutation group on as together with composition .
+<br>We can quite easily see that for any , is a <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups" data-href="Matematik/Groups and rings/Lecture notes/Groups" href="matematik/groups-and-rings/lecture-notes/groups.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Group</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups" data-href="Matematik/Groups and rings/Lecture notes/Groups" href="matematik/groups-and-rings/lecture-notes/groups.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Group</a> under composition . However, it is not necessarily commutative since the compositions of bijections are not necessarily commutative; swapping the first two elements and then the second two among three elements is different from swapping the second two and then the first two.Permutation groups are groups
+Let be a set. Then is a group.
+Proof:
+If we know since the composition of two bijections is a bijection. Compositions are associative, and by definition invertible with the identity on as the unit element.
+Notation
+If , we define and call it the symmetric group of degree or the group of permutations of elements.
+]]></description><link>matematik/groups-and-rings/lecture-notes/permutation-groups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Lecture notes/Permutation groups.md</guid><pubDate>Fri, 26 Sep 2025 13:48:18 GMT</pubDate></item><item><title><![CDATA[Rings]]></title><description><![CDATA[Definition: Ring
+A ring is a set together with two maps and such that is an <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Abelian group</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Abelian group</a>, is a monoid, is distributive over , meaning for every . The additive and multiplicative unit elements are denoted and , respectively, and are called identities in the context of rings.
+The additive inverse of is denoted .
 Theorem
-If and , then for every .
-Proof:
-We have and . This gives by the distributative property.
-Definition: Less than, greater than
-Let . We say that is less than , denoted , if there exists an such that . If is less than , we say that is greater than and write .
-Axiom: Law of trichotomy
-Exactly one of the three statements is true for any .
-An important consequence of this definition is that for every .Theorem: Reflexivity of If and , then .
-Proof:
-We have and , so .
+Let be a ring. Then for every .
+Proof: , and the same for .
+, and the same for . Definition: Subring, ring extension
+Let be a ring. is a subring of if is a ring and . The pair is called a ring extension.
+Definition: Unit
+Let be a ring. Then whose elements are called units.
+]]></description><link>matematik/groups-and-rings/lecture-notes/rings.html</link><guid isPermaLink="false">Matematik/Groups and rings/Lecture notes/Rings.md</guid><pubDate>Fri, 26 Sep 2025 13:48:18 GMT</pubDate></item><item><title><![CDATA[Subgroups]]></title><description><![CDATA[<a href=".?query=tag:matematik-groups" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#matematik-groups">#matematik-groups</a> <br>Definition: Submonoid, subgroup
+Let be sets, and . If and are <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Monoids</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Monoids</a> under the same operation, is called a submonoid of . If and are <a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Groups</a><a data-tooltip-position="top" aria-label="Matematik/Groups and rings/Lecture notes/Groups > ^5927de" data-href="Matematik/Groups and rings/Lecture notes/Groups#^5927de" href="matematik/groups-and-rings/lecture-notes/groups.html#^5927de" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups</a> under the same operation, is called a subgroup of and we write .
+We see that every group contains two trivial subgroups: itself and the trivial group . If a subgroup is not one of these two trivial subgroups, we often call it nontrivial.From this definition the following theorems follow directly and so we state them without proofs.Theorem
+Let be a monoid with unit , and . Then is a submonoid of if and only if and for all .
 Theorem
-Let . If , then .
+Let be a group and . Then is a subgroup of if and only if is a submonoid of and for all .
+We also find that we can find an often easier equivalent requirement for a subset to be a subgroup.Theorem
+Let be a group and where . Then is a subgroup of if and only if , or in other words, for all .
 Proof:
-Assume . WLOG, let . Then , so which means which is clearly false since and only one can be true at once.
-]]></description><link>matematik/discrete-mathematics/natural-numbers.html</link><guid isPermaLink="false">Matematik/Discrete mathematics/Natural numbers.md</guid><pubDate>Fri, 26 Sep 2025 13:48:18 GMT</pubDate></item><item><title><![CDATA[Free modules]]></title><description><![CDATA[where is on component , elsewhere.These span all of , that is, any element , and these are linearly independent, that is, Observe that that is, each is determined by where it sends which is .
+If is a subgroup of , it is clear that since is a group and thus closed under composition and inverses. If instead , we can take any and know that , so . This also means for all , which finally means that for all . So is indeed a subgroup of . ]]></description><link>matematik/groups-and-rings/lecture-notes/subgroups.html</link><guid isPermaLink="false">Matematik/Groups and rings/Lecture notes/Subgroups.md</guid><pubDate>Fri, 26 Sep 2025 13:48:18 GMT</pubDate></item><item><title><![CDATA[Free modules]]></title><description><![CDATA[where is on component , elsewhere.These span all of , that is, any element , and these are linearly independent, that is, Observe that that is, each is determined by where it sends which is .
 Surjectivity of generate (span) .
 Injectivity of linearly ind. isomorphism basis.Proposition a submodule of .
 a. If is finitely generated, then so is .
@@ -2137,7 +2311,81 @@ Vi definierar multiplikation enligt När vi nu alltså räknar med yttre potense
 Den yttre algebran av ett vektorrum med bas är ett en algebra med vektorrum som ges av<br>
 och multiplikation som ges av <a data-tooltip-position="top" aria-label="^281be4" data-href="#^281be4" href="#^281be4" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Definition: Multiplikation av yttre potenser</a><a data-tooltip-position="top" aria-label="^281be4" data-href="#^281be4" href="#^281be4" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition: Multiplikation av yttre potenser</a>.
 Vi noterar här att om är ändligdimensionellt så är , samt att om , där betecknar vektorrummet med bara nollvektorn. Vi får även att
-]]></description><link>matematik/linjär-algebra/yttre-algebran.html</link><guid isPermaLink="false">Matematik/Linjär algebra/Yttre algebran.md</guid><pubDate>Mon, 16 Dec 2024 18:17:39 GMT</pubDate></item><item><title><![CDATA[JSXGraph test]]></title><link>jsxgraph-test.html</link><guid isPermaLink="false">JSXGraph test.md</guid><pubDate>Fri, 17 Oct 2025 16:58:11 GMT</pubDate></item><item><title><![CDATA[Kladd]]></title><link>kladd.html</link><guid isPermaLink="false">Kladd.md</guid><pubDate>Fri, 17 Oct 2025 16:51:00 GMT</pubDate></item><item><title><![CDATA[Kladd katex 4]]></title><link>kladd-katex-4.html</link><guid isPermaLink="false">Kladd katex 4.md</guid><pubDate>Fri, 17 Oct 2025 15:25:16 GMT</pubDate></item><item><title><![CDATA[jsxgraph test]]></title><link>jsxgraph-test.html</link><guid isPermaLink="false">jsxgraph test.html</guid><pubDate>Fri, 17 Oct 2025 14:05:49 GMT</pubDate></item><item><title><![CDATA[Kladd katex 3]]></title><description><![CDATA[12345−1−2−3−4−5123−1−2−30,0–o+←↓↑→k = 1.00f(x) = e^{\int x}AB]]></description><link>kladd-katex-3.html</link><guid isPermaLink="false">Kladd katex 3.md</guid><pubDate>Fri, 17 Oct 2025 14:07:23 GMT</pubDate></item><item><title><![CDATA[Kladd katex 1]]></title><description><![CDATA[12345−1−2−3−4−5123−1−2−30,00,00,0–o+←↓↑→k=1.00k = 1.00k=1.00f(x)=sin⁡(tx)f(x) = \sin(tx)f(x)=sin(tx)AAABBB]]></description><link>kladd-katex-1.html</link><guid isPermaLink="false">Kladd katex 1.md</guid><pubDate>Fri, 17 Oct 2025 11:45:55 GMT</pubDate></item><item><title><![CDATA[Kladd katex 2]]></title><description><![CDATA[12345−1−2−3−4−5123−1−2−30,00,00,0–o+←↓↑→k=1.00k = 1.00k=1.00f(x)=e∫xf(x) = e^{\int x}f(x)=e∫xAAABBB]]></description><link>kladd-katex-2.html</link><guid isPermaLink="false">Kladd katex 2.md</guid><pubDate>Fri, 17 Oct 2025 11:34:15 GMT</pubDate></item><item><title><![CDATA[Inför tenta]]></title><description><![CDATA[
+]]></description><link>matematik/linjär-algebra/yttre-algebran.html</link><guid isPermaLink="false">Matematik/Linjär algebra/Yttre algebran.md</guid><pubDate>Mon, 16 Dec 2024 18:17:39 GMT</pubDate></item><item><title><![CDATA[13]]></title><description><![CDATA[Formulera Lax ekvivalenssats och visa ett exempel på att stabilitet och konsistens medför konvergens för en numerisk metod som approximerar en partiell differentialekvation.Vi börjar med ett rättställt linjärt problem , och har approximationer . Vi inför begreppen
+Stabilitet: De approximerade lösningsoperatorerna är uniformt begränsade (begränsade av en och samma konstant), och lösningsoperatorn är begränsad.
+Konsistens: och när Konvergens: när .
+Lax ekvivalenssats säger då att stabilitet+konsistens är ekvivalent med konvergens.
+Exempel:
+Vi tar värmeledningsproblemet Fouriertransformering av ekvationen ger och därmed
+Därmed är den exakta lösningsoperatorn för ett tidssteg. Vi jämför nu med differensmetoden: alltså där . Fouriertransformering ger då där alltså . Vi får nu
+Stabilitet: Vi har och därmed är för något ett tillräckligt krav för stabilitet. Vi behöver därmed att inte exploderar och därmed , alltså så stabilitet gäller om .
+Konsistens: Vi har och därmed ty om så gäller och om så gäller Därmed gäller konsistens ty Konvergens följer nu från dessa samt att : Alternativ:Låt vara ett Hilbert-funktionsrum och låt vara ett rättställt linjärt problem. Låt vara ett motsvarande funktionsrum med approximativa funktioner, låt vara projektionen av på , låt vara motsvarande approximerade problem, för alla .Vi inför följande begrepp:
+Stabilitet: Alla är uniformt begränsade (begränsade av en och samma konstant). är begränsad.
+Konsistens: och när .
+Konvergens: när .
+Lax ekvivalenssats säger då att stabilitet+konsistens konvergens.Exempel:
+Vi tar värmeledningsproblemet där och . Fouriertransformering i -led ger Vi tar nu den vanliga finit differens-approximationen med något och . Vi får då att är den exakta operatorn för ett tidssteg. Vi jämför nu med finita differensmetoden, där vi har att där . Fouriertransformering i -led ger där alltså . Vi får nu
+Stabilitet: Vi har så vi har stabilitet om när , d.v.s. , vilket sker om .
+Konsistens: Vi har med Parselvals formel och därmed ty om så gäller med Taylorutveckling att och om så gäller Därmed får vi när , alltså har vi konsistens.
+Konvergens: Följer från stabilitet+konsistens: så eftersom och får vi när .
+Alternativ 3:
+Låt vara ett funktionsrum och ett rum med approximationer. Låt vara ett rättställt linjärt problem i och låt för alla vara motsvarande approximerade problem i . Vi inför följande:
+Stabilitet: Lösningsoperatorerna är uniformt begränsade (begränsade av en och samma konstant) och är begränsad.
+Konsistens: och när .
+Konvergens: när .
+Lax-ekvivalenssats säger då att stabilitet+konsistens=konvergens.
+Exempel:
+Vi tar värmeledningsekvationen på och , med finita differensmetoden, Fouriertransformering i -led av diffekvationen ger Därmed är den exakta lösningsoperatorn för ett tidssteg. För finita differensen får vi med Fouriertransformering där alltså är lösningsoperatorn för finita differensmetoden, givet och .Vi undersöker nu kriterierna för Lax-ekvivalenssats för dessa operatorer.
+Stabilitet: För stabilitet krävs alltså att inte exploderar, d.v.s. att ej exploderar, d.v.s. . Vi har därmed stabilitet om Eftersom gäller detta omm Eftersom har vi alltid , alltså kan inte explodera, så det räcker att för stabilitet.
+Konsistens: Vi har där den sista likheten gäller eftersom om så har vi med Taylorutveckling medan om har vi Därmed går när , så vi har konsistens.
+Konvergens: Följer nu från stabilitet+konsistens: Eftersom är varje och därmed har vi som går mot när , alltså har vi konvergens!
+Alternativ 4:
+Låt vara ett rättställt linjärt problem och låt vara motsvarande approximerade problem, för alla . Vi inför följande begrepp:
+Stabilitet: De approximerade lösningsoperatorerna är uniformt begränsade, d.v.s. begränsade av en och samma konstant, och lösningsoperatorn är begränsad.
+Konsistens: och när .
+Konvergens: när .
+Då gäller att stabilitet+konsistens=konvergens.
+Exempel:
+Vi tar värmeledningsekvationen och betraktar finita differensmetoden med framåtdifferens för tidsderivatan och centraldifferens för rumsderivatan, d.v.s. där . Fouriertransformering i -led av PDE:n ger Därmed är den exakta lösningsoperatorn för ett tidssteg. För finita differensmetoden får vi istället så är den approximerade lösningsoperatorn för ett tidssteg. Vi undersöker nu kraven för ekvivalenssatsen.
+Stabilitet: Vi behöver alltså här att och inte exploderar när . Eftersom kan den ej explodera. Vi får att Eftersom uppfylls detta om Alltså, om så har vi stabilitet.
+Konsistens: Konsistens gäller om när , vilket gäller om . Vi får att eftersom om så gäller med Taylorutveckling att och om gäller Därmed gäller när , alltså har vi konsistens.
+Konvergens: Vi har Från stabilitet vet vi att och därmed att varje , så vi har att Vi vet slutligen att det största värdet av är , samt från konsistens att . Därmed är Med Parsevals identitet räcker det att konvergensen sker i Fourier-rummet.
+]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/13.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/13.md</guid><pubDate>Wed, 11 Mar 2026 20:39:10 GMT</pubDate></item><item><title><![CDATA[10]]></title><description><![CDATA[Bevisa en feluppskattning av finita elementmetoden för i med randvillkoren .Vi skriver först problemet på variationsform. Låt Vi tar en testfunktion och får vilket med partiell integration blir Definiera därmed Problemet blir då att hitta s.a. för alla .För finita elementmetoden tar vi något och definierar Målet med finita differensmetoden är då att hitta s.a. för alla . För alla finns då ett s.a. där normen ges av .Bevis:
+Vi vet att det för alla finns s.a. samt att det finns och s.a. och för alla . Vi har då att och därmed Eftersom vi har får vi ]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/10.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/10.md</guid><pubDate>Wed, 11 Mar 2026 13:22:14 GMT</pubDate></item><item><title><![CDATA[4]]></title><description><![CDATA[Formulera och härled en maximumprincip för värmeledningsekvationen och använd detta för att visa entydighet av lösningar
+Värmeledningsekvationen är , och vi betraktar den på rektangeln given av och . Maximumprincipen säger att antar det största värdet antingen initialt () eller på sidorna ( eller ).Bevis: Låt vara det största värdet antar längs sidorna , och . Låt och sätt . Målet är att visa att på hela , vilket ger att för alla , och därmed . Vi vet att längs sidorna , , . uppfyller även Om hade antagit ett maximum på det inre av hade vi där haft och vilket hade motsagt olikheten ovan. Därmed antas inget maximum på det inre. Kvar är toppen , . Men där gäller isåfall och vilket också hade motsagt olikheten ovan. Ett maximum måste antas på , alltså görs det på någon av sidorna , , .Entydighet:
+Antag att och är lösningar till Bilda . Då uppfyller att Maximumprincipen ger då att maxvärdet av är , medan om vi applicerar samma på får vi att även minvärdet av är , och därmed är så .]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/4.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/4.md</guid><pubDate>Wed, 11 Mar 2026 09:09:27 GMT</pubDate></item><item><title><![CDATA[6]]></title><description><![CDATA[Härled en representationsformel för lösningen till värmeledningsekvationen med källterm i .Problemet ges av för givna . Låt där är källfunktionen, Lösningen ges då av representationsformeln Bevis:
+Problemet är linjärt eftersom operatorn är linjär. Därmed räcker det att visa att löser problemet och att löser problemet Det följer då att löser det ursprungliga problemet.Det är känt att källfunktionen konvergerar (i distributionsmening) mot -funktionen när . Därmed har vi Vi har även alltså uppfylls begynnelsevillkoren. Notera nu först att löser : Därmed får vi För utnyttjar vi återigen att när : Vi får även och därmed Därmed uppfyller både och även PDEn och sina respektiva villkor.ALTERNATIVT:Vi har PDE:n i , . Vi Fouriertransformerar i -led och får Med en integrerande faktor får vi vilket med BV:et ger Vi har att Därmed får vi genom faltning att ]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/6.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/6.md</guid><pubDate>Tue, 10 Mar 2026 10:30:30 GMT</pubDate></item><item><title><![CDATA[12]]></title><description><![CDATA[Låt vara ett Hilbertrum, låt vara en bilinjär form och vara en linjär form. Antag att är symmetrisk är -elliptisk: är kontinuerlig: är kontinuerlig: Då finns ett unikt s.a. för alla , och det :et uppfyller .
+Bevis:
+Vi antar att vi har energinormen som är ekvivalent med ty Vi vet att uppfyller för alla omm minimerar . Vi vet att existerar eftersom om har vi medan om har visom är en nedåt begränsad funktion av .Eftersom infimum existerar finns en följd så att . Vi ser att är en Cauchyföljd ty för alla har vi Eftersom är ett Hilbertrum konvergerar alltså mot något . Av kontinuitet av och följer att är kontinuerlig och därmed , så minimerar och uppfyller därmed för alla .Det följer att eftersom Antag nu att uppfyller för alla . Då har vi och därmed , så lösningen är unik.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/12.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/12.md</guid><pubDate>Wed, 04 Mar 2026 09:00:35 GMT</pubDate></item><item><title><![CDATA[17]]></title><description><![CDATA[**Visa att -funktionen är en distribution och att konvergerar svagt (dvs i distributionsmening) mot -funktionen när .Vi definierar så att för Schwartz-funktioner . är då linjär ty och kontinuerlig ty om så gäller Definiera nu distributionerna enligt När fås då vilket med variabelbytet ger när , alltså konvergerar mycket riktigt mot när .]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/17.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/17.md</guid><pubDate>Mon, 02 Mar 2026 14:17:53 GMT</pubDate></item><item><title><![CDATA[16]]></title><description><![CDATA[Formulera och härled medelvärdesegenskapen för harmoniska funktioner.Låt vara en harmonisk funktion på en cirkel. Då är värdet av i origo lika med medelvärdet av på cirkelns omkrets.Bevis:
+Låt vara cirkelns radie, och låt . Vi får med Poissons formel I fås därmed vilket är medelvärdet av på cirkelns omkrets.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/16.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/16.md</guid><pubDate>Mon, 02 Mar 2026 14:01:00 GMT</pubDate></item><item><title><![CDATA[15]]></title><description><![CDATA[Formulera och härled Poissons representationsformel för harmoniska funktioner i en cirkel.Vi har alltså Vi kan skriva om detta med polära koordinater: Vi utför variabelseparation och ansätter därmed , och kräver även att ska vara begränsad. Då får vi Om får vi uppenbarligen inga icketriviala periodiska lösningar för . Om får vi de periodiska lösningarna för . Om slutligen får vi som är -periodisk om för något , d.v.s. .För får vi Vi ansätter och får För att ska bli begränsad kan vi inte ha , alltså måste vi ha , alltså . Vi kan nu ta linjärkombinationer av dessa lösningar: eller på komplex form: Randvillkoren ger då och enligt ortogonalitet, Insättning ger Vi delar upp serien i geometriska serier och får Om vi sätter har vi alltså Insättning ger slutligen Poissons lösningsformel ]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/15.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/15.md</guid><pubDate>Mon, 02 Mar 2026 13:25:39 GMT</pubDate></item><item><title><![CDATA[14]]></title><description><![CDATA[Formulera och bevisa en maximumprincip för harmoniska funktioner.För enkelhetens skull antar vi att vi är i , men allt generaliseras till godtycklig dimension.Låt vara öppen, sammanhängande och begränsad. Om är harmonisk, d.v.s. uppfyller i , där . Då gäller Bevis:
+Låt och . Antag att är en inre maxpunkt till . Isåfall har vi men så detta är omöjligt. Därmed antar sitt max på randen , låt denna punkt vara . Då har vi där , som finns eftersom är begränsad. Detta gäller för alla och därmed är för alla , så satsen följer.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/14.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/14.md</guid><pubDate>Mon, 02 Mar 2026 12:37:14 GMT</pubDate></item><item><title><![CDATA[11]]></title><description><![CDATA[Formulera och bevisa punktvis konvergens av FourierserierLåt vara -periodisk och kvadratiskt integrerbar. Låt Antag att är deriverbar i . Då konvergerar i , d.v.s. Bevis:
+Vi kan WLOG anta att och . Låt . I har vi genom Tayloruteckling och alltså är begränsad och därmed kvadratiskt integrerbar. Låt vara koefficienterna till . Då är Enligt Bessels olikhet gäller så eftersom är kvadratiskt integrerbar är serien konvergent och därmed måste när . Vi har därmed ]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/11.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/11.md</guid><pubDate>Mon, 02 Mar 2026 08:30:17 GMT</pubDate></item><item><title><![CDATA[9]]></title><description><![CDATA[Formulera och bevisa en uppskattning av interpolationsfel med kontinuerliga och styckvis linjära funktioner på intervallet .Låt vara ett funktionsrum och . Låt vara ett delrum med styckvis linjära funktioner på intervallen där . Vi definierar interpoleringen så att där ges av och för . Då gäller Bevis:
+Det finns enligt medelvärdessatsen ett s.a. för alla . Då gäller Därmed gäller Därmed får vi Vi får därmed ]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/9.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/9.md</guid><pubDate>Tue, 24 Feb 2026 09:53:08 GMT</pubDate></item><item><title><![CDATA[8]]></title><description><![CDATA[Formulera och bevisa en sats om finita elementmetodens optimala approximation av lösningen till i med randvillkoren i energinorm.Vi skriver först problemet på variationsform. Låt Vi tar en testfunktion och får vilket med partiell integration blir Definiera därmed Problemet blir då att hitta s.a. för alla .För finita differensmetoden tar vi något och definierar Målet med finita differensmetoden är då att hitta s.a. för alla . Satsen om optimal approximation säger då att med energinormen .Bevis:
+Låt lösa originalproblemet, låt lösa finit-differensproblemet. Tag något . Vi har då Vi får och därmed med Cauchy-Schwarz.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/8.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/8.md</guid><pubDate>Mon, 23 Feb 2026 11:08:03 GMT</pubDate></item><item><title><![CDATA[7]]></title><description><![CDATA[Formulera och bevisa en ekvivalens mellan partiella differentialekvationers variationsform och minimeringsformLåt vara en positivt definit, symmetrisk bilinjär form och låt vara en linjär form över något funktionsrum . Då gäller att variationsproblemet är ekvivalent med minimeringsproblemet Bevis:
+Antag först att löser variationsproblemet. Tag något . Vi har då och därmed löser även minimeringsproblemet.
+Antag nu istället att löser minimeringsproblemet. För alla och har vi då och därmed för alla , så vi måste ha , alltså löser även variationsproblemet.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/7.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/7.md</guid><pubDate>Mon, 23 Feb 2026 10:51:11 GMT</pubDate></item><item><title><![CDATA[5]]></title><description><![CDATA[Visa att energin bevaras för vågekvationen
+Vi har vågekvationen . Vi får den kinetiska energin Detta ger där konstanttermen försvinner i den partiella integrationen eftersom måste gå mot när för att integralen ska konvergera. Notera nu att , alltså Med och fås alltså .]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/5.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/5.md</guid><pubDate>Fri, 20 Feb 2026 11:48:12 GMT</pubDate></item><item><title><![CDATA[3]]></title><description><![CDATA[Formulera och härled d'Alemberts lösningsformel
+Begynnelsevärdesproblemet för vågekvationen är med begynnelsevillkor Ansätt Vi får då alltså som vi kan lösa ut och från: vilket ger och : Eftersom måste vi ha . Därmed är vilket är d'Alemberts lösningsformel.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/3.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/3.md</guid><pubDate>Fri, 20 Feb 2026 10:06:23 GMT</pubDate></item><item><title><![CDATA[2]]></title><description><![CDATA[Formulera en explicit finit differensmetod för en värmeledningsekvation och bevisa ett relaterat stabilitetsvillkor
+Vi antar konstant värmekapacitet och löser på där medan är given.
+Välj steglängder och och sätt Vi approximerar med framåtdifferens och med centraldifferens: Sätt . Vi får då finita differensmetoden Stabilitet: Vi gör variabelseparation och ansätter . Vi får Därmed är och Detta är en diskret variant av , så vi ansätter cosinus- och sinuslösningar: för något . Randvillkoret ger , så vi kan välja och alltså . Randvillkoret ger för något , d.v.s Därmed är för alla . Med fås alltså Eftersom måste vi ha för alla för stabilitet. Det vill säga varierar mellan och , alltså måste vi ha vilket alltså är vårt stabilitetsvillkor.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/2.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/2.md</guid><pubDate>Fri, 20 Feb 2026 09:16:57 GMT</pubDate></item><item><title><![CDATA[1]]></title><description><![CDATA[Härled värmeledningsekvationen
+Låt vara temperaturen och låt vara värmeenergin i ett visst område . Då får vi att där är den specifika värmekapaciteten och är densiteten. Ändringen i värmeenergin i måste motsvara värmeflödet genom dess yta, så där är värmekonduktiviteten. Divergenssatsen ger Detta gäller för alla , alltså måste vi ha likheten vilket är värmeledningsekvationen.]]></description><link>matematik/partial-differential-equations/instuderingsfrågor/1.html</link><guid isPermaLink="false">Matematik/Partial differential equations/Instuderingsfrågor/1.md</guid><pubDate>Fri, 20 Feb 2026 09:16:38 GMT</pubDate></item><item><title><![CDATA[canvas test]]></title><description><![CDATA[Optimization theory regards methods of solving problems that are of the general following form:Definition: Optimization problem, feasible region, cost function
+An optimization problem is a problem of the following form: where is a set called the feasible region, and where is a real-valued function called the cost function or objective function.
+Remark
+Unless otherwise stated, is assumed to be a subset of .
+Definition: Optimal value, feasible solution, optimal solution
+The optimal value of an optimization problem is .
+A vector is called a feasible solution whenever .
+A vector is called a (global) optimal solution whenever for all .
+Remark
+If an optimal solution exists, then is the optimal value. This is because is a minimum of and is thus the infimum.
+Definition: Local optimal solution, global optimal solution
+A vector is called a local optimal solution if there exists a such that whenever such that , .
+The optimization problemDuality (optimization) - Wikipedia]]></description><link>matematik/optimization/canvas-test.html</link><guid isPermaLink="false">Matematik/Optimization/canvas test.canvas</guid><pubDate>Wed, 07 Jan 2026 23:04:16 GMT</pubDate></item><item><title><![CDATA[Anteckningar]]></title><description><![CDATA[
+<a data-href="Linjär algebra" href="matematik/linjär-algebra.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Linjär algebra</a><a data-href="Linjär algebra" href="matematik/linjär-algebra.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Linjär algebra</a>
+<br><a data-href="Discrete mathematics" href="matematik/discrete-mathematics.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Discrete mathematics</a><a data-href="Discrete mathematics" href="matematik/discrete-mathematics.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Discrete mathematics</a>
+<br><a data-href="Groups and rings, Lectures" href="matematik/groups-and-rings,-lectures.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Groups and rings, Lectures</a><a data-href="Groups and rings, Lectures" href="matematik/groups-and-rings,-lectures.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Groups and rings, Lectures</a>
+<br><a data-href="Optimization" href="matematik/optimization.html" class="original-internal-link" target="_self" rel="noopener nofollow" style="display: none;">Optimization</a><a data-href="Optimization" href="matematik/optimization.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Optimization</a>
+]]></description><link>anteckningar.html</link><guid isPermaLink="false">Anteckningar.md</guid><pubDate>Mon, 29 Dec 2025 15:32:28 GMT</pubDate></item><item><title><![CDATA[JSXGraph test]]></title><link>jsxgraph-test.html</link><guid isPermaLink="false">JSXGraph test.md</guid><pubDate>Fri, 17 Oct 2025 16:58:11 GMT</pubDate></item><item><title><![CDATA[Kladd]]></title><link>kladd.html</link><guid isPermaLink="false">Kladd.md</guid><pubDate>Fri, 17 Oct 2025 16:51:00 GMT</pubDate></item><item><title><![CDATA[Kladd katex 4]]></title><link>kladd-katex-4.html</link><guid isPermaLink="false">Kladd katex 4.md</guid><pubDate>Fri, 17 Oct 2025 15:25:16 GMT</pubDate></item><item><title><![CDATA[jsxgraph test]]></title><link>jsxgraph-test.html</link><guid isPermaLink="false">jsxgraph test.html</guid><pubDate>Fri, 17 Oct 2025 14:05:49 GMT</pubDate></item><item><title><![CDATA[Kladd katex 3]]></title><description><![CDATA[12345−1−2−3−4−5123−1−2−30,0–o+←↓↑→k = 1.00f(x) = e^{\int x}AB]]></description><link>kladd-katex-3.html</link><guid isPermaLink="false">Kladd katex 3.md</guid><pubDate>Fri, 17 Oct 2025 14:07:23 GMT</pubDate></item><item><title><![CDATA[Kladd katex 1]]></title><description><![CDATA[12345−1−2−3−4−5123−1−2−30,00,00,0–o+←↓↑→k=1.00k = 1.00k=1.00f(x)=sin⁡(tx)f(x) = \sin(tx)f(x)=sin(tx)AAABBB]]></description><link>kladd-katex-1.html</link><guid isPermaLink="false">Kladd katex 1.md</guid><pubDate>Fri, 17 Oct 2025 11:45:55 GMT</pubDate></item><item><title><![CDATA[Kladd katex 2]]></title><description><![CDATA[12345−1−2−3−4−5123−1−2−30,00,00,0–o+←↓↑→k=1.00k = 1.00k=1.00f(x)=e∫xf(x) = e^{\int x}f(x)=e∫xAAABBB]]></description><link>kladd-katex-2.html</link><guid isPermaLink="false">Kladd katex 2.md</guid><pubDate>Fri, 17 Oct 2025 11:34:15 GMT</pubDate></item><item><title><![CDATA[Inför tenta]]></title><description><![CDATA[
 Euler-diskretisering bakåt: ersätt derivata med för något tidsintervall Vid rotort: kom ihåg att hitta skärningspunkter med imaginära axeln för att hitta stabila värden på .
 Vid rotort: titta även på för vilka rötterna är på reella axeln. Abrupta hopp därifrån sker ofta ut i det komplexa planet.
 Vid rotort: kom ihåg att den ska vara symmetrisk kring reella axeln!
